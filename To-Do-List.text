@@ -3,7 +3,7 @@
 🟡 Main Part:
 Requirements:
 
-❌ Build a clean and straightforward PC Builder website for PC parts and components using Next.js. The website should include a PC Builder tool where users can add selected PC components to build their own PC.
+✅ Build a clean and straightforward PC Builder website for PC parts and components using Next.js. The website should include a PC Builder tool where users can add selected PC components to build their own PC.
 (Next.js ব্যবহার করে PC যন্ত্রাংশ এবং উপাদানগুলির জন্য একটি পরিষ্কার এবং সহজবোধ্য PC Builder ওয়েবসাইট তৈরি করুন। ওয়েবসাইটটিতে একটি পিসি বিল্ডার টুল অন্তর্ভুক্ত করা উচিত যেখানে ব্যবহারকারীরা তাদের নিজস্ব পিসি তৈরি করতে নির্বাচিত পিসি উপাদান যোগ করতে পারে।)
 
 # Navbar start
