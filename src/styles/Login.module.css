@@ -1,0 +1,20 @@
+.login{
+    width: 30%;
+    height: 250px;
+    border-radius: 10px;
+    background: #36343c;
+    margin: 8% auto;
+    padding: 20px;
+    text-align: center;
+    color: white
+}
+
+
+.social_icons{
+    width: 30%;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid white;
+    margin-top: 70px;
+    cursor:pointer;
+}
