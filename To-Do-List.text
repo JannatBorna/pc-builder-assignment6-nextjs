@@ -32,10 +32,10 @@ Requirements:
 
  #  home page start
 🟡 Home Page: (SSG implementation): 
-❌ The home page should feature at least 6 random PC components as Featured Products.
+✅ The home page should feature at least 6 random PC components as Featured Products.
 (হোম পেজে কমপক্ষে 6টি র্যান্ডম পিসি উপাদান বৈশিষ্ট্যযুক্ত পণ্য হিসাবে বৈশিষ্ট্যযুক্ত হওয়া উচিত।)
 
-❌ Each Featured product card should display the following properties:
+✅ Each Featured product card should display the following properties:
 (প্রতিটি বৈশিষ্ট্যযুক্ত পণ্য কার্ড নিম্নলিখিত বৈশিষ্ট্য প্রদর্শন করা উচিত:)
                     - Image
                     - Product Name
