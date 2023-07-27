@@ -17,7 +17,7 @@ const RootLayout = ({ children }) => {
     key: '0',
   },
   {
-  label: <a href="/motherboar">Motherboard</a>,
+  label: <a href="/motherboard">Motherboard</a>,
   key: '1',
 },
 {
@@ -75,7 +75,7 @@ const RootLayout = ({ children }) => {
               </a>
                </Dropdown>
 
-        <Link href="/" className={styles.manu}> 
+        <Link href="/pcBuilder" className={styles.manu}> 
            <items style={{ margin: "0px 30px", padding: "10px" }} className={styles.list}>      
            PC Builder
            </items>

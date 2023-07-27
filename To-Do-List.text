@@ -11,7 +11,7 @@ Requirements:
 🟡 Navbar: 
 ✅ Add a button named PC Builder.(পিসি বিল্ডার নামে একটি বোতাম যুক্ত করুন।)
 
-❌ Clicking on the PC Builder button should redirect the user to the PC Builder page to start building their PC.
+✅ Clicking on the PC Builder button should redirect the user to the PC Builder page to start building their PC.
 (পিসি বিল্ডার বোতামে ক্লিক করলে ব্যবহারকারীকে redirect করে PC Builder page চলে যাবে)
 
 ✅ The navbar should also have a Categories dropdown with the following categories:
@@ -24,7 +24,7 @@ Requirements:
                      - Storage Device
                      - Monitor
                      - Others
-  ° Each category should have a corresponding route. (SSG implementation)
+  ✅ ° Each category should have a corresponding route. (SSG implementation)
   (প্রতিটি বিভাগের একটি সংশ্লিষ্ট রুট থাকা উচিত। (এসএসজি বাস্তবায়ন))
 
   # Navbar end
