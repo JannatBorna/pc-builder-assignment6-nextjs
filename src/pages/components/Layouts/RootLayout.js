@@ -125,31 +125,55 @@ const RootLayout = ({ children }) => {
             <Footer
         style={{
           textAlign: "center",
+          background: "#1f1f1f",
+          color: "#ffff"
         }}
       >
         <div className={styles.line}></div>
-        <h2
-          style={{
-            fontSize: "28px",
-          }}
-        >
-          BLOGS PORTAL
-        </h2>
+        <Row>
+            <Col xs={24} sm={24} md={8} lg={8}>
+                <h2 style={{fontSize: "28px"}} > PC Builder </h2>
+
         <p className={styles.social_icons}>
-          <Link href="https://web.facebook.com/groups/programmingherocommunity">
-            <FacebookFilled />
-          </Link>
-          <Link href="www.twitter.com">
-            <TwitterSquareFilled />
-          </Link>
-          <Link href="https://web.programming-hero.com/home/">
-            <GoogleSquareFilled />
-          </Link>
-          <Link href="www.linkedin.com">
-            <LinkedinFilled />
-          </Link>
-        </p>
-        Blogs Portal ©2023 Created by Programming Hero
+         <Link href="https://web.facebook.com/groups/programmingherocommunity">
+           <FacebookFilled />
+         </Link>
+         <Link href="www.twitter.com">
+           <TwitterSquareFilled />
+         </Link>
+         <Link href="https://web.programming-hero.com/home/">
+           <GoogleSquareFilled />
+         </Link>
+         <Link href="www.linkedin.com">
+           <LinkedinFilled />
+         </Link>
+       </p>
+        </Col>
+    <Col xs={24} sm={24} md={8} lg={8}>
+       <form style={{marginTop: "30px"}}>
+        <input  type="email" placeholder="Enter Your Email" style={{marginBottom: "10px",  width: "50%", height: "5vh"}}/>
+        <button style={{marginLeft: "10px", height: "5vh", backgroundColor: "red", color: "white", border: "none", width: "15%",}}>Subscribe</button>
+      </form>
+      </Col>
+     <Col xs={24} sm={24} md={8} lg={8}>
+      <p>If you're on a budget and looking to save some money, building your own       PC can be a huge advantage. By choosing your own parts, you can shop around       to find the best prices and avoid the added cost of paying for expensive       parts that you don't need.</p>
+    <p
+    style={{
+        display: "flex",
+        justifyContent:"space-around",
+        width: "100%",
+        color:"white",
+        margin:"10px 0px"
+    }}>
+        <span>About Us</span> 
+        <span>Home</span>
+        <span>PC Buy</span>
+        <span>Contact Us</span>
+        <span>Our Website</span>
+    </p>
+    </Col>
+    </Row>
+        <p style={{fontSize: "10px"}}>PC Builder &copy;2023 Created by Jannat Borna</p>
       </Footer>
     </Layout>
   );
