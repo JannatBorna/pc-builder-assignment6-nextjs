@@ -1,4 +1,4 @@
-# Assignment 6: Project Name:  Simple PC Builder ✅ 
+# Assignment 6: Project Name:  Simple PC Builder 
 
 🟡 Main Part:
 Requirements:
@@ -9,12 +9,12 @@ Requirements:
 # Navbar start
 
 🟡 Navbar: 
-❌ Add a button named PC Builder.(পিসি বিল্ডার নামে একটি বোতাম যুক্ত করুন।)
+✅ Add a button named PC Builder.(পিসি বিল্ডার নামে একটি বোতাম যুক্ত করুন।)
 
 ❌ Clicking on the PC Builder button should redirect the user to the PC Builder page to start building their PC.
 (পিসি বিল্ডার বোতামে ক্লিক করলে ব্যবহারকারীকে redirect করে PC Builder page চলে যাবে)
 
-❌ The navbar should also have a Categories dropdown with the following categories:
+✅ The navbar should also have a Categories dropdown with the following categories:
 (নেভিবারে নিম্নলিখিত বিভাগগুলির সাথে একটি বিভাগ ড্রপডাউনও থাকা উচিত:)
 
                      - CPU / Processor
