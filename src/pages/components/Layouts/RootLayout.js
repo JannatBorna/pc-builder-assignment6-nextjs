@@ -2,13 +2,17 @@ import { Col, Dropdown, Layout, Menu, Row, Space } from 'antd';
 import Image from 'next/image';
 import logo from '@/assets/images/logo.png';
 import Link from 'next/link';
-import { DashboardOutlined, DeploymentUnitOutlined,  DownOutlined,  FacebookFilled, GoogleSquareFilled,  LinkedinFilled, LoginOutlined, MobileOutlined, PoweroffOutlined,  RobotOutlined,   TwitterSquareFilled, UserOutlined, } from '@ant-design/icons';
+import {  FacebookFilled, GoogleSquareFilled,  LinkedinFilled, LoginOutlined,  PoweroffOutlined,   TwitterSquareFilled, } from '@ant-design/icons';
 import styles  from '@/styles/Home.module.css';
 const { Header, Content, Footer } = Layout;
+import { useSession, signOut } from "next-auth/react"
+
 
 
 
 const RootLayout = ({ children }) => {
+  
+     const { data: session } = useSession(); // github
 
 
   const items = [
@@ -79,15 +83,11 @@ const RootLayout = ({ children }) => {
            <items style={{ margin: "0px 30px", padding: "10px" }} className={styles.list}>      
            PC Builder
            </items>
-        </Link>   
-      
+        </Link>  
 
-            <Link href="/login"  className={styles.manu}>
-              <items style={{padding: "10px"}}>
-                <LoginOutlined style={{margin: "5px"}}/>
-                Login
-              </items>
-            </Link>  
+         { session?.user?.email? (
+ 
+      
 
                <items style={{ margin: "0px 30px" }}>
                <button 
@@ -105,9 +105,15 @@ const RootLayout = ({ children }) => {
                  Logout
                  </button>
               </items>
+           ) :
 
-
-
+            <Link href="/login"  className={styles.manu}>
+              <items style={{padding: "10px"}}>
+                <LoginOutlined style={{margin: "5px"}}/>
+                Login
+              </items>
+            </Link>  
+        }
         </Menu>
         </Col>
           </Row> 
