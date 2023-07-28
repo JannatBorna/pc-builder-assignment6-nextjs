@@ -6,7 +6,7 @@ import Link from "next/link";
 import RootLayout from "../components/Layouts/RootLayout";
 
 
-const PowersPage = ({powers}) => {
+const PowersPage = ({rams}) => {
     const {Meta} = Card;
     return (
       <>
@@ -21,10 +21,10 @@ const PowersPage = ({powers}) => {
 </h1>
         <Row>
           {
-          powers?.map((power) =>(
+          rams?.map((ram) =>(
               <Col 
               xs={24} sm={24} md={12} lg={8} 
-              key={power?.id}
+              key={ram?.id}
 
               >
 
@@ -33,7 +33,7 @@ const PowersPage = ({powers}) => {
               hoverable
                   cover={
                   <Image
-                    src={power?.img}
+                    src={ram?.img}
                     width={500}
                     height={200}
                     responsive
@@ -41,7 +41,7 @@ const PowersPage = ({powers}) => {
                   />
                   }
               >
-                <Meta title={power?.name}/>
+                <Meta title={ram?.name}/>
                 <div
                   style={{
                     height:"5px",
@@ -50,7 +50,7 @@ const PowersPage = ({powers}) => {
                     width: "100%"
                   }}
                 ></div>
-               <h2 style={{color:"gray",}}>{power?.status}</h2>
+               <h2 style={{color:"gray",}}>{ram?.status}</h2>
                 <p
                 style={{
                   display: "flex",
@@ -61,16 +61,16 @@ const PowersPage = ({powers}) => {
                 }}
                 >
                 <span>
-                    Price: {power?.price}&#2547; 
+                    Price: {ram?.price}&#2547; 
                 </span>
                 <span>
-                     Rating : {power?.rating} 
+                     Rating : {ram?.rating} 
                 </span>
                 <span>
-                    Category: {power?.category}
+                    Category: {ram?.category}
                 </span>
                 </p>
-                <Link href={`/power/${power?._id}`}>
+                <Link href={`/ram/${ram?._id}`}>
                     <p
                       style={{
                           fontSize:"15px",
@@ -108,12 +108,12 @@ PowersPage.getLayout = function getLayout (page){
 
 // data fetching
 export const getStaticProps = async () => {
-    const res = await fetch ("http://localhost:3000/api/powers");
+    const res = await fetch ("http://localhost:3000/api/rams");
     const data = await res.json();
     console.log(data);
     return{
         props: {
-            powers: data.data,
+            rams: data.data,
         }
     }
 }

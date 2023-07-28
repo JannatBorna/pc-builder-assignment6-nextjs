@@ -2,12 +2,12 @@ import Head from 'next/head';
 import Banner from './components/UI/Banner';
 import RootLayout from '../components/Layouts/RootLayout';
 
-const PowerHomePage = () => {
+const RamsHomePage = () => {
   return (
     <div>
         <>
      <Head>
-       <title>Powers PC_Builder</title>
+       <title>Rams PC_Builder</title>
        <meta
          name="description"
          content="This is PC_Builder website made by next-js"
@@ -22,8 +22,8 @@ const PowerHomePage = () => {
   );
 };
 
-export default PowerHomePage;
-PowerHomePage.getLayout = function getLayout(page){
+export default RamsHomePage;
+RamsHomePage.getLayout = function getLayout(page){
   return (
     <RootLayout>
       {page}
@@ -33,12 +33,12 @@ PowerHomePage.getLayout = function getLayout(page){
 
 // data fetching
 export const getStaticProps = async () =>{
-  const res = await fetch("http://localhost:3000/api/powers")
+  const res = await fetch("http://localhost:3000/api/rams")
   const data = await res.json();
   console.log(data);
   return{
   props :{
-    powers: data.data.data,
+    rams: data.data.data,
   },
    revalidate: 10,
   };
