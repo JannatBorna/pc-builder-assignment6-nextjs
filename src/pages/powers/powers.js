@@ -17,7 +17,7 @@ const PowersPage = ({powers}) => {
             margin:"30px 0px",
         }}
         >
-   # Others
+   # Power Supply Unit
 </h1>
         <Row>
           {

@@ -17,7 +17,7 @@ const PowersPage = ({rams}) => {
             margin:"30px 0px",
         }}
         >
-   # Others
+   # RAM
 </h1>
         <Row>
           {
