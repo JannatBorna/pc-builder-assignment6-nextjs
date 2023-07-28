@@ -29,3 +29,11 @@
   width: 99%;
   margin: 20px 0px;
 }
+
+.builderBtn{
+  padding: 0.5em;
+  background-color: #eedb6b;
+  height: 7vh;
+  border: none;
+  cursor: pointer;
+}

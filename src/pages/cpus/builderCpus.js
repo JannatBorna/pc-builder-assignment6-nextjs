@@ -2,10 +2,10 @@ import { Card, Col, Row } from "antd";
 import Image from "next/image";
 import styles  from '@/styles/Home.module.css';
 import Link from "next/link";
-import RootLayout from "./components/Layouts/RootLayout";
+import RootLayout from "../components/Layouts/RootLayout";
 
 
-const AllProductsPage = ({allProducts}) => {
+const BuilderCpus = ({cpus}) => {
     const {Meta} = Card;
     return (
       <>
@@ -16,14 +16,14 @@ const AllProductsPage = ({allProducts}) => {
             margin:"30px 0px",
         }}
         >
-    ALL PRODUCTS
+   # CPU
 </h1>
         <Row>
           {
-          allProducts?.map((products) =>(
+          cpus?.map((cpu) =>(
               <Col 
               xs={24} sm={24} md={12} lg={8} 
-              key={products?.id}
+              key={cpu?._id}
 
               >
 
@@ -32,7 +32,7 @@ const AllProductsPage = ({allProducts}) => {
               hoverable
                   cover={
                   <Image
-                    src={products?.image}
+                    src={cpu?.img}
                     width={500}
                     height={200}
                     responsive
@@ -40,7 +40,7 @@ const AllProductsPage = ({allProducts}) => {
                   />
                   }
               >
-                <Meta title={products?.product_name}/>
+                <Meta title={cpu?.name}/>
                 <div
                   style={{
                     height:"5px",
@@ -49,7 +49,7 @@ const AllProductsPage = ({allProducts}) => {
                     width: "100%"
                   }}
                 ></div>
-               <h2 style={{color:"gray",}}>{products?.status}</h2>
+               <h2 style={{color:"gray",}}>{cpu?.status}</h2>
                 <p
                 style={{
                   display: "flex",
@@ -60,16 +60,16 @@ const AllProductsPage = ({allProducts}) => {
                 }}
                 >
                 <span>
-                    Price: {products?.price}&#2547; 
+                    Price: {cpu?.price}&#2547; 
                 </span>
                 <span>
-                     Rating : {products?.rating} 
+                     Rating : {cpu?.rating} 
                 </span>
                 <span>
-                    Category: {products?.category}
+                    Category: {cpu?.category}
                 </span>
                 </p>
-                <Link href={`/product/${products?._id}`}>
+                <Link href="">
                     <p
                       style={{
                           fontSize:"15px",
@@ -83,7 +83,7 @@ const AllProductsPage = ({allProducts}) => {
                           textAlign: "center",
                       }}
                       >
-                          See Detail
+                        Add To Builder  
                       </p>
                 </Link>
               </Card>
@@ -95,9 +95,9 @@ const AllProductsPage = ({allProducts}) => {
     );
 };
 
-export default AllProductsPage;
+export default BuilderCpus;
 
-AllProductsPage.getLayout = function getLayout (page){
+BuilderCpus.getLayout = function getLayout (page){
     return(
         <RootLayout>
             {page}
@@ -107,12 +107,12 @@ AllProductsPage.getLayout = function getLayout (page){
 
 // data fetching
 export const getStaticProps = async () => {
-    const res = await fetch ("http://localhost:3000/api/products");
+    const res = await fetch ("http://localhost:3000/api/cpus");
     const data = await res.json();
     console.log(data);
     return{
         props: {
-            allProducts: data.data,
+            cpus: data.data,
         }
     }
 }

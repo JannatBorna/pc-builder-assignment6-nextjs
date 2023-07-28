@@ -5,7 +5,7 @@ import Link from "next/link";
 import RootLayout from "../components/Layouts/RootLayout";
 
 
-const PowersPage = ({cpus}) => {
+const CpusPage = ({cpus}) => {
     const {Meta} = Card;
     return (
       <>
@@ -95,9 +95,9 @@ const PowersPage = ({cpus}) => {
     );
 };
 
-export default PowersPage;
+export default CpusPage;
 
-PowersPage.getLayout = function getLayout (page){
+CpusPage.getLayout = function getLayout (page){
     return(
         <RootLayout>
             {page}

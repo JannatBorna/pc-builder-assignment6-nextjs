@@ -80,7 +80,7 @@ Requirements:
                     - Price
                     - Status ( In Stock | Out of stock)
                     - Rating (Out of 5 Stars)
-° Each product retrieved after querying on this page will also be clickable and should take the user to the product detail page.
+✅ ° Each product retrieved after querying on this page will also be clickable and should take the user to the product detail page.
 (এই পৃষ্ঠায় জিজ্ঞাসা করার পরে পুনরুদ্ধার করা প্রতিটি পণ্যও ক্লিকযোগ্য হবে এবং ব্যবহারকারীকে পণ্যের বিশদ পৃষ্ঠায় নিয়ে যাওয়া উচিত।)
 
 # Featured Category Sections end
@@ -104,7 +104,7 @@ Requirements:
 # Product Detail Page end
 
 🟡 PC Builder Page: (SSR implementation)
-   ° The PC Builder page should have category sections as follows:
+  ✅ ° The PC Builder page should have category sections as follows:
    (পিসি বিল্ডার পৃষ্ঠায় নিম্নলিখিত বিভাগগুলি থাকা উচিত:)
                     - CPU / Processor
                     - Motherboard
@@ -112,13 +112,13 @@ Requirements:
                     - Power Supply Unit
                     - Storage Device
                     - Monitor
-❌ Each category will have a Choose/Select Button.
+✅ Each category will have a Choose/Select Button.
 (প্রতিটি বিভাগে একটি চয়ন/নির্বাচন বোতাম থাকবে।)
-❌ Clicking on the Choose/Select Button will take the user to another page where at least 3 components of that specific category will be displayed.
+✅ Clicking on the Choose/Select Button will take the user to another page where at least 3 components of that specific category will be displayed.
 (চয়ন/নির্বাচন বোতামে ক্লিক করা ব্যবহারকারীকে অন্য পৃষ্ঠায় নিয়ে যাবে যেখানে সেই নির্দিষ্ট বিভাগের কমপক্ষে 3টি উপাদান প্রদর্শিত হবে।)
 
 
-❌ Each component card on this page should show the following properties:
+✅ Each component card on this page should show the following properties:
 (এই পৃষ্ঠার প্রতিটি উপাদান কার্ড নিম্নলিখিত বৈশিষ্ট্যগুলি দেখাতে হবে:)
                     - Image
                     - Product Name

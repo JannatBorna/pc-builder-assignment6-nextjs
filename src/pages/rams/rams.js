@@ -5,7 +5,7 @@ import Link from "next/link";
 import RootLayout from "../components/Layouts/RootLayout";
 
 
-const PowersPage = ({rams}) => {
+const RamsPage = ({rams}) => {
     const {Meta} = Card;
     return (
       <>
@@ -69,7 +69,7 @@ const PowersPage = ({rams}) => {
                     Category: {ram?.category}
                 </span>
                 </p>
-                <Link href={`/ram/${ram?._id}`}>
+                <Link href="">
                     <p
                       style={{
                           fontSize:"15px",
@@ -83,7 +83,7 @@ const PowersPage = ({rams}) => {
                           textAlign: "center",
                       }}
                       >
-                          See Detail
+                          Add To Builder
                       </p>
                 </Link>
               </Card>
@@ -95,9 +95,9 @@ const PowersPage = ({rams}) => {
     );
 };
 
-export default PowersPage;
+export default RamsPage;
 
-PowersPage.getLayout = function getLayout (page){
+RamsPage.getLayout = function getLayout (page){
     return(
         <RootLayout>
             {page}

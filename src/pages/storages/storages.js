@@ -5,7 +5,7 @@ import Link from "next/link";
 import RootLayout from "../components/Layouts/RootLayout";
 
 
-const PowersPage = ({storages}) => {
+const StoragesPage = ({storages}) => {
     const {Meta} = Card;
     return (
       <>
@@ -95,9 +95,9 @@ const PowersPage = ({storages}) => {
     );
 };
 
-export default PowersPage;
+export default StoragesPage;
 
-PowersPage.getLayout = function getLayout (page){
+StoragesPage.getLayout = function getLayout (page){
     return(
         <RootLayout>
             {page}
