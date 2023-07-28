@@ -51,7 +51,7 @@ Requirements:
 
 
 
-❌ There should be 6 Featured Categories under the Featured Product section. The Categories are:
+✅ There should be 6 Featured Categories under the Featured Product section. The Categories are:
 (বৈশিষ্ট্যযুক্ত পণ্য বিভাগের অধীনে 6টি বৈশিষ্ট্যযুক্ত বিভাগ থাকতে হবে। বিভাগগুলি হল:)
 
                     - CPU / Processor
@@ -66,13 +66,13 @@ Requirements:
 
 🟡 Featured Category Sections: (SSG implementation)
 
-❌ Each featured category should be clickable.
+✅ Each featured category should be clickable.
 (প্রতিটি বৈশিষ্ট্যযুক্ত বিভাগ ক্লিকযোগ্য হওয়া উচিত।)
 
-❌ Clicking on any of the Featured Categories will redirect the user to another page where at least 3 products of that category will be displayed.
+✅ Clicking on any of the Featured Categories will redirect the user to another page where at least 3 products of that category will be displayed.
 (যে কোনো বৈশিষ্ট্যযুক্ত বিভাগগুলিতে ক্লিক করলে ব্যবহারকারীকে অন্য পৃষ্ঠায় পুনঃনির্দেশিত করা হবে যেখানে সেই বিভাগের কমপক্ষে 3টি পণ্য প্রদর্শিত হবে।)
 
-❌ Each product card on this page should show the following properties:
+✅ Each product card on this page should show the following properties:
 (এই পৃষ্ঠায় প্রতিটি পণ্য কার্ড নিম্নলিখিত বৈশিষ্ট্য প্রদর্শন করা উচিত:)
                     - Image
                     - Product Name
@@ -89,7 +89,7 @@ Requirements:
 
 🟡 Product Detail Page / Route: (SSG implementation)
  Product Details:
-❌  Each PC Component must have the following properties:
+✅  Each PC Component must have the following properties:
 (প্রতিটি পিসি উপাদানের নিম্নলিখিত বৈশিষ্ট্য থাকতে হবে:)
                     - Image
                     - Product Name
@@ -149,7 +149,7 @@ Requirements:
 ✅ The Home page should also have a hero section/banner section and a footer.
 (হোম পেজে একটি হিরো বিভাগ/ব্যানার বিভাগ এবং একটি ফুটার থাকা উচিত।)
 
-❌ The entire application must be responsive for both mobile and desktop devices to ensure an enjoyable user experience across all devices.
+✅ The entire application must be responsive for both mobile and desktop devices to ensure an enjoyable user experience across all devices.
 (সমস্ত ডিভাইস জুড়ে একটি উপভোগ্য ব্যবহারকারীর অভিজ্ঞতা নিশ্চিত করতে সম্পূর্ণ অ্যাপ্লিকেশনটি মোবাইল এবং ডেস্কটপ উভয় ডিভাইসের জন্যই প্রতিক্রিয়াশীল হতে হবে।)
 
 ❌ Create a ReadMe.md file describing your application, explaining its features, and providing clear instructions on how to run the project.
