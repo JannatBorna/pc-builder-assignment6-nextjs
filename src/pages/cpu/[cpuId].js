@@ -18,6 +18,18 @@ const CputDetailPage = ({cpus}) => {
               />
               </div>
                   <h2 style={{color:"gray",}}>{cpus?.status}</h2>
+                <div
+                style={{
+                     height:"5px",
+                     margin:"20px 0",
+                     background:"#000",
+                     width:"90%",
+                }}
+                ></div>
+               <div style={{marginTop: "20px"}}>
+                  <h2 style={{textAlign: "center"}}>REVIEW</h2>
+                  <p  style={{marginTop: "20px"}}>&#8226; {cpus?.reviews}</p>
+               </div>
               </Col>
 
               <Col xs={24} sm={24} md={12} lg={12}> 
@@ -62,18 +74,6 @@ const CputDetailPage = ({cpus}) => {
              </span>
              </p>
 
-        <div
-         style={{
-              height:"5px",
-              margin:"20px 0",
-              background:"#000",
-              width:"100%",
-         }}
-         ></div>
-         <div>
-            <h2 style={{textAlign: "center"}}>REVIEW</h2>
-            <p>&#8226; {cpus?.reviews}</p>
-         </div>
     </Col>
   </Row>
         </>
