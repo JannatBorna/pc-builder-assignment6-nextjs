@@ -1,10 +1,4 @@
 import { Col, Row, Carousel } from "antd";
-import {
-  ArrowRightOutlined,
-  CalendarOutlined,
-  CommentOutlined,
-  ProfileOutlined,
-} from "@ant-design/icons";
 import Image from "next/image";
 import banner1 from "../../../assets/banner/banner-1.png";
 import banner2 from "../../../assets/banner/banner-2.png";
@@ -24,7 +18,7 @@ const Banner = () => (
           <h1 style={{ fontSize: "50px" }}>
             IdeaPad Gaming &apos; Core i5
             <br />
-            15.6" FHD Laptop
+            15.6&rdquo; FHD Laptop
           </h1>
           <div
             className="line"
@@ -38,7 +32,7 @@ const Banner = () => (
 
 
           <p style={{ fontSize: "20px" }}>
-            The latest price of Lenovo IdeaPad Gaming 3i Core i5 11th Gen RTX 3050 4GB Graphics 15.6" FHD Laptop in Bangladesh is 110,000৳. You can buy the Lenovo IdeaPad Gaming 3i Core i5 11th Gen RTX 3050 4GB Graphics 15.6" FHD Laptop at best price from our website or visit any of our showrooms...
+            The latest price of Lenovo IdeaPad Gaming 3i Core i5 11th Gen RTX 3050 4GB Graphics 15.6&quot; FHD Laptop in Bangladesh is 110,000৳. You can buy the Lenovo IdeaPad Gaming 3i Core i5 11th Gen RTX 3050 4GB Graphics 15.6&rdquo; FHD Laptop at best price from our website or visit any of our showrooms...
           </p>
         </Col>
 

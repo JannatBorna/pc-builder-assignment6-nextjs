@@ -94,12 +94,13 @@ export const getStaticPaths = async () => {
       const res = await fetch("http://localhost:5000/products");
       const products = await res.json();
 
-      const paths = products.map((product) => ({
+      const paths = products?.map((product) => ({
        params: { productId: product.id },
        }));
-
+console.log(products)
       return{ paths,  fallback:false };
 }
+
 
 export const getStaticProps = async (context) => {
    const { params } = context;

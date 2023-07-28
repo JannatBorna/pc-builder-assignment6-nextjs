@@ -17,31 +17,31 @@ const RootLayout = ({ children }) => {
 
   const items = [
   {
-    label: <a href="/cpu">CPU / Processor</a>,
+    label: <Link href="/cpu">CPU / Processor</Link>,
     key: '0',
   },
   {
-  label: <a href="/motherboard">Motherboard</a>,
+  label: <Link href="/motherboard">Motherboard</Link>,
   key: '1',
 },
 {
-  label: <a href="/ram">RAM</a>,
+  label: <Link href="/ram">RAM</Link>,
   key: '2',
 },
 {
-  label: <a href="/powerSupply">Power Supply Unit</a>,
+  label: <Link href="/powerSupply">Power Supply Unit</Link>,
   key: '3',
 },
 {
-  label: <a href="/storageDevice">Storage Device</a>,
+  label: <Link href="/storageDevice">Storage Device</Link>,
   key: '4',
 },
 {
-  label: <a href="/monitor">Monitor</a>,
+  label: <Link href="/monitor">Monitor</Link>,
   key: '5',
 },
   {
-    label: <a href="/others">Others</a>,
+    label: <Link href="/others">Others</Link>,
     key: '6',
   },
 ];
@@ -162,7 +162,7 @@ const RootLayout = ({ children }) => {
       </form>
       </Col>
      <Col xs={24} sm={24} md={8} lg={8}>
-      <p>If you're on a budget and looking to save some money, building your own       PC can be a huge advantage. By choosing your own parts, you can shop around       to find the best prices and avoid the added cost of paying for expensive       parts that you don't need.</p>
+      <p>If you are on a budget and looking to save some money, building your own PC can be a huge advantage. By choosing your own parts, you can shop around to find the best prices and avoid the added cost of paying for expensive parts that you do not need.</p>
     <p
     style={{
         display: "flex",

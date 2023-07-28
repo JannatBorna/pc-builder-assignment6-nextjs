@@ -44,7 +44,7 @@ Requirements:
                     - Status ( In Stock | Out of stock)
                     - Rating (Out of 5 Stars)
 
- ° Each featured product will be clickable and should take the user to the product detail page. (Button/Entire Card)
+ ✅° Each featured product will be clickable and should take the user to the product detail page. (Button/Entire Card)
  (প্রতিটি বৈশিষ্ট্যযুক্ত পণ্য ক্লিকযোগ্য হবে এবং ব্যবহারকারীকে পণ্যের বিস্তারিত পৃষ্ঠায় নিয়ে যাওয়া উচিত। (বোতাম/পুরো কার্ড))
 
  #  home page end

@@ -22,10 +22,6 @@ async function run(req, res) {
     res.send({message:"success", status:200, data: products})
   }
   
-  if(req.method === "GET"){
-  const productId = await productsCollection.find({}).findOne(query);
-  res.send({message:"success", status:200, data: productId})
-}
 
   // single product
   if (req.method === 'GET'){
