@@ -29,7 +29,7 @@ const RootLayout = ({ children }) => {
   key: '2',
 },
 {
-  label: <Link href="/power/power">Power Supply Unit</Link>,
+  label: <Link href="/powers/powers">Power Supply Unit</Link>,
   key: '3',
 },
 {
