@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Banner from './components/UI/Banner';
 import RootLayout from '../components/Layouts/RootLayout';
 
 const StoragesHomePage = () => {
@@ -15,7 +14,7 @@ const StoragesHomePage = () => {
        <meta name="viewport" content="width=device-width, initial-scale=1" />
        <link rel="icon" href="/favicon.ico" />
      </Head>
-     <Banner />
+
      
    </>
     </div>
