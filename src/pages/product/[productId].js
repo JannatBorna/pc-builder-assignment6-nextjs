@@ -93,7 +93,7 @@ ProductDetailPage.getLayout = function getLayout (page){
 export const getStaticPaths = async () => {
      const res = await fetch("http://localhost:3000/api/products");
      const productses = await res.json();
-     const paths = productses?.map((products) => ({
+     const paths = productses?.data.map((products) => ({
      params: { productId: products._id },
      }))
      return{
