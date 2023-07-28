@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "json-server": "json-server --watch db.json --port 5000",
     "lint": "next lint"
   },
   "dependencies": {
@@ -13,6 +14,7 @@
     "antd": "^5.7.3",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.12",
+    "json-server": "^0.17.3",
     "next": "13.4.12",
     "next-auth": "^4.22.3",
     "react": "18.2.0",
