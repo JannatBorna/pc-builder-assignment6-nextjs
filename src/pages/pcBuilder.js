@@ -2,12 +2,40 @@ import { Col, Row } from 'antd';
 import RootLayout from './components/Layouts/RootLayout';
 import Link from 'next/link';
 import styles  from '@/styles/Home.module.css';
+import { useSelector } from 'react-redux';
+import Image from 'next/image';
+
 
 const PcBuilderPage = () => {
+    const item = useSelector((state) => state.cart)
     return (
         <div>
             <Row>
                 <Col xs={24} sm={24} md={24} lg={24}>
+                 
+                                     
+                  <hr style={{margin:"30px"}}/>
+                
+                     <div style={{display:"flex", justifyContent:"space-around", marginTop:"20px"}}>
+                        <div>
+                            <Image 
+                            src={item?.img}
+                            width={100}
+                            height={100}
+                            responsive
+                            alt="image"/>
+
+                            <h2>{item?.name}</h2>
+                            <h2>{item?.price}</h2>
+                        </div>
+
+                     <Link href="/cpus/builderCpus">
+                        <button className={styles.builderBtn}>Choose</button>
+                    </Link>
+                    </div>
+
+
+
                      <hr style={{margin:"30px"}}/>
                     <div style={{display:"flex", justifyContent:"space-around", marginTop:"20px"}}>
                         <h4>CPU / Processor</h4>

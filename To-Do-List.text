@@ -129,7 +129,8 @@ Requirements:
 ❌ Each component card on that page will have an Add To Builder Button.
 (সেই পৃষ্ঠার প্রতিটি কম্পোনেন্ট কার্ডে একটি অ্যাড টু বিল্ডার বোতাম থাকবে।)
 
-❌ Clicking on this button will redirect the user to the PC Builder page, and it will update the state of that selected category section in the PC Builder Page with the selected component below. (You can use Redux / Context API to create a central store for this)
+❌ Clicking on this button will redirect the user to the PC Builder page, and it will update the state of that selected category section in the PC Builder Page with the selected component below. 
+(You can use Redux / Context API to create a central store for this)
 (এই বোতামে ক্লিক করা ব্যবহারকারীকে পিসি বিল্ডার পৃষ্ঠায় পুনঃনির্দেশিত করবে, এবং এটি নীচের নির্বাচিত উপাদান সহ PC বিল্ডার পৃষ্ঠায় নির্বাচিত বিভাগ বিভাগের অবস্থা আপডেট করবে। (এর জন্য একটি কেন্দ্রীয় স্টোর তৈরি করতে আপনি Redux / প্রসঙ্গ API ব্যবহার করতে পারেন))
 
 ❌ After adding at least 5 - 6 Components (CPU, RAM, Power Supply, Storage, Motherboard, Casing), the user will be able to click on the Complete Build button. (This button will be disabled unless the user adds at least 5-6 of the mentioned components)
