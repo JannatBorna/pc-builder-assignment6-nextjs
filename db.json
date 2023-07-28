@@ -107,7 +107,14 @@
         "category": "Monitor LED350",
         "price": "170000",
         "status": "In Stock",
-        "rating": "4"
+        "rating": "4",
+        "description": "The ThundeRobot K98 Ebony on Cedar Wired Mechanical Keyboard is a high-CPU cooler and it comes with a  whisper-quiet 92 mm LED fan and a large, aluminum heat fin structure with two embedded copper heat pipes. The 43 x 86 mm aluminum fins offer a larger surface area for heat transference. These allow the CPU to cool off efficiently. It has been designed for compatibility with leading desktop processor sockets. The Antec A30 92mm CPU Cooler supports Intel Core i7, and AMD Sempron, among others.",
+        "key_features1": "Model: K98",
+        "key_features2": "95% 98-Key arrangement, Full-Key Conflict-Free Operation, Double Shot", 
+        "key_features3": "Switch: ThundeRobot Milk Tea",
+        "individual_rating": "4", 
+        "average_rating": "4", 
+        "reviews": "use very comfotable"     
      },
 
          {
@@ -116,7 +123,14 @@
        "category": "Monitor 5RD66AA",
        "price": "50000",
        "status": "Out of stock",
-       "rating": "3"
+       "rating": "3",
+        "description": "ScreenBeam SBUSBSW4 USB Pro Switch for Content Sharing ScreenBeam SBUSBSW4 USB Pro Switch between meeting room devices and resources with this USB Pro Switch from ScreenBeam and its six USB Type-A host and device ports. A single button allows you to start a Microsoft Teams Room meeting and toggle between room resources to better bridge the gap between in-person and remote participants. Pairing the USB Pro with the 1100 Plus display receiver integrates AV peripherals like video cameras, microphones, speakers, or touchscreen displays regardless of the room configuration. The switch is compatible with both Windows and MacOS devices and is powered via a micro-USB port at the front.(Pair with ScreenBeam 1100 Plus)The USB Pro Switch when paired with a ScreenBeam 1100 Plus receiver overcomes these challenges and turns your UC meeting room into a fully flexible meeting space for both UC meetings and BYOM meetings. The ScreenBeam USB Pro Switch intelligently and seamlessly switches the room peripherals (camera, microphone, speaker and touchscreen) between your UC room experience and a Bring Your Own Meeting (BYOM) experience. Best of all, there is no user intervention required, nor any changes to either your UC or BYOM experience…ScreenBeam just knows when to switch resources automatically. Not every meeting space is equipped with an MTR. So for those spaces ScreenBeam USB Pro Switch provides users the flexibility to choose to go wireless or wired for their BYOM session, allowing guest presenters with locked down devices to still drive the meeting.",
+       "key_features1":"Battery capacity: 400mah,Charging about 2 hours",
+       "key_features2":"95% 98-Key arrangement, Full-Key Conflict-Free Operation, Double Shot",
+       "key_features3": "Switch: ThundeRobot Milk Tea",
+       "individual_rating": "4",
+       "average_rating": "5",
+       "reviews": "Nice product."
     },
 
         {
@@ -125,123 +139,214 @@
        "category": "Monitor Redmi 1A",
        "price": "7678",
        "status": "In Stock",
-       "rating": "5"
+       "rating": "5",
+       "description": "ScreenBeam SBUSBSW4 USB Pro Switch for Content Sharing ScreenBeam SBUSBSW4 USB Pro Switch between meeting room devices and resources with this USB Pro Switch from ScreenBeam and its six USB Type-A host and device ports. A single button allows you to start a Microsoft Teams Room meeting and toggle between room resources to better bridge the gap between in-person and remote participants. Pairing the USB Pro with the 1100 Plus display receiver integrates AV peripherals like video cameras, microphones, speakers, or touchscreen displays regardless of the room configuration. The switch is compatible with both Windows and MacOS devices and is powered via a micro-USB port at the front.(Pair with ScreenBeam 1100 Plus)The USB Pro Switch when paired with a ScreenBeam 1100 Plus receiver overcomes these challenges and turns your UC meeting room into a fully flexible meeting space for both UC meetings and BYOM meetings. The ScreenBeam USB Pro Switch intelligently and seamlessly switches the room peripherals (camera, microphone, speaker and touchscreen) between your UC room experience and a Bring Your Own Meeting (BYOM) experience. Best of all, there is no user intervention required, nor any changes to either your UC or BYOM experience…ScreenBeam just knows when to switch resources automatically. Not every meeting space is equipped with an MTR. So for those spaces ScreenBeam USB Pro Switch provides users the flexibility to choose to go wireless or wired for their BYOM session, allowing guest presenters with locked down devices to still drive the meeting.",
+       "key_features1":"Extra-Elongated Layout, Honeycomb Fabrics",
+       "key_features2":"Battery capacity: 400mah,Charging about 2 hours",
+       "key_features3": "Switch: ThundeRobot Milk Tea",
+       "individual_rating": "3",
+       "average_rating": "4",
+       "reviews": "Look for it first the gamming focused asus very good product"
     }
     ],
 
         "cpus": [
      {
         "img": "/image/cpu-1.png",
-        "name": "",
-        "category": "",
-        "price": "20000",
+        "name": "Antec A30 92mm CPU Cooler",
+        "category": "cpu A30",
+        "price": "2000",
         "status": "In Stock",
-        "rating": "5"
+        "rating": "5",
+        "description": "ScreenBeam SBUSBSW4 USB Pro Switch for Content Sharing ScreenBeam SBUSBSW4 USB Pro Switch between meeting room devices and resources with this USB Pro Switch from ScreenBeam and its six USB Type-A host and device ports. A single button allows you to start a Microsoft Teams Room meeting and toggle between room resources to better bridge the gap between in-person and remote participants. Pairing the USB Pro with the 1100 Plus display receiver integrates AV peripherals like video cameras, microphones, speakers, or touchscreen displays regardless of the room configuration. The switch is compatible with both Windows and MacOS devices and is powered via a micro-USB port at the front.(Pair with ScreenBeam 1100 Plus)The USB Pro Switch when paired with a ScreenBeam 1100 Plus receiver overcomes these challenges and turns your UC meeting room into a fully flexible meeting space for both UC meetings and BYOM meetings. The ScreenBeam USB Pro Switch intelligently and seamlessly switches the room peripherals (camera, microphone, speaker and touchscreen) between your UC room experience and a Bring Your Own Meeting (BYOM) experience. Best of all, there is no user intervention required, nor any changes to either your UC or BYOM experience…ScreenBeam just knows when to switch resources automatically. Not every meeting space is equipped with an MTR. So for those spaces ScreenBeam USB Pro Switch provides users the flexibility to choose to go wireless or wired for their BYOM session, allowing guest presenters with locked down devices to still drive the meeting.",
+        "key_features1":"Model: BlackWidow Chroma",
+        "key_features2":"CPI Resolution: 1000 dpi",
+        "key_features3": "Battery capacity: 400mah,Charging about 2 hours",
+        "individual_rating": "5",
+        "average_rating": "4",
+        "reviews": "Look for it first the gamming focused asus very good product"
      },
 
          {
        "img": "/image/cpu-2.png",
-       "name": "",
-       "category": "",
-       "price": "",
-       "status": "",
-       "rating": ""
+       "name": "NZXT T120 120mm Air CPU Cooler White",
+       "category": "cpu T120",
+       "price": "300",
+       "status": "Out of stock",
+       "rating": "4",
+        "description": "ScreenBeam SBUSBSW4 USB Pro Switch for Content Sharing ScreenBeam SBUSBSW4 USB Pro Switch between meeting room devices and resources with this USB Pro Switch from ScreenBeam and its six USB Type-A host and device ports. A single button allows you to start a Microsoft Teams Room meeting and toggle between room resources to better bridge the gap between in-person and remote participants. Pairing the USB Pro with the 1100 Plus display receiver integrates AV peripherals like video cameras, microphones, speakers, or touchscreen displays regardless of the room configuration. The switch is compatible with both Windows and MacOS devices and is powered via a micro-USB port at the front.(Pair with ScreenBeam 1100 Plus)The USB Pro Switch when paired with a ScreenBeam 1100 Plus receiver overcomes these challenges and turns your UC meeting room into a fully flexible meeting space for both UC meetings and BYOM meetings. The ScreenBeam USB Pro Switch intelligently and seamlessly switches the room peripherals (camera, microphone, speaker and touchscreen) between your UC room experience and a Bring Your Own Meeting (BYOM) experience. Best of all, there is no user intervention required, nor any changes to either your UC or BYOM experience…ScreenBeam just knows when to switch resources automatically. Not every meeting space is equipped with an MTR. So for those spaces ScreenBeam USB Pro Switch provides users the flexibility to choose to go wireless or wired for their BYOM session, allowing guest presenters with locked down devices to still drive the meeting.",
+       "key_features1":"CPI Resolution: 1000 dpi",
+       "key_features2":"Battery capacity: 400mah,Charging about 2 hours",
+       "key_features3": "Model: BlackWidow Chroma",
+       "individual_rating": "4",
+       "average_rating": "5",
+       "reviews": "Nice product."
     },
 
         {
        "img": "/image/cpu-3.png",
-       "name": "",
-       "category": "",
-       "price": "",
-       "status": "",
-       "rating": ""
+       "name": "Antec FrigusAir 400 ARGB CPU Air Cooler",
+       "category": "cpu 400",
+       "price": "340",
+       "status": "In Stock",
+       "rating": "3",
+        "description": "ScreenBeam SBUSBSW4 USB Pro Switch for Content Sharing ScreenBeam SBUSBSW4 USB Pro Switch between meeting room devices and resources with this USB Pro Switch from ScreenBeam and its six USB Type-A host and device ports. A single button allows you to start a Microsoft Teams Room meeting and toggle between room resources to better bridge the gap between in-person and remote participants. Pairing the USB Pro with the 1100 Plus display receiver integrates AV peripherals like video cameras, microphones, speakers, or touchscreen displays regardless of the room configuration. The switch is compatible with both Windows and MacOS devices and is powered via a micro-USB port at the front.(Pair with ScreenBeam 1100 Plus)The USB Pro Switch when paired with a ScreenBeam 1100 Plus receiver overcomes these challenges and turns your UC meeting room into a fully flexible meeting space for both UC meetings and BYOM meetings. The ScreenBeam USB Pro Switch intelligently and seamlessly switches the room peripherals (camera, microphone, speaker and touchscreen) between your UC room experience and a Bring Your Own Meeting (BYOM) experience. Best of all, there is no user intervention required, nor any changes to either your UC or BYOM experience…ScreenBeam just knows when to switch resources automatically. Not every meeting space is equipped with an MTR. So for those spaces ScreenBeam USB Pro Switch provides users the flexibility to choose to go wireless or wired for their BYOM session, allowing guest presenters with locked down devices to still drive the meeting.",
+       "key_features1":"Battery capacity: 400mah,Charging about 2 hours",
+       "key_features2":"Model: BlackWidow Chroma",
+       "key_features3": "CPI Resolution: 1000 dpi",
+       "individual_rating": "3",
+       "average_rating": "4",
+       "reviews": "Look for it first the gamming focused asus very good product"
     }
     ],
 
         "motherboards": [
      {
         "img": "/image/board-1.png",
-        "name": "",
-        "category": "",
-        "price": "",
-        "status": "",
-        "rating": ""
+        "name": "Gigabyte X299 AORUS Gaming 3 Motherboard",
+        "category": "Motherboard",
+        "price": "2000",
+        "status": "In Stock",
+        "rating": "5",
+        "description": "ScreenBeam SBUSBSW4 USB Pro Switch for Content Sharing ScreenBeam SBUSBSW4 USB Pro Switch between meeting room devices and resources with this USB Pro Switch from ScreenBeam and its six USB Type-A host and device ports. A single button allows you to start a Microsoft Teams Room meeting and toggle between room resources to better bridge the gap between in-person and remote participants. Pairing the USB Pro with the 1100 Plus display receiver integrates AV peripherals like video cameras, microphones, speakers, or touchscreen displays regardless of the room configuration. The switch is compatible with both Windows and MacOS devices and is powered via a micro-USB port at the front.(Pair with ScreenBeam 1100 Plus)The USB Pro Switch when paired with a ScreenBeam 1100 Plus receiver overcomes these challenges and turns your UC meeting room into a fully flexible meeting space for both UC meetings and BYOM meetings. The ScreenBeam USB Pro Switch intelligently and seamlessly switches the room peripherals (camera, microphone, speaker and touchscreen) between your UC room experience and a Bring Your Own Meeting (BYOM) experience. Best of all, there is no user intervention required, nor any changes to either your UC or BYOM experience…ScreenBeam just knows when to switch resources automatically. Not every meeting space is equipped with an MTR. So for those spaces ScreenBeam USB Pro Switch provides users the flexibility to choose to go wireless or wired for their BYOM session, allowing guest presenters with locked down devices to still drive the meeting.",
+        "key_features1":"Model: BlackWidow Chroma",
+        "key_features2":"CPI Resolution: 1000 dpi",
+        "key_features3": "Battery capacity: 400mah,Charging about 2 hours",
+        "individual_rating": "4",
+        "average_rating": "2",
+        "reviews": "Look for it first the gamming focused asus very good product"
      },
 
          {
        "img": "/image/board-2.png",
-       "name": "",
-       "category": "",
-       "price": "",
-       "status": "",
-       "rating": ""
+       "name": "MSI B450M PRO-VDH MAX AMD AM4 Gaming Motherboard",
+       "category": "Motherboard AM4",
+       "price": "739",
+       "status": "Out of Stock",
+       "rating": "3",
+       "description": "ScreenBeam SBUSBSW4 USB Pro Switch for Content Sharing ScreenBeam SBUSBSW4 USB Pro Switch between meeting room devices and resources with this USB Pro Switch from ScreenBeam and its six USB Type-A host and device ports. A single button allows you to start a Microsoft Teams Room meeting and toggle between room resources to better bridge the gap between in-person and remote participants. Pairing the USB Pro with the 1100 Plus display receiver integrates AV peripherals like video cameras, microphones, speakers, or touchscreen displays regardless of the room configuration. The switch is compatible with both Windows and MacOS devices and is powered via a micro-USB port at the front.(Pair with ScreenBeam 1100 Plus)The USB Pro Switch when paired with a ScreenBeam 1100 Plus receiver overcomes these challenges and turns your UC meeting room into a fully flexible meeting space for both UC meetings and BYOM meetings. The ScreenBeam USB Pro Switch intelligently and seamlessly switches the room peripherals (camera, microphone, speaker and touchscreen) between your UC room experience and a Bring Your Own Meeting (BYOM) experience. Best of all, there is no user intervention required, nor any changes to either your UC or BYOM experience…ScreenBeam just knows when to switch resources automatically. Not every meeting space is equipped with an MTR. So for those spaces ScreenBeam USB Pro Switch provides users the flexibility to choose to go wireless or wired for their BYOM session, allowing guest presenters with locked down devices to still drive the meeting.",
+       "key_features1":"CPI Resolution: 1000 dpi",
+       "key_features2":"Battery capacity: 400mah,Charging about 2 hours",
+       "key_features3": "Model: BlackWidow Chroma",
+       "individual_rating": "4",
+       "average_rating": "5",
+       "reviews": "Nice product."
     },
 
         {
        "img": "/image/board-3.png",
-       "name": "",
-       "category": "",
-       "price": "",
-       "status": "",
-       "rating": ""
+       "name": "GIGABYTE B550M DS3H AC Micro ATX AMD Motherboard",
+       "category": "Motherboard ATX",
+       "price": "6276",
+       "status": "In Stock",
+       "rating": "4",
+       "description": "ScreenBeam SBUSBSW4 USB Pro Switch for Content Sharing ScreenBeam SBUSBSW4 USB Pro Switch between meeting room devices and resources with this USB Pro Switch from ScreenBeam and its six USB Type-A host and device ports. A single button allows you to start a Microsoft Teams Room meeting and toggle between room resources to better bridge the gap between in-person and remote participants. Pairing the USB Pro with the 1100 Plus display receiver integrates AV peripherals like video cameras, microphones, speakers, or touchscreen displays regardless of the room configuration. The switch is compatible with both Windows and MacOS devices and is powered via a micro-USB port at the front.(Pair with ScreenBeam 1100 Plus)The USB Pro Switch when paired with a ScreenBeam 1100 Plus receiver overcomes these challenges and turns your UC meeting room into a fully flexible meeting space for both UC meetings and BYOM meetings. The ScreenBeam USB Pro Switch intelligently and seamlessly switches the room peripherals (camera, microphone, speaker and touchscreen) between your UC room experience and a Bring Your Own Meeting (BYOM) experience. Best of all, there is no user intervention required, nor any changes to either your UC or BYOM experience…ScreenBeam just knows when to switch resources automatically. Not every meeting space is equipped with an MTR. So for those spaces ScreenBeam USB Pro Switch provides users the flexibility to choose to go wireless or wired for their BYOM session, allowing guest presenters with locked down devices to still drive the meeting.",
+       "key_features1":"Battery capacity: 400mah,Charging about 2 hours",
+       "key_features2":"Model: BlackWidow Chroma",
+       "key_features3": "CPI Resolution: 1000 dpi",
+       "individual_rating": "3",
+       "average_rating": "4",
+       "reviews": "Look for it first the gamming focused asus very good product"
     }
     ],
 
         "rams": [
      {
         "img": "/image/ram-1.png",
-        "name": "",
-        "category": "",
-        "price": "",
-        "status": "",
-        "rating": ""
+        "name": "CORSAIR VENGEANCE 8GB DDR4 3200MHz SODIMM Laptop RAM",
+        "category": "RAM",
+        "price": "2344",
+        "status": "In Stock",
+        "rating": "4",
+        "description": "ScreenBeam SBUSBSW4 USB Pro Switch for Content Sharing ScreenBeam SBUSBSW4 USB Pro Switch between meeting room devices and resources with this USB Pro Switch from ScreenBeam and its six USB Type-A host and device ports. A single button allows you to start a Microsoft Teams Room meeting and toggle between room resources to better bridge the gap between in-person and remote participants. Pairing the USB Pro with the 1100 Plus display receiver integrates AV peripherals like video cameras, microphones, speakers, or touchscreen displays regardless of the room configuration. The switch is compatible with both Windows and MacOS devices and is powered via a micro-USB port at the front.(Pair with ScreenBeam 1100 Plus)The USB Pro Switch when paired with a ScreenBeam 1100 Plus receiver overcomes these challenges and turns your UC meeting room into a fully flexible meeting space for both UC meetings and BYOM meetings. The ScreenBeam USB Pro Switch intelligently and seamlessly switches the room peripherals (camera, microphone, speaker and touchscreen) between your UC room experience and a Bring Your Own Meeting (BYOM) experience. Best of all, there is no user intervention required, nor any changes to either your UC or BYOM experience…ScreenBeam just knows when to switch resources automatically. Not every meeting space is equipped with an MTR. So for those spaces ScreenBeam USB Pro Switch provides users the flexibility to choose to go wireless or wired for their BYOM session, allowing guest presenters with locked down devices to still drive the meeting.",
+        "key_features1":"Model: BlackWidow Chroma",
+        "key_features2":"Battery capacity: 400mah,Charging about 2 hours",
+        "key_features3": "CPI Resolution: 1000 dpi",
+        "individual_rating": "5",
+        "average_rating": "3",
+        "reviews": "very comfortable products"
      },
 
          {
        "img": "/image/ram-1.png",
-       "name": "",
-       "category": "",
-       "price": "",
-       "status": "",
-       "rating": ""
+       "name": "Samsung 4GB 1600MHz DDR3 PC3L Laptop RAM",
+       "category": "RAM PCAL",
+       "price": "5765",
+       "status": "In Stock",
+       "rating": "3",
+        "description": "ScreenBeam SBUSBSW4 USB Pro Switch for Content Sharing ScreenBeam SBUSBSW4 USB Pro Switch between meeting room devices and resources with this USB Pro Switch from ScreenBeam and its six USB Type-A host and device ports. A single button allows you to start a Microsoft Teams Room meeting and toggle between room resources to better bridge the gap between in-person and remote participants. Pairing the USB Pro with the 1100 Plus display receiver integrates AV peripherals like video cameras, microphones, speakers, or touchscreen displays regardless of the room configuration. The switch is compatible with both Windows and MacOS devices and is powered via a micro-USB port at the front.(Pair with ScreenBeam 1100 Plus)The USB Pro Switch when paired with a ScreenBeam 1100 Plus receiver overcomes these challenges and turns your UC meeting room into a fully flexible meeting space for both UC meetings and BYOM meetings. The ScreenBeam USB Pro Switch intelligently and seamlessly switches the room peripherals (camera, microphone, speaker and touchscreen) between your UC room experience and a Bring Your Own Meeting (BYOM) experience. Best of all, there is no user intervention required, nor any changes to either your UC or BYOM experience…ScreenBeam just knows when to switch resources automatically. Not every meeting space is equipped with an MTR. So for those spaces ScreenBeam USB Pro Switch provides users the flexibility to choose to go wireless or wired for their BYOM session, allowing guest presenters with locked down devices to still drive the meeting.",
+       "key_features1":"CPI Resolution: 1000 dpi",
+       "key_features2":"Battery capacity: 400mah,Charging about 2 hours",
+       "key_features3": "Model: BlackWidow Chroma",
+       "individual_rating": "4",
+       "average_rating": "5",
+       "reviews": "Nice product."
     },
 
         {
        "img": "/image/ram-1.png",
-       "name": "",
-       "category": "",
-       "price": "",
-       "status": "",
-       "rating": ""
+       "name": "TEAM ELITE 8GB 3200MHz Laptop RAM",
+       "category": "RAM TED48G3200C22-S01",
+       "price": "900",
+       "status": "Out of Stock",
+       "rating": "5",
+       "description": "ScreenBeam SBUSBSW4 USB Pro Switch for Content Sharing ScreenBeam SBUSBSW4 USB Pro Switch between meeting room devices and resources with this USB Pro Switch from ScreenBeam and its six USB Type-A host and device ports. A single button allows you to start a Microsoft Teams Room meeting and toggle between room resources to better bridge the gap between in-person and remote participants. Pairing the USB Pro with the 1100 Plus display receiver integrates AV peripherals like video cameras, microphones, speakers, or touchscreen displays regardless of the room configuration. The switch is compatible with both Windows and MacOS devices and is powered via a micro-USB port at the front.(Pair with ScreenBeam 1100 Plus)The USB Pro Switch when paired with a ScreenBeam 1100 Plus receiver overcomes these challenges and turns your UC meeting room into a fully flexible meeting space for both UC meetings and BYOM meetings. The ScreenBeam USB Pro Switch intelligently and seamlessly switches the room peripherals (camera, microphone, speaker and touchscreen) between your UC room experience and a Bring Your Own Meeting (BYOM) experience. Best of all, there is no user intervention required, nor any changes to either your UC or BYOM experience…ScreenBeam just knows when to switch resources automatically. Not every meeting space is equipped with an MTR. So for those spaces ScreenBeam USB Pro Switch provides users the flexibility to choose to go wireless or wired for their BYOM session, allowing guest presenters with locked down devices to still drive the meeting.",
+       "key_features1":"Battery capacity: 400mah,Charging about 2 hours",
+       "key_features2":"Model: BlackWidow Chroma",
+       "key_features3": "CPI Resolution: 1000 dpi",
+       "individual_rating": "3",
+       "average_rating": "4",
+       "reviews": "very comfortable products"
     }
     ],
 
         "powers": [
      {
         "img": "/image/power-1.png",
-        "name": "",
-        "category": "",
-        "price": "",
-        "status": "",
-        "rating": ""
+        "name": "MSI MPG A1000G PCIE5 1000W 80 Plus Gold Full Modular Power Supply",
+        "category": "Power Supply Unit PCIE5",
+        "price": "6667",
+        "status": "Out of Stock",
+        "rating": "4",
+        "description": "ScreenBeam SBUSBSW4 USB Pro Switch for Content Sharing ScreenBeam SBUSBSW4 USB Pro Switch between meeting room devices and resources with this USB Pro Switch from ScreenBeam and its six USB Type-A host and device ports. A single button allows you to start a Microsoft Teams Room meeting and toggle between room resources to better bridge the gap between in-person and remote participants. Pairing the USB Pro with the 1100 Plus display receiver integrates AV peripherals like video cameras, microphones, speakers, or touchscreen displays regardless of the room configuration. The switch is compatible with both Windows and MacOS devices and is powered via a micro-USB port at the front.(Pair with ScreenBeam 1100 Plus)The USB Pro Switch when paired with a ScreenBeam 1100 Plus receiver overcomes these challenges and turns your UC meeting room into a fully flexible meeting space for both UC meetings and BYOM meetings. The ScreenBeam USB Pro Switch intelligently and seamlessly switches the room peripherals (camera, microphone, speaker and touchscreen) between your UC room experience and a Bring Your Own Meeting (BYOM) experience. Best of all, there is no user intervention required, nor any changes to either your UC or BYOM experience…ScreenBeam just knows when to switch resources automatically. Not every meeting space is equipped with an MTR. So for those spaces ScreenBeam USB Pro Switch provides users the flexibility to choose to go wireless or wired for their BYOM session, allowing guest presenters with locked down devices to still drive the meeting.",
+        "key_features1":"Model: BlackWidow Chroma",
+        "key_features2":"Battery capacity: 400mah,Charging about 2 hours",
+        "key_features3": "CPI Resolution: 1000 dpi",
+        "individual_rating": "4",
+        "average_rating": "3",
+        "reviews": "very comfortable products"
      },
 
          {
        "img": "/image/power-1.png",
-       "name": "",
-       "category": "",
-       "price": "",
-       "status": "",
-       "rating": ""
+       "name": "Revenger VP 350 Watt Power Supply",
+       "category": "Power Supply Unit VP",
+       "price": "4242",
+       "status": "In Stock",
+       "rating": "3",
+        "description": "ScreenBeam SBUSBSW4 USB Pro Switch for Content Sharing ScreenBeam SBUSBSW4 USB Pro Switch between meeting room devices and resources with this USB Pro Switch from ScreenBeam and its six USB Type-A host and device ports. A single button allows you to start a Microsoft Teams Room meeting and toggle between room resources to better bridge the gap between in-person and remote participants. Pairing the USB Pro with the 1100 Plus display receiver integrates AV peripherals like video cameras, microphones, speakers, or touchscreen displays regardless of the room configuration. The switch is compatible with both Windows and MacOS devices and is powered via a micro-USB port at the front.(Pair with ScreenBeam 1100 Plus)The USB Pro Switch when paired with a ScreenBeam 1100 Plus receiver overcomes these challenges and turns your UC meeting room into a fully flexible meeting space for both UC meetings and BYOM meetings. The ScreenBeam USB Pro Switch intelligently and seamlessly switches the room peripherals (camera, microphone, speaker and touchscreen) between your UC room experience and a Bring Your Own Meeting (BYOM) experience. Best of all, there is no user intervention required, nor any changes to either your UC or BYOM experience…ScreenBeam just knows when to switch resources automatically. Not every meeting space is equipped with an MTR. So for those spaces ScreenBeam USB Pro Switch provides users the flexibility to choose to go wireless or wired for their BYOM session, allowing guest presenters with locked down devices to still drive the meeting.",
+       "key_features1":"CPI Resolution: 1000 dpi",
+       "key_features2":"Battery capacity: 400mah,Charging about 2 hours",
+       "key_features3": "Model: BlackWidow Chroma",
+       "individual_rating": "4",
+       "average_rating": "5",
+       "reviews": "Nice product."
     },
 
         {
        "img": "/image/power-1.png",
-       "name": "",
-       "category": "",
-       "price": "",
-       "status": "",
-       "rating": ""
+       "name": "Cooler Master MWE 450W V2 Non-Modular 80 Plus Bronze Power Supply",
+       "category": "Power Supply Unit V2",
+       "price": "2555",
+       "status": "In Stock",
+       "rating": "4",
+        "description": "ScreenBeam SBUSBSW4 USB Pro Switch for Content Sharing ScreenBeam SBUSBSW4 USB Pro Switch between meeting room devices and resources with this USB Pro Switch from ScreenBeam and its six USB Type-A host and device ports. A single button allows you to start a Microsoft Teams Room meeting and toggle between room resources to better bridge the gap between in-person and remote participants. Pairing the USB Pro with the 1100 Plus display receiver integrates AV peripherals like video cameras, microphones, speakers, or touchscreen displays regardless of the room configuration. The switch is compatible with both Windows and MacOS devices and is powered via a micro-USB port at the front.(Pair with ScreenBeam 1100 Plus)The USB Pro Switch when paired with a ScreenBeam 1100 Plus receiver overcomes these challenges and turns your UC meeting room into a fully flexible meeting space for both UC meetings and BYOM meetings. The ScreenBeam USB Pro Switch intelligently and seamlessly switches the room peripherals (camera, microphone, speaker and touchscreen) between your UC room experience and a Bring Your Own Meeting (BYOM) experience. Best of all, there is no user intervention required, nor any changes to either your UC or BYOM experience…ScreenBeam just knows when to switch resources automatically. Not every meeting space is equipped with an MTR. So for those spaces ScreenBeam USB Pro Switch provides users the flexibility to choose to go wireless or wired for their BYOM session, allowing guest presenters with locked down devices to still drive the meeting.",
+       "key_features1":"Battery capacity: 400mah,Charging about 2 hours",
+       "key_features2":"Model: BlackWidow Chroma",
+       "key_features3": "CPI Resolution: 1000 dpi",
+       "individual_rating": "3",
+       "average_rating": "4",
+       "reviews": "Look for it first the gamming focused asus very good product"
     }
     ],
 
@@ -249,59 +354,98 @@
      {
         "img": "/image/storage-1.png",
         "name": "",
-        "category": "",
-        "price": "",
-        "status": "",
-        "rating": ""
+        "category": "storages",
+        "price": "2324",
+        "status": "In Stock",
+        "rating": "4",
+        "description": "ScreenBeam SBUSBSW4 USB Pro Switch for Content Sharing ScreenBeam SBUSBSW4 USB Pro Switch between meeting room devices and resources with this USB Pro Switch from ScreenBeam and its six USB Type-A host and device ports. A single button allows you to start a Microsoft Teams Room meeting and toggle between room resources to better bridge the gap between in-person and remote participants. Pairing the USB Pro with the 1100 Plus display receiver integrates AV peripherals like video cameras, microphones, speakers, or touchscreen displays regardless of the room configuration. The switch is compatible with both Windows and MacOS devices and is powered via a micro-USB port at the front.(Pair with ScreenBeam 1100 Plus)The USB Pro Switch when paired with a ScreenBeam 1100 Plus receiver overcomes these challenges and turns your UC meeting room into a fully flexible meeting space for both UC meetings and BYOM meetings. The ScreenBeam USB Pro Switch intelligently and seamlessly switches the room peripherals (camera, microphone, speaker and touchscreen) between your UC room experience and a Bring Your Own Meeting (BYOM) experience. Best of all, there is no user intervention required, nor any changes to either your UC or BYOM experience…ScreenBeam just knows when to switch resources automatically. Not every meeting space is equipped with an MTR. So for those spaces ScreenBeam USB Pro Switch provides users the flexibility to choose to go wireless or wired for their BYOM session, allowing guest presenters with locked down devices to still drive the meeting.",
+        "key_features1":"Model: BlackWidow Chroma",
+        "key_features2":"CPI Resolution: 1000 dpi",
+        "key_features3": "Battery capacity: 400mah,Charging about 2 hours",
+        "individual_rating": "5",
+        "average_rating": "3",
+        "reviews": "very comfortable products"
      },
 
          {
        "img": "/image/storage-1.png",
-       "name": "",
-       "category": "",
-       "price": "",
-       "status": "",
-       "rating": ""
+       "name": "Asustor DRIVESTOR 4 Pro AS3304T 4-Bay NAS",
+       "category": "storages NAS",
+       "price": "8777",
+       "status": "Out of Stock",
+       "rating": "5",
+        "description": "ScreenBeam SBUSBSW4 USB Pro Switch for Content Sharing ScreenBeam SBUSBSW4 USB Pro Switch between meeting room devices and resources with this USB Pro Switch from ScreenBeam and its six USB Type-A host and device ports. A single button allows you to start a Microsoft Teams Room meeting and toggle between room resources to better bridge the gap between in-person and remote participants. Pairing the USB Pro with the 1100 Plus display receiver integrates AV peripherals like video cameras, microphones, speakers, or touchscreen displays regardless of the room configuration. The switch is compatible with both Windows and MacOS devices and is powered via a micro-USB port at the front.(Pair with ScreenBeam 1100 Plus)The USB Pro Switch when paired with a ScreenBeam 1100 Plus receiver overcomes these challenges and turns your UC meeting room into a fully flexible meeting space for both UC meetings and BYOM meetings. The ScreenBeam USB Pro Switch intelligently and seamlessly switches the room peripherals (camera, microphone, speaker and touchscreen) between your UC room experience and a Bring Your Own Meeting (BYOM) experience. Best of all, there is no user intervention required, nor any changes to either your UC or BYOM experience…ScreenBeam just knows when to switch resources automatically. Not every meeting space is equipped with an MTR. So for those spaces ScreenBeam USB Pro Switch provides users the flexibility to choose to go wireless or wired for their BYOM session, allowing guest presenters with locked down devices to still drive the meeting.",
+       "key_features1":"CPI Resolution: 1000 dpi",
+       "key_features2":"Battery capacity: 400mah,Charging about 2 hours",
+       "key_features3": "Model: BlackWidow Chroma",
+       "individual_rating": "4",
+       "average_rating": "5",
+       "reviews": "Nice product."
     },
 
         {
        "img": "/image/storage-1.png",
-       "name": "",
-       "category": "",
-       "price": "",
-       "status": "",
-       "rating": ""
+       "name": "Asustor AS6602T NAS Storage",
+       "category": "storages NAS",
+       "price": "888",
+       "status": "In Stock",
+       "rating": "3",
+        "description": "ScreenBeam SBUSBSW4 USB Pro Switch for Content Sharing ScreenBeam SBUSBSW4 USB Pro Switch between meeting room devices and resources with this USB Pro Switch from ScreenBeam and its six USB Type-A host and device ports. A single button allows you to start a Microsoft Teams Room meeting and toggle between room resources to better bridge the gap between in-person and remote participants. Pairing the USB Pro with the 1100 Plus display receiver integrates AV peripherals like video cameras, microphones, speakers, or touchscreen displays regardless of the room configuration. The switch is compatible with both Windows and MacOS devices and is powered via a micro-USB port at the front.(Pair with ScreenBeam 1100 Plus)The USB Pro Switch when paired with a ScreenBeam 1100 Plus receiver overcomes these challenges and turns your UC meeting room into a fully flexible meeting space for both UC meetings and BYOM meetings. The ScreenBeam USB Pro Switch intelligently and seamlessly switches the room peripherals (camera, microphone, speaker and touchscreen) between your UC room experience and a Bring Your Own Meeting (BYOM) experience. Best of all, there is no user intervention required, nor any changes to either your UC or BYOM experience…ScreenBeam just knows when to switch resources automatically. Not every meeting space is equipped with an MTR. So for those spaces ScreenBeam USB Pro Switch provides users the flexibility to choose to go wireless or wired for their BYOM session, allowing guest presenters with locked down devices to still drive the meeting.",
+       "key_features1":"Battery capacity: 400mah,Charging about 2 hours",
+       "key_features2":"Model: BlackWidow Chroma",
+       "key_features3": "CPI Resolution: 1000 dpi",
+       "individual_rating": "3",
+       "average_rating": "4",
+       "reviews": "very comfortable products"
     }
     ],
 
     "others": [
     {
        "img": "/image/others-1.png",
-       "name": "",
-       "category": "",
-       "price": "",
-       "status": "",
-       "rating": ""
+       "name": "DeepCool PCIe 4.0 Vertical GPU Bracket",
+       "category": "GPU",
+       "price": "3333",
+       "status": "In Stock",
+       "rating": "4",
+        "description": "ScreenBeam SBUSBSW4 USB Pro Switch for Content Sharing ScreenBeam SBUSBSW4 USB Pro Switch between meeting room devices and resources with this USB Pro Switch from ScreenBeam and its six USB Type-A host and device ports. A single button allows you to start a Microsoft Teams Room meeting and toggle between room resources to better bridge the gap between in-person and remote participants. Pairing the USB Pro with the 1100 Plus display receiver integrates AV peripherals like video cameras, microphones, speakers, or touchscreen displays regardless of the room configuration. The switch is compatible with both Windows and MacOS devices and is powered via a micro-USB port at the front.(Pair with ScreenBeam 1100 Plus)The USB Pro Switch when paired with a ScreenBeam 1100 Plus receiver overcomes these challenges and turns your UC meeting room into a fully flexible meeting space for both UC meetings and BYOM meetings. The ScreenBeam USB Pro Switch intelligently and seamlessly switches the room peripherals (camera, microphone, speaker and touchscreen) between your UC room experience and a Bring Your Own Meeting (BYOM) experience. Best of all, there is no user intervention required, nor any changes to either your UC or BYOM experience…ScreenBeam just knows when to switch resources automatically. Not every meeting space is equipped with an MTR. So for those spaces ScreenBeam USB Pro Switch provides users the flexibility to choose to go wireless or wired for their BYOM session, allowing guest presenters with locked down devices to still drive the meeting.",
+       "key_features1":"Model: BlackWidow Chroma",
+       "key_features2":"CPI Resolution: 1000 dpi",
+       "key_features3": "Battery capacity: 400mah,Charging about 2 hours",
+       "individual_rating": "4",
+       "average_rating": "4",
+       "reviews": "Look for it first the gamming focused asus very good product"
     },
         {
       "img": "/image/others-1.png",
-      "name": "",
-      "category": "",
-      "price": "",
-      "status": "",
-      "rating": ""
+      "name": "Fantech W189 Wireless Mouse",
+      "category": "Mouse",
+      "price": "7777",
+      "status": "Out of Stock",
+      "rating": "5",
+      "description": "ScreenBeam SBUSBSW4 USB Pro Switch for Content Sharing ScreenBeam SBUSBSW4 USB Pro Switch between meeting room devices and resources with this USB Pro Switch from ScreenBeam and its six USB Type-A host and device ports. A single button allows you to start a Microsoft Teams Room meeting and toggle between room resources to better bridge the gap between in-person and remote participants. Pairing the USB Pro with the 1100 Plus display receiver integrates AV peripherals like video cameras, microphones, speakers, or touchscreen displays regardless of the room configuration. The switch is compatible with both Windows and MacOS devices and is powered via a micro-USB port at the front.(Pair with ScreenBeam 1100 Plus)The USB Pro Switch when paired with a ScreenBeam 1100 Plus receiver overcomes these challenges and turns your UC meeting room into a fully flexible meeting space for both UC meetings and BYOM meetings. The ScreenBeam USB Pro Switch intelligently and seamlessly switches the room peripherals (camera, microphone, speaker and touchscreen) between your UC room experience and a Bring Your Own Meeting (BYOM) experience. Best of all, there is no user intervention required, nor any changes to either your UC or BYOM experience…ScreenBeam just knows when to switch resources automatically. Not every meeting space is equipped with an MTR. So for those spaces ScreenBeam USB Pro Switch provides users the flexibility to choose to go wireless or wired for their BYOM session, allowing guest presenters with locked down devices to still drive the meeting.",
+      "key_features1":"CPI Resolution: 1000 dpi",
+       "key_features2":"Battery capacity: 400mah,Charging about 2 hours",
+       "key_features3": "Model: BlackWidow Chroma",
+       "individual_rating": "4",
+       "average_rating": "5",
+       "reviews": "Nice product."
    },
        {
       "img": "/image/others-1.png",
-      "name": "",
-      "category": "",
-      "price": "",
-      "status": "",
-      "rating": ""
-   }
+      "name": "Logitech K120 Usb Keyboard With Bangla Black (920-008363)",
+      "category": "Keyboard",
+      "price": "3332",
+      "status": "In Stock",
+      "rating": "4",
+      "description": "ScreenBeam SBUSBSW4 USB Pro Switch for Content Sharing ScreenBeam SBUSBSW4 USB Pro Switch between meeting room devices and resources with this USB Pro Switch from ScreenBeam and its six USB Type-A host and device ports. A single button allows you to start a Microsoft Teams Room meeting and toggle between room resources to better bridge the gap between in-person and remote participants. Pairing the USB Pro with the 1100 Plus display receiver integrates AV peripherals like video cameras, microphones, speakers, or touchscreen displays regardless of the room configuration. The switch is compatible with both Windows and MacOS devices and is powered via a micro-USB port at the front.(Pair with ScreenBeam 1100 Plus)The USB Pro Switch when paired with a ScreenBeam 1100 Plus receiver overcomes these challenges and turns your UC meeting room into a fully flexible meeting space for both UC meetings and BYOM meetings. The ScreenBeam USB Pro Switch intelligently and seamlessly switches the room peripherals (camera, microphone, speaker and touchscreen) between your UC room experience and a Bring Your Own Meeting (BYOM) experience. Best of all, there is no user intervention required, nor any changes to either your UC or BYOM experience…ScreenBeam just knows when to switch resources automatically. Not every meeting space is equipped with an MTR. So for those spaces ScreenBeam USB Pro Switch provides users the flexibility to choose to go wireless or wired for their BYOM session, allowing guest presenters with locked down devices to still drive the meeting.",
+      "key_features1":"Battery capacity: 400mah,Charging about 2 hours",
+      "key_features2":"Model: BlackWidow Chroma",
+      "key_features3": "CPI Resolution: 1000 dpi",
+      "individual_rating": "3",
+      "average_rating": "4",
+      "reviews": "very comfortable products"
+    }
    ]
-
-
-
 }
 

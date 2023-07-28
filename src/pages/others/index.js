@@ -1,14 +1,13 @@
 import Head from 'next/head';
-import RootLayout from "./components/Layouts/RootLayout";
 import Banner from './components/UI/Banner';
-import AllProductsPage from './ allProducts';
+import RootLayout from '../components/Layouts/RootLayout';
 
-const HomePage = ({allProducts}) => {
+const OthersHomePage = () => {
   return (
     <div>
         <>
      <Head>
-       <title>PC_Builder</title>
+       <title>Others PC_Builder</title>
        <meta
          name="description"
          content="This is PC_Builder website made by next-js"
@@ -17,15 +16,14 @@ const HomePage = ({allProducts}) => {
        <link rel="icon" href="/favicon.ico" />
      </Head>
      <Banner />
-     <AllProductsPage allProducts = {allProducts}/>
      
    </>
     </div>
   );
 };
 
-export default HomePage;
-HomePage.getLayout = function getLayout(page){
+export default OthersHomePage;
+OthersHomePage.getLayout = function getLayout(page){
   return (
     <RootLayout>
       {page}
@@ -35,14 +33,12 @@ HomePage.getLayout = function getLayout(page){
 
 // data fetching
 export const getStaticProps = async () =>{
-  // const res = await fetch("http://localhost:5000/products");
-  const res = await fetch("http://localhost:3000/api/products")
+  const res = await fetch("http://localhost:3000/api/others")
   const data = await res.json();
-  // console.log(data);
+  console.log(data);
   return{
   props :{
-    allProducts: data.data,
-    // allProducts: data,
+    others: data.data.data,
   },
    revalidate: 10,
   };

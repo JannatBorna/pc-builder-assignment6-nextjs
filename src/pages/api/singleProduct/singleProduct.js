@@ -13,14 +13,18 @@ const client = new MongoClient(uri, {
 async function run(req, res) {
   try {
     await client.connect();
-    console.log("database connect")
-  const productsCollection = client.db('pc_builder').collection('products');
+    const productsCollection = client.db('pc_builder').collection('products');
+    
+    console.log("database connected");
 
-  // products
-  if(req.method === "GET"){
-    const products = await productsCollection.find({}).toArray();
-    res.send({message:"success", status:200, data: products})
-  }
+  //single products
+      if (req.method === 'GET'){
+      const productId = req.query.productId;
+      const query = { _id:new ObjectId(productId)};
+      const product = await productsCollection.findOne(query);
+      res.send({message: "success", status: 200, data: product})
+    }
+
   
 
   } finally {

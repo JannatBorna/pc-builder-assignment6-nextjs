@@ -1,11 +1,12 @@
+import {  ArrowDownOutlined, CalendarOutlined, CommentOutlined, ProfileOutlined } from "@ant-design/icons";
 import { Card, Col, Row } from "antd";
 import Image from "next/image";
 import styles  from '@/styles/Home.module.css';
 import Link from "next/link";
-import RootLayout from "./components/Layouts/RootLayout";
+import RootLayout from "../components/Layouts/RootLayout";
 
 
-const AllProductsPage = ({allProducts}) => {
+const MonitorPage = ({others}) => {
     const {Meta} = Card;
     return (
       <>
@@ -16,14 +17,14 @@ const AllProductsPage = ({allProducts}) => {
             margin:"30px 0px",
         }}
         >
-    ALL PRODUCTS
+   # Others
 </h1>
         <Row>
           {
-          allProducts?.map((products) =>(
+          others?.map((other) =>(
               <Col 
               xs={24} sm={24} md={12} lg={8} 
-              key={products?.id}
+              key={other?.id}
 
               >
 
@@ -32,7 +33,7 @@ const AllProductsPage = ({allProducts}) => {
               hoverable
                   cover={
                   <Image
-                    src={products?.image}
+                    src={other?.img}
                     width={500}
                     height={200}
                     responsive
@@ -40,7 +41,7 @@ const AllProductsPage = ({allProducts}) => {
                   />
                   }
               >
-                <Meta title={products?.product_name}/>
+                <Meta title={other?.name}/>
                 <div
                   style={{
                     height:"5px",
@@ -49,7 +50,7 @@ const AllProductsPage = ({allProducts}) => {
                     width: "100%"
                   }}
                 ></div>
-               <h2 style={{color:"gray",}}>{products?.status}</h2>
+               <h2 style={{color:"gray",}}>{other?.status}</h2>
                 <p
                 style={{
                   display: "flex",
@@ -60,16 +61,16 @@ const AllProductsPage = ({allProducts}) => {
                 }}
                 >
                 <span>
-                    Price: {products?.price}&#2547; 
+                    Price: {other?.price}&#2547; 
                 </span>
                 <span>
-                     Rating : {products?.rating} 
+                     Rating : {other?.rating} 
                 </span>
                 <span>
-                    Category: {products?.category}
+                    Category: {other?.category}
                 </span>
                 </p>
-                <Link href={`/product/${products?._id}`}>
+                <Link href={`/other/${other?._id}`}>
                     <p
                       style={{
                           fontSize:"15px",
@@ -95,9 +96,9 @@ const AllProductsPage = ({allProducts}) => {
     );
 };
 
-export default AllProductsPage;
+export default MonitorPage;
 
-AllProductsPage.getLayout = function getLayout (page){
+MonitorPage.getLayout = function getLayout (page){
     return(
         <RootLayout>
             {page}
@@ -106,13 +107,13 @@ AllProductsPage.getLayout = function getLayout (page){
 }
 
 // data fetching
-// export const getStaticProps = async () => {
-    // const res = await fetch ("http://localhost:3000/api/products");
-    // const data = await res.json();
-    // console.log(data);
-    // return{
-        // props: {
-            // allProducts: data.data,
-        // }
-    // }
-// }
+export const getStaticProps = async () => {
+    const res = await fetch ("http://localhost:3000/api/others");
+    const data = await res.json();
+    console.log(data);
+    return{
+        props: {
+            others: data.data,
+        }
+    }
+}

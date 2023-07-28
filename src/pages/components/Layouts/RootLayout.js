@@ -17,31 +17,31 @@ const RootLayout = ({ children }) => {
 
   const items = [
   {
-    label: <Link href="/cpu">CPU / Processor</Link>,
+    label: <Link href="/cpus/cpus">CPU / Processor</Link>,
     key: '0',
   },
   {
-  label: <Link href="/motherboard">Motherboard</Link>,
+  label: <Link href="/motherboards/motherboards">Motherboard</Link>,
   key: '1',
 },
 {
-  label: <Link href="/ram">RAM</Link>,
+  label: <Link href="/rams/rams">RAM</Link>,
   key: '2',
 },
 {
-  label: <Link href="/powerSupply">Power Supply Unit</Link>,
+  label: <Link href="/power/power">Power Supply Unit</Link>,
   key: '3',
 },
 {
-  label: <Link href="/storageDevice">Storage Device</Link>,
+  label: <Link href="/storage/storage">Storage Device</Link>,
   key: '4',
 },
 {
-  label: <Link href="/monitor">Monitor</Link>,
+  label: <Link href="/monitors/monitors">Monitor</Link>,
   key: '5',
 },
   {
-    label: <Link href="/others">Others</Link>,
+    label: <Link href="/others/others">Others</Link>,
     key: '6',
   },
 ];
