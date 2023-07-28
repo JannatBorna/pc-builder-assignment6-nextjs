@@ -14,12 +14,12 @@ async function run(req, res) {
   try {
     await client.connect();
     console.log("database connect")
-    const monitorsCollection = client.db('pc_builder').collection('monitors');
+    const motherboardsCollection = client.db('pc_builder').collection('motherboards');
 
   // products
   if(req.method === "GET"){
-    const monitors = await monitorsCollection.find({}).toArray();
-    res.send({message:"success", status:200, data: monitors})
+    const motherboards = await motherboardsCollection.find({}).toArray();
+    res.send({message:"success", status:200, data: motherboards})
   }
   
 

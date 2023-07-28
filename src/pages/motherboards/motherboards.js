@@ -6,7 +6,7 @@ import Link from "next/link";
 import RootLayout from "../components/Layouts/RootLayout";
 
 
-const PowersPage = ({powers}) => {
+const PowersPage = ({motherboards}) => {
     const {Meta} = Card;
     return (
       <>
@@ -17,14 +17,14 @@ const PowersPage = ({powers}) => {
             margin:"30px 0px",
         }}
         >
-   # Others
+   # Motherboard
 </h1>
         <Row>
           {
-          powers?.map((power) =>(
+          motherboards?.map((motherboard) =>(
               <Col 
               xs={24} sm={24} md={12} lg={8} 
-              key={power?._id}
+              key={motherboard?._id}
 
               >
 
@@ -33,7 +33,7 @@ const PowersPage = ({powers}) => {
               hoverable
                   cover={
                   <Image
-                    src={power?.img}
+                    src={motherboard?.img}
                     width={500}
                     height={200}
                     responsive
@@ -41,7 +41,7 @@ const PowersPage = ({powers}) => {
                   />
                   }
               >
-                <Meta title={power?.name}/>
+                <Meta title={motherboard?.name}/>
                 <div
                   style={{
                     height:"5px",
@@ -50,7 +50,7 @@ const PowersPage = ({powers}) => {
                     width: "100%"
                   }}
                 ></div>
-               <h2 style={{color:"gray",}}>{power?.status}</h2>
+               <h2 style={{color:"gray",}}>{motherboard?.status}</h2>
                 <p
                 style={{
                   display: "flex",
@@ -61,16 +61,16 @@ const PowersPage = ({powers}) => {
                 }}
                 >
                 <span>
-                    Price: {power?.price}&#2547; 
+                    Price: {motherboard?.price}&#2547; 
                 </span>
                 <span>
-                     Rating : {power?.rating} 
+                     Rating : {motherboard?.rating} 
                 </span>
                 <span>
-                    Category: {power?.category}
+                    Category: {motherboard?.category}
                 </span>
                 </p>
-                <Link href={`/power/${power?._id}`}>
+                <Link href={`/motherboard/${motherboard?._id}`}>
                     <p
                       style={{
                           fontSize:"15px",
@@ -108,12 +108,12 @@ PowersPage.getLayout = function getLayout (page){
 
 // data fetching
 export const getStaticProps = async () => {
-    const res = await fetch ("http://localhost:3000/api/powers");
+    const res = await fetch ("http://localhost:3000/api/motherboards");
     const data = await res.json();
     console.log(data);
     return{
         props: {
-            powers: data.data,
+            motherboards: data.data,
         }
     }
 }
