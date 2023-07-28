@@ -33,7 +33,7 @@ const RootLayout = ({ children }) => {
   key: '3',
 },
 {
-  label: <Link href="/storage/storage">Storage Device</Link>,
+  label: <Link href="/storages/storages">Storage Device</Link>,
   key: '4',
 },
 {
