@@ -138,9 +138,9 @@ const RootLayout = ({ children }) => {
         <div className={styles.line}></div>
         <Row>
             <Col xs={24} sm={24} md={8} lg={8}>
-                <h2 style={{fontSize: "28px"}} > PC Builder </h2>
+                <h2 style={{fontSize: "28px", marginTop: "20px"}} > PC Builder </h2>
 
-        <p className={styles.social_icons}>
+        <p className={styles.social_icons} style={{marginTop: "20px"}}>
          <Link href="https://web.facebook.com/groups/programmingherocommunity">
            <FacebookFilled />
          </Link>
@@ -156,13 +156,16 @@ const RootLayout = ({ children }) => {
        </p>
         </Col>
     <Col xs={24} sm={24} md={8} lg={8}>
-       <form style={{marginTop: "30px"}}>
+       <form style={{marginTop: "30px", }}>
         <input  type="email" placeholder="Enter Your Email" style={{marginBottom: "10px",  width: "50%", height: "5vh"}}/>
         <button style={{marginLeft: "10px", height: "5vh", backgroundColor: "red", color: "white", border: "none", width: "15%",}}>Subscribe</button>
       </form>
       </Col>
      <Col xs={24} sm={24} md={8} lg={8}>
-      <p>If you are on a budget and looking to save some money, building your own PC can be a huge advantage. By choosing your own parts, you can shop around to find the best prices and avoid the added cost of paying for expensive parts that you do not need.</p>
+      <p
+      style={{marginTop: "20px"}}
+      >
+        If you are on a budget and looking to save some money, building your own PC can be a huge advantage. By choosing your own parts, you can shop around to find the best prices and avoid the added cost of paying for expensive parts that you do not need.</p>
     <p
     style={{
         display: "flex",
