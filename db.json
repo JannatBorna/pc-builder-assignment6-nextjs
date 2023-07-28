@@ -98,7 +98,210 @@
             "average_rating": "4", 
             "reviews": "good product "     
         }
-    ]
+    ],
+    
+    "monitors": [
+     {
+        "img": "",
+        "name": "",
+        "category": "",
+        "price": "",
+        "status": "",
+        "rating": ""
+     },
+
+         {
+       "img": "",
+       "name": "",
+       "category": "",
+       "price": "",
+       "status": "",
+       "rating": ""
+    },
+
+        {
+       "img": "",
+       "name": "",
+       "category": "",
+       "price": "",
+       "status": "",
+       "rating": ""
+    }
+    ],
+
+        "cpus": [
+     {
+        "img": "",
+        "name": "",
+        "category": "",
+        "price": "",
+        "status": "",
+        "rating": ""
+     },
+
+         {
+       "img": "",
+       "name": "",
+       "category": "",
+       "price": "",
+       "status": "",
+       "rating": ""
+    },
+
+        {
+       "img": "",
+       "name": "",
+       "category": "",
+       "price": "",
+       "status": "",
+       "rating": ""
+    }
+    ],
+
+        "motherboards": [
+     {
+        "img": "",
+        "name": "",
+        "category": "",
+        "price": "",
+        "status": "",
+        "rating": ""
+     },
+
+         {
+       "img": "",
+       "name": "",
+       "category": "",
+       "price": "",
+       "status": "",
+       "rating": ""
+    },
+
+        {
+       "img": "",
+       "name": "",
+       "category": "",
+       "price": "",
+       "status": "",
+       "rating": ""
+    }
+    ],
+
+        "rams": [
+     {
+        "img": "",
+        "name": "",
+        "category": "",
+        "price": "",
+        "status": "",
+        "rating": ""
+     },
+
+         {
+       "img": "",
+       "name": "",
+       "category": "",
+       "price": "",
+       "status": "",
+       "rating": ""
+    },
+
+        {
+       "img": "",
+       "name": "",
+       "category": "",
+       "price": "",
+       "status": "",
+       "rating": ""
+    }
+    ],
+
+        "powers": [
+     {
+        "img": "",
+        "name": "",
+        "category": "",
+        "price": "",
+        "status": "",
+        "rating": ""
+     },
+
+         {
+       "img": "",
+       "name": "",
+       "category": "",
+       "price": "",
+       "status": "",
+       "rating": ""
+    },
+
+        {
+       "img": "",
+       "name": "",
+       "category": "",
+       "price": "",
+       "status": "",
+       "rating": ""
+    }
+    ],
+
+        "storages": [
+     {
+        "img": "",
+        "name": "",
+        "category": "",
+        "price": "",
+        "status": "",
+        "rating": ""
+     },
+
+         {
+       "img": "",
+       "name": "",
+       "category": "",
+       "price": "",
+       "status": "",
+       "rating": ""
+    },
+
+        {
+       "img": "",
+       "name": "",
+       "category": "",
+       "price": "",
+       "status": "",
+       "rating": ""
+    }
+    ],
+
+    "others": [
+    {
+       "img": "",
+       "name": "",
+       "category": "",
+       "price": "",
+       "status": "",
+       "rating": ""
+    },
+        {
+      "img": "",
+      "name": "",
+      "category": "",
+      "price": "",
+      "status": "",
+      "rating": ""
+   },
+       {
+      "img": "",
+      "name": "",
+      "category": "",
+      "price": "",
+      "status": "",
+      "rating": ""
+   }
+   ]
+
+
 
 }
 
