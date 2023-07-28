@@ -1,4 +1,3 @@
-
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = "mongodb+srv://pc-builder:PfhQgMY2M2Yn5Ov3@cluster0.zoj9s.mongodb.net/?retryWrites=true&w=majority";
 
@@ -29,12 +28,12 @@ async function run(req, res) {
 }
 
   // single product
-//   if(req.method === "GET"){
-    // const productId = req.params.productId;;
-    // const query = { _id: ObjectId(productId)};
-    // const product = await productsCollection.findOne(query);
-    // res.json(product);
-//   }
+  if (req.method === 'GET'){
+  const productId = req.params.productId;
+  const query = { _id: ObjectId(productId)};
+  const product = await productsCollection.findOne(query);
+  res.json(product);
+}
 
   } finally {
     // Ensures that the client will close when you finish/error
