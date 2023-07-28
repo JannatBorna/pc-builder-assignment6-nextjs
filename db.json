@@ -102,45 +102,45 @@
     
     "monitors": [
      {
-        "img": "",
-        "name": "",
-        "category": "",
-        "price": "",
-        "status": "",
-        "rating": ""
+        "img": "/image/monitor-1.png",
+        "name": "Univision LED350 22, 60Hz AH FHD Monitor",
+        "category": "Monitor LED350",
+        "price": "170000",
+        "status": "In Stock",
+        "rating": "4"
      },
 
          {
-       "img": "",
-       "name": "",
-       "category": "",
-       "price": "",
-       "status": "",
-       "rating": ""
+       "img": "/image/monitor-2.png",
+       "name": "HP P204v 19.5 Inch HD LED Monitor (HDMI, VGA)",
+       "category": "Monitor 5RD66AA",
+       "price": "50000",
+       "status": "Out of stock",
+       "rating": "3"
     },
 
         {
-       "img": "",
-       "name": "",
-       "category": "",
-       "price": "",
-       "status": "",
-       "rating": ""
+       "img": "/image/monitor-3.png",
+       "name": "Xiaomi Redmi 1A 23.8, Monitor",
+       "category": "Monitor Redmi 1A",
+       "price": "7678",
+       "status": "In Stock",
+       "rating": "5"
     }
     ],
 
         "cpus": [
      {
-        "img": "",
+        "img": "/image/cpu-1.png",
         "name": "",
         "category": "",
-        "price": "",
-        "status": "",
-        "rating": ""
+        "price": "20000",
+        "status": "In Stock",
+        "rating": "5"
      },
 
          {
-       "img": "",
+       "img": "/image/cpu-2.png",
        "name": "",
        "category": "",
        "price": "",
@@ -149,7 +149,7 @@
     },
 
         {
-       "img": "",
+       "img": "/image/cpu-3.png",
        "name": "",
        "category": "",
        "price": "",
@@ -160,7 +160,7 @@
 
         "motherboards": [
      {
-        "img": "",
+        "img": "/image/board-1.png",
         "name": "",
         "category": "",
         "price": "",
@@ -169,7 +169,7 @@
      },
 
          {
-       "img": "",
+       "img": "/image/board-2.png",
        "name": "",
        "category": "",
        "price": "",
@@ -178,7 +178,7 @@
     },
 
         {
-       "img": "",
+       "img": "/image/board-3.png",
        "name": "",
        "category": "",
        "price": "",
@@ -189,7 +189,7 @@
 
         "rams": [
      {
-        "img": "",
+        "img": "/image/ram-1.png",
         "name": "",
         "category": "",
         "price": "",
@@ -198,7 +198,7 @@
      },
 
          {
-       "img": "",
+       "img": "/image/ram-1.png",
        "name": "",
        "category": "",
        "price": "",
@@ -207,7 +207,7 @@
     },
 
         {
-       "img": "",
+       "img": "/image/ram-1.png",
        "name": "",
        "category": "",
        "price": "",
@@ -218,7 +218,7 @@
 
         "powers": [
      {
-        "img": "",
+        "img": "/image/power-1.png",
         "name": "",
         "category": "",
         "price": "",
@@ -227,7 +227,7 @@
      },
 
          {
-       "img": "",
+       "img": "/image/power-1.png",
        "name": "",
        "category": "",
        "price": "",
@@ -236,7 +236,7 @@
     },
 
         {
-       "img": "",
+       "img": "/image/power-1.png",
        "name": "",
        "category": "",
        "price": "",
@@ -247,7 +247,7 @@
 
         "storages": [
      {
-        "img": "",
+        "img": "/image/storage-1.png",
         "name": "",
         "category": "",
         "price": "",
@@ -256,7 +256,7 @@
      },
 
          {
-       "img": "",
+       "img": "/image/storage-1.png",
        "name": "",
        "category": "",
        "price": "",
@@ -265,7 +265,7 @@
     },
 
         {
-       "img": "",
+       "img": "/image/storage-1.png",
        "name": "",
        "category": "",
        "price": "",
@@ -276,7 +276,7 @@
 
     "others": [
     {
-       "img": "",
+       "img": "/image/others-1.png",
        "name": "",
        "category": "",
        "price": "",
@@ -284,7 +284,7 @@
        "rating": ""
     },
         {
-      "img": "",
+      "img": "/image/others-1.png",
       "name": "",
       "category": "",
       "price": "",
@@ -292,7 +292,7 @@
       "rating": ""
    },
        {
-      "img": "",
+      "img": "/image/others-1.png",
       "name": "",
       "category": "",
       "price": "",
