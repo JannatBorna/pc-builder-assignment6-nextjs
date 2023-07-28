@@ -70,24 +70,23 @@ const AllProductsPage = ({allProducts}) => {
                     Category: {products?.category}
                 </span>
                 </p>
-{/* href={`/product/${products?.id}`} */}
-                 <Link href="{`/product/${products?.id}`}"> 
-                            <p
-                        style={{
-                            fontSize:"15px",
-                            marginTop:"20px",
-                            backgroundColor:"black",
-                            color:"white",
-                            width: "100%",
-                            padding: "2px 5px",
-                            fontWeight: "300",
-                            letterSpacing: "3px",
-                            textAlign: "center",
-                        }}
-                        >
-                            See Detail
-                        </p>
-                        </Link> 
+                <Link href={`/products/${products.id}`}>
+                    <p
+                      style={{
+                          fontSize:"15px",
+                          marginTop:"20px",
+                          backgroundColor:"black",
+                          color:"white",
+                          width: "100%",
+                          padding: "2px 5px",
+                          fontWeight: "300",
+                          letterSpacing: "3px",
+                          textAlign: "center",
+                      }}
+                      >
+                          See Detail
+                      </p>
+                </Link>
               </Card>
 
     </Col>
@@ -108,3 +107,14 @@ AllProductsPage.getLayout = function getLayout (page){
 }
 
 // data fetching
+export const getStaticProps = async () => {
+    const res = await fetch("http://localhost:5000/products")
+    // const res = await fetch ("http://localhost:3000/api/products");
+    const data = await res.json();
+    console.log(data);
+    return{
+        props: {
+            allProducts: data,
+        }
+    }
+}
