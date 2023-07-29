@@ -1,8 +1,8 @@
-import { Card, Col, Row } from "antd";
 import Image from "next/image";
 import styles from '@/styles/Home.module.css';
 import Link from "next/link";
 import RootLayout from "../components/Layouts/RootLayout";
+import { Card, Col, Row } from "antd";
 
 
 const PowersPage = ({powers}) => {

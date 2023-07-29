@@ -1,8 +1,8 @@
-import { Card, Col, Row } from "antd";
 import Image from "next/image";
 import styles from '@/styles/Home.module.css';
 import RootLayout from "../components/Layouts/RootLayout";
 import Link from "next/link";
+import { Card, Col, Row } from "antd";
 
 
 const BuilderCpus = ({cpus}) => {

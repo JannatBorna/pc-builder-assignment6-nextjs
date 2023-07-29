@@ -1,8 +1,8 @@
-import { Card, Col, Row } from "antd";
 import Image from "next/image";
 import styles from '@/styles/Home.module.css';
 import Link from "next/link";
 import RootLayout from "../components/Layouts/RootLayout";
+import { Card, Col, Row } from "antd";
 
 
 const BuilderMonitors = ({monitors}) => {
@@ -23,7 +23,7 @@ const BuilderMonitors = ({monitors}) => {
           monitors?.map((monitor) =>(
               <Col 
               xs={24} sm={24} md={12} lg={8} 
-              key={monitor?.id}
+              key={monitor?._id}
 
               >
 

@@ -23,7 +23,7 @@ const AllProductsPage = ({allProducts}) => {
           allProducts?.map((products) =>(
               <Col 
               xs={24} sm={24} md={12} lg={8} 
-              key={products?.id}
+              key={products?._id}
 
               >
 

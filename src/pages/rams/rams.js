@@ -1,8 +1,8 @@
-import { Card, Col, Row } from "antd";
 import Image from "next/image";
 import styles from '@/styles/Home.module.css';
 import Link from "next/link";
 import RootLayout from "../components/Layouts/RootLayout";
+import { Card, Col, Row } from "antd";
 
 
 const RamsPage = ({rams}) => {
@@ -23,7 +23,7 @@ const RamsPage = ({rams}) => {
           rams?.map((ram) =>(
               <Col 
               xs={24} sm={24} md={12} lg={8} 
-              key={ram?.id}
+              key={ram?._id}
 
               >
 

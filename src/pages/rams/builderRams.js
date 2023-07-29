@@ -23,7 +23,7 @@ const BuilderRams = ({rams}) => {
           rams?.map((ram) =>(
               <Col 
               xs={24} sm={24} md={12} lg={8} 
-              key={ram?.id}
+              key={ram?._id}
 
               >
 
