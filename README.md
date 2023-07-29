@@ -1,12 +1,8 @@
 # (Assignment 6) Project Name: PC Builder
 
-*** github link: ***
+- github link: [https://github.com/JannatBorna/pc-builder-assignment6-nextjs]
 
-  [https://github.com/JannatBorna/pc-builder-assignment6-nextjs]
-
-*** live link: ***
-
-[]
+- live link: []
 
 - This is PC parts and components using the Next.js project and In this project PC has been worked with some components. The ingredients are:
 
