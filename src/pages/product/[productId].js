@@ -1,5 +1,5 @@
 import RootLayout from '../components/Layouts/RootLayout';
-import { Card, Col, Row } from 'antd';
+import { Col, Row } from 'antd';
 import Image from 'next/image';
 
 const ProductDetailPage = ({products}) => {

@@ -12,7 +12,6 @@
  padding: 0.5em;
  background-color: #ffffff;
  border: none;
- /* cursor: pointer; */
  color: #000;
 }
 .line{
@@ -20,9 +19,9 @@
 }
 
 .social_icons a{
-    font-size: 28px;
-    margin: 15px 3px;
-    color: #dbdbdb;
+  font-size: 28px;
+  margin: 15px 3px;
+  color: #dbdbdb;
 }
 
 .card{

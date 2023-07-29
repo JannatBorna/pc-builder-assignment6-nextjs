@@ -3,7 +3,7 @@ import styles from "@/styles/Login.module.css";
 import { GithubOutlined } from "@ant-design/icons";
 import { signIn } from "next-auth/react";
 import RootLayout from './components/Layouts/RootLayout';
-import { Col,  Row, } from 'antd';
+import { Col, Row, } from 'antd';
 
 
 
