@@ -1,8 +1,8 @@
 import Image from "next/image";
-import styles from '@/styles/Home.module.css';
-import Link from "next/link";
+import styles from '@/styles/cart.module.css';
 import RootLayout from "../components/Layouts/RootLayout";
 import { Card, Col, Row } from "antd";
+import Router from "next/router";
 
 
 const RamsPage = ({rams}) => {
@@ -69,23 +69,13 @@ const RamsPage = ({rams}) => {
                     Category: {ram?.category}
                 </span>
                 </p>
-                <Link href={`/ram/${ram?._id}`}>
-                    <p
-                      style={{
-                          fontSize:"15px",
-                          marginTop:"20px",
-                          backgroundColor:"#da8d8d",
-                          color:"white",
-                          width: "100%",
-                          padding: "2px 5px",
-                          fontWeight: "300",
-                          letterSpacing: "5px",
-                          textAlign: "center",
-                      }}
-                      >
-                          SEE DETAIL
-                      </p>
-                </Link>
+                {/* <Link href={`/ram/${ram?._id}`}> */}
+               <button 
+               onClick={() => Router.push(`/ram/${ram?._id}`)}
+               className={styles.cartBtn}
+               >SEE DETAIL
+               </button>                
+                {/* </Link> */}
               </Card>
 
     </Col>

@@ -1,8 +1,8 @@
 import { Card, Col, Row } from "antd";
 import Image from "next/image";
-import styles from '@/styles/Home.module.css';
-import Link from "next/link";
+import styles from '@/styles/cart.module.css';
 import RootLayout from "./components/Layouts/RootLayout";
+import Router from "next/router";
 
 
 const AllProductsPage = ({allProducts}) => {
@@ -69,23 +69,14 @@ const AllProductsPage = ({allProducts}) => {
                     Category: {products?.category}
                 </span>
                 </p>
-                <Link href={`/product/${products?._id}`}>
-                    <p
-                      style={{
-                          fontSize:"15px",
-                          marginTop:"20px",
-                          backgroundColor:"#da8d8d",
-                          color:"white",
-                          width: "100%",
-                          padding: "2px 5px",
-                          fontWeight: "500",
-                          letterSpacing: "5px",
-                          textAlign: "center",
-                      }}
-                      >
-                          SEE DETAIL
-                      </p>
-                </Link>
+
+                {/* <Link href={`/product/${products?._id}`}> */}
+                <button 
+                onClick={() => Router.push(`/product/${products?._id}`)}
+                className={styles.cartBtn}
+                >SEE DETAIL
+                </button>
+                {/* </Link> */}
               </Card>
 
     </Col>

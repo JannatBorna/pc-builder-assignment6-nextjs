@@ -1,0 +1,20 @@
+.card{
+  width: 99%;
+  margin: 20px 0px;
+}
+
+
+.cartBtn{                        
+    font-size:15px;
+    margin-top:20px;
+    background-color:#da8d8d;
+    color:white;
+    width: 100%;
+    height: 5vh;
+    padding: 2px 5px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;  
+    border: none;
+    cursor: pointer;              
+}

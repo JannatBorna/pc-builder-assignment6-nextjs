@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import error from '@/assets/images/404_error.png'
 import Head from 'next/head';
-import Link from 'next/link';
 import styles from "@/styles/error.module.css";
 import { ArrowLeftOutlined } from '@ant-design/icons';
 import { useRouter } from 'next/router';
+import  Router  from 'next/router';
 
 const NotFoundPage = () => {
 
@@ -28,9 +28,10 @@ const NotFoundPage = () => {
             style={{display:'flex', margin: '50px auto'}}
             width={500}
             />
-            <Link href="/">
-               <button className={styles.btn}><ArrowLeftOutlined /> Back To Home</button>
-            </Link>
+            
+            <button className={styles.btn}
+            onClick={() => Router.push('/')}
+            ><ArrowLeftOutlined /> Back To Home</button>
         </div>
     );
 };

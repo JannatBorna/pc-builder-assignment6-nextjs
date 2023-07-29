@@ -1,12 +1,11 @@
-import { Col, Row } from 'antd';
 import RootLayout from './components/Layouts/RootLayout';
-import Link from 'next/link';
 import builder1 from '../assets/images/cpu-2.png';
 import builder2 from '../assets/images/ram-3.png';
 import builder3 from '../assets/images/board-3.png'
 import builder4 from '../assets/images/power-3.png'
 import builder5 from '../assets/images/storage-2.png'
 import styles  from '@/styles/Home.module.css';
+import { Col, Row } from 'antd';
 import Image from 'next/image';
 import swal from 'sweetalert';
 import {BsCpu, BsMotherboard, BsMemory, BsFuelPumpDieselFill, BsUsbDrive } from 'react-icons/bs';
