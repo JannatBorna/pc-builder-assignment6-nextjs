@@ -35,7 +35,7 @@ const AllProductsPage = ({allProducts}) => {
                     src={products?.image}
                     width={500}
                     height={200}
-                    responsive
+                    true
                     alt="image"
                   />
                   }

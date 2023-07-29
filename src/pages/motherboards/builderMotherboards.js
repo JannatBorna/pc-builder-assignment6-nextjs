@@ -35,7 +35,7 @@ const BuilderMotherboards = ({motherboards}) => {
                     src={motherboard?.img}
                     width={500}
                     height={200}
-                    responsive
+                    true
                     alt="image"
                   />
                   }

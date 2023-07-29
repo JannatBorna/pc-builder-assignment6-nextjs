@@ -12,7 +12,7 @@ const StorageDetailPage = ({storages}) => {
                 src={storages?.img}
                 width={500}
                 height={400}
-                responsive
+                true
                 alt="image"
               />
               </div>

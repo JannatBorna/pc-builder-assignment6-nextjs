@@ -12,7 +12,7 @@ const CputDetailPage = ({cpus}) => {
                 src={cpus?.img}
                 width={500}
                 height={400}
-                responsive
+                true
                 alt="image"
               />
               </div>

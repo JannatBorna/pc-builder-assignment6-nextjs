@@ -35,7 +35,7 @@ const BuilderRams = ({rams}) => {
                     src={ram?.img}
                     width={500}
                     height={200}
-                    responsive
+                    true
                     alt="image"
                   />
                   }

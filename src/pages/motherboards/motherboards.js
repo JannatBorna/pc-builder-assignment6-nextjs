@@ -35,7 +35,7 @@ const PowersPage = ({motherboards}) => {
                     src={motherboard?.img}
                     width={500}
                     height={200}
-                    responsive
+                    true
                     alt="image"
                   />
                   }
@@ -69,13 +69,13 @@ const PowersPage = ({motherboards}) => {
                     Category: {motherboard?.category}
                 </span>
                 </p>
-                {/* <Link href={`/motherboard/${motherboard?._id}`}> */}
+
                <button 
                onClick={() => Router.push(`/motherboard/${motherboard?._id}`)}
                className={styles.cartBtn}
                >SEE DETAIL
                </button>                
-                {/* </Link> */}
+
               </Card>
 
     </Col>

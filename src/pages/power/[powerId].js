@@ -12,7 +12,7 @@ const PowerDetailPage = ({powers}) => {
                 src={powers?.img}
                 width={500}
                 height={400}
-                responsive
+                true
                 alt="image"
               />
               </div>

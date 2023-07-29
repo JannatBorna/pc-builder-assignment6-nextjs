@@ -57,9 +57,7 @@ const RootLayout = ({ children }) => {
 
       <Header className={styles.layout} >
         <Row>
-        <Col xs={8} sm={8} md={12} lg={8} 
-        
-        >
+        <Col xs={8} sm={8} md={12} lg={8} >
         <div> 
         <p onClick={() => Router.push('/')}>
           <Image
@@ -72,8 +70,7 @@ const RootLayout = ({ children }) => {
         </div>
         </Col>
     <Col  xs={16} sm={16} md={12} lg={16}>
-        <Menu mode="vertical" style={{ backgroundColor: "#1f1f1f",textAlign: "end"}} className={styles.manu_item} >
-
+        <items mode="vertical" style={{ backgroundColor: "#1f1f1f", textAlign: "end"}} className={styles.manu_item} >
              <Dropdown 
                   menu={{
                     items,
@@ -108,15 +105,13 @@ const RootLayout = ({ children }) => {
               </items>
            ) :
            <button onClick={() => Router.push('/login')} className={styles.loginBtn}> 
-            {/* <Link href="/login"  className={styles.manu}> */}
               <items style={{padding: "10px"}}>
                 <LoginOutlined style={{margin: "5px"}}/>
                 Login
               </items>
-            {/* </Link>   */}
             </button>
         }
-        </Menu>
+        </items>
         </Col>
           </Row> 
         </Header>
@@ -143,18 +138,18 @@ const RootLayout = ({ children }) => {
                 <h2 style={{fontSize: "28px", marginTop: "20px"}} > PC Builder </h2>
 
         <p className={styles.social_icons} style={{marginTop: "20px"}}>
-         <Link href="https://web.facebook.com/groups/programmingherocommunity">
+         <span className={styles.socialIcons}>
            <FacebookFilled />
-         </Link>
-         <Link href="www.twitter.com">
+         </span>
+         <span className={styles.socialIcons}>
            <TwitterSquareFilled />
-         </Link>
-         <Link href="https://web.programming-hero.com/home/">
+         </span>
+         <span className={styles.socialIcons}>
            <GoogleSquareFilled />
-         </Link>
-         <Link href="www.linkedin.com">
+         </span>
+         <span className={styles.socialIcons}>
            <LinkedinFilled />
-         </Link>
+         </span>
        </p>
         </Col>
     <Col xs={24} sm={24} md={8} lg={8}>

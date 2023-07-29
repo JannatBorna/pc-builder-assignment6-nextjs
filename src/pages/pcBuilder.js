@@ -40,7 +40,7 @@ const PcBuilderPage = () => {
                             src={builder1}
                             width={50}
                             height={50}
-                            responsive
+                            true
                             alt="image"/>
                   
                             <h4>Asustor DRIVESTOR 4 Pro AS3304T 4-Bay NAS</h4> 
@@ -61,7 +61,7 @@ const PcBuilderPage = () => {
                         src={builder2}
                         width={50}
                         height={50}
-                        responsive
+                        true
                         alt="image"/>
                         <h4>Asustor DRIVESTOR 4 Pro AS3304T 4-Bay NAS</h4> 
                         <h5>8777 &#2547;</h5>
@@ -81,7 +81,7 @@ const PcBuilderPage = () => {
                         src={builder3}
                         width={50}
                         height={50}
-                        responsive
+                        true
                         alt="image"/>
                         <h4>Gigabyte X299 AORUS Gaming 3 Motherboard</h4> 
                         <h5>2000 &#2547;</h5>
@@ -100,7 +100,7 @@ const PcBuilderPage = () => {
                         src={builder4}
                         width={50}
                         height={50}
-                        responsive
+                        true
                         alt="image"/>
                         <h4>Cooler Master MWE 450W V2 Non-Modular 80 Plus Bronze Power Supply</h4> 
                         <h5>2555 &#2547;</h5>
@@ -118,7 +118,7 @@ const PcBuilderPage = () => {
                             src={builder5}
                             width={50}
                             height={50}
-                            responsive
+                            true
                             alt="image"/>
 
                             <h4>Asustor AS6602T NAS Storage</h4> 

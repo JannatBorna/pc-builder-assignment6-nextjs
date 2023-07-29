@@ -35,7 +35,7 @@ const CpusPage = ({cpus}) => {
                     src={cpu?.img}
                     width={500}
                     height={200}
-                    responsive
+                    true
                     alt="image"
                   />
                   }
@@ -69,13 +69,13 @@ const CpusPage = ({cpus}) => {
                     Category: {cpu?.category}
                 </span>
                 </p>
-                {/* <Link href={`/cpu/${cpu?._id}`}> */}
+
                <button 
                onClick={() => Router.push(`/cpu/${cpu?._id}`)}
                className={styles.cartBtn}
                >SEE DETAIL
                </button>                
-                {/* </Link> */}
+
               </Card>
 
     </Col>

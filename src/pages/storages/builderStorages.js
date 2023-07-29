@@ -37,7 +37,7 @@ const BuilderStorages = ({storages}) => {
                     src={storage?.img}
                     width={500}
                     height={200}
-                    responsive
+                    true
                     alt="image"
                   />
                   }

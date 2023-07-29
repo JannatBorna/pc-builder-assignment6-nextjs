@@ -19,6 +19,7 @@
   color: red;
   font-size: 20px;
   cursor: pointer;
+
 }
 
 
@@ -51,15 +52,17 @@
  cursor: pointer;
 }
 
-.social_icons a{
-  font-size: 28px;
-  margin: 15px 3px;
-  color: #dbdbdb;
-}
-
 /* footer start */
 .line{
   border: 1px solid #da8d8d;
+}
+
+
+.socialIcons {
+  font-size: 28px;
+  margin: 15px 3px;
+  color: #dbdbdb;
+  cursor: pointer;
 }
 /* footer  end */
 

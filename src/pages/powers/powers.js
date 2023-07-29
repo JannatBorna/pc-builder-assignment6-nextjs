@@ -35,7 +35,7 @@ const PowersPage = ({powers}) => {
                     src={power?.img}
                     width={500}
                     height={200}
-                    responsive
+                    true
                     alt="image"
                   />
                   }
@@ -69,13 +69,11 @@ const PowersPage = ({powers}) => {
                     Category: {power?.category}
                 </span>
                 </p>
-                {/* <Link href={`/power/${power?._id}`}> */}
                <button 
                onClick={() => Router.push(`/power/${power?._id}`)}
                className={styles.cartBtn}
                >SEE DETAIL
                </button>                
-                {/* </Link> */}
               </Card>
 
     </Col>

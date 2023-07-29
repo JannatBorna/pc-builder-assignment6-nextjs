@@ -35,7 +35,7 @@ const StoragesPage = ({storages}) => {
                     src={storage?.img}
                     width={500}
                     height={200}
-                    responsive
+                    true
                     alt="image"
                   />
                   }
@@ -69,13 +69,12 @@ const StoragesPage = ({storages}) => {
                     Category: {storage?.category}
                 </span>
                 </p>
-                {/* <Link href={`/storage/${storage?._id}`}> */}
                <button 
                onClick={() => Router.push(`/storage/${storage?._id}`)}
                className={styles.cartBtn}
                >SEE DETAIL
                </button>                
-                {/* </Link> */}
+
               </Card>
 
     </Col>

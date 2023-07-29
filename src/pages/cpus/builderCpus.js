@@ -35,7 +35,7 @@ const BuilderCpus = ({cpus}) => {
                     src={cpu?.img}
                     width={500}
                     height={200}
-                    responsive
+                    true
                     alt="image"
                   />
                   }

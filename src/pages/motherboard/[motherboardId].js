@@ -12,7 +12,7 @@ const MotherboardDetailPage = ({motherboards}) => {
                 src={motherboards?.img}
                 width={500}
                 height={400}
-                responsive
+                true
                 alt="image"
               />
               </div>

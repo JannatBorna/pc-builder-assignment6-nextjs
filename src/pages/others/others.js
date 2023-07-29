@@ -35,7 +35,7 @@ const MonitorPage = ({others}) => {
                     src={other?.img}
                     width={500}
                     height={200}
-                    responsive
+                    true
                     alt="image"
                   />
                   }
@@ -69,13 +69,13 @@ const MonitorPage = ({others}) => {
                     Category: {other?.category}
                 </span>
                 </p>
-                {/* <Link href={`/other/${other?._id}`}> */}
+ 
                <button 
                onClick={() => Router.push(`/other/${other?._id}`)}
                className={styles.cartBtn}
                >SEE DETAIL
                </button>                
-                {/* </Link> */}
+
               </Card>
 
     </Col>

@@ -35,7 +35,7 @@ const RamsPage = ({rams}) => {
                     src={ram?.img}
                     width={500}
                     height={200}
-                    responsive
+                    true
                     alt="image"
                   />
                   }
@@ -69,13 +69,13 @@ const RamsPage = ({rams}) => {
                     Category: {ram?.category}
                 </span>
                 </p>
-                {/* <Link href={`/ram/${ram?._id}`}> */}
+
                <button 
                onClick={() => Router.push(`/ram/${ram?._id}`)}
                className={styles.cartBtn}
                >SEE DETAIL
                </button>                
-                {/* </Link> */}
+
               </Card>
 
     </Col>

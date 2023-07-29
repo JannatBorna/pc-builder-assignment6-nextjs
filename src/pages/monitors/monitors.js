@@ -35,7 +35,7 @@ const MonitorPage = ({monitors}) => {
                     src={monitor?.img}
                     width={500}
                     height={200}
-                    responsive
+                    true
                     alt="image"
                   />
                   }
@@ -69,13 +69,13 @@ const MonitorPage = ({monitors}) => {
                     Category: {monitor?.category}
                 </span>
                 </p>
-                {/* <Link href={`/monitor/${monitor?._id}`}> */}
+
                <button 
                onClick={() => Router.push(`/monitor/${monitor?._id}`)}
                className={styles.cartBtn}
                >SEE DETAIL
                </button>                
-                {/* </Link> */}
+
               </Card>
 
     </Col>
