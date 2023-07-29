@@ -1,4 +1,3 @@
-import React from 'react';
 import RootLayout from '../components/Layouts/RootLayout';
 import { Card, Col, Row } from 'antd';
 import Image from 'next/image';

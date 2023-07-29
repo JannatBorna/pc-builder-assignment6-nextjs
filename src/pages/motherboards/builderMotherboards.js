@@ -69,22 +69,20 @@ const BuilderMotherboards = ({motherboards}) => {
                     Category: {motherboard?.category}
                 </span>
                 </p>
-                <Link href="">
-                    <p
-                      style={{
-                          fontSize:"15px",
-                          marginTop:"20px",
-                          backgroundColor:"black",
-                          color:"white",
-                          width: "100%",
-                          padding: "2px 5px",
-                          fontWeight: "300",
-                          letterSpacing: "3px",
-                          textAlign: "center",
-                      }}
-                      >
-                          Add To Builder
-                      </p>
+                <Link href="/pcBuilder">
+                  <p
+                  style={{
+                  fontSize:"15px",
+                  marginTop:"20px",
+                  backgroundColor:"black",
+                  color:"white",
+                  width: "100%",
+                  padding: "2px 5px",
+                  fontWeight: "300",
+                  letterSpacing: "3px",
+                  textAlign: "center",
+                    }}
+              >Add To Builder</p>
                 </Link>
               </Card>
 

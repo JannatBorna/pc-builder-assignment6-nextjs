@@ -1,6 +1,6 @@
 import { Card, Col, Row } from "antd";
 import Image from "next/image";
-import styles  from '@/styles/Home.module.css';
+import styles from '@/styles/Home.module.css';
 import Link from "next/link";
 import RootLayout from "../components/Layouts/RootLayout";
 
@@ -69,22 +69,20 @@ const BuilderMonitors = ({monitors}) => {
                     Category: {monitor?.category}
                 </span>
                 </p>
-                <Link href={`/monitor/${monitor?._id}`}>
-                    <p
-                      style={{
-                          fontSize:"15px",
-                          marginTop:"20px",
-                          backgroundColor:"black",
-                          color:"white",
-                          width: "100%",
-                          padding: "2px 5px",
-                          fontWeight: "300",
-                          letterSpacing: "3px",
-                          textAlign: "center",
-                      }}
-                      >
-                          Add To Builder
-                      </p>
+                <Link href="/pcBuilder">
+                  <p
+                  style={{
+                  fontSize:"15px",
+                  marginTop:"20px",
+                  backgroundColor:"black",
+                  color:"white",
+                  width: "100%",
+                  padding: "2px 5px",
+                  fontWeight: "300",
+                  letterSpacing: "3px",
+                  textAlign: "center",
+                    }}
+                   >Add To Builder</p>
                 </Link>
               </Card>
 

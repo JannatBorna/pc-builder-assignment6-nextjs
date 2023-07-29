@@ -1,8 +1,8 @@
 import { Card, Col, Row } from "antd";
 import Image from "next/image";
-import styles  from '@/styles/Home.module.css';
-import Link from "next/link";
+import styles from '@/styles/Home.module.css';
 import RootLayout from "../components/Layouts/RootLayout";
+import Link from "next/link";
 
 
 const BuilderCpus = ({cpus}) => {
@@ -69,19 +69,21 @@ const BuilderCpus = ({cpus}) => {
                     Category: {cpu?.category}
                 </span>
                 </p>
-                <button
-                    style={{
-                    fontSize:"15px",
-                    marginTop:"20px",
-                    backgroundColor:"black",
-                    color:"white",
-                    width: "100%",
-                    padding: "2px 5px",
-                    fontWeight: "300",
-                    letterSpacing: "3px",
-                    textAlign: "center",
-                      }}
-                >Add To Builder</button>
+                <Link href="/pcBuilder">
+                  <p
+                  style={{
+                  fontSize:"15px",
+                  marginTop:"20px",
+                  backgroundColor:"black",
+                  color:"white",
+                  width: "100%",
+                  padding: "2px 5px",
+                  fontWeight: "300",
+                  letterSpacing: "3px",
+                  textAlign: "center",
+                    }}
+              >Add To Builder</p>
+                </Link>
               </Card>
 
     </Col>
