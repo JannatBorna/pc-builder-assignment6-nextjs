@@ -126,25 +126,25 @@ Requirements:
                     - Price
                     - Status
                     - Rating
-❌ Each component card on that page will have an Add To Builder Button.
+✅ Each component card on that page will have an Add To Builder Button.
 (সেই পৃষ্ঠার প্রতিটি কম্পোনেন্ট কার্ডে একটি অ্যাড টু বিল্ডার বোতাম থাকবে।)
 
-❌ Clicking on this button will redirect the user to the PC Builder page, and it will update the state of that selected category section in the PC Builder Page with the selected component below. 
+✅ Clicking on this button will redirect the user to the PC Builder page, and it will update the state of that selected category section in the PC Builder Page with the selected component below. 
 (You can use Redux / Context API to create a central store for this)
 (এই বোতামে ক্লিক করা ব্যবহারকারীকে পিসি বিল্ডার পৃষ্ঠায় পুনঃনির্দেশিত করবে, এবং এটি নীচের নির্বাচিত উপাদান সহ PC বিল্ডার পৃষ্ঠায় নির্বাচিত বিভাগ বিভাগের অবস্থা আপডেট করবে। (এর জন্য একটি কেন্দ্রীয় স্টোর তৈরি করতে আপনি Redux / প্রসঙ্গ API ব্যবহার করতে পারেন))
 
-❌ After adding at least 5 - 6 Components (CPU, RAM, Power Supply, Storage, Motherboard, Casing), the user will be able to click on the Complete Build button. (This button will be disabled unless the user adds at least 5-6 of the mentioned components)
+✅ After adding at least 5 - 6 Components (CPU, RAM, Power Supply, Storage, Motherboard, Casing), the user will be able to click on the Complete Build button. (This button will be disabled unless the user adds at least 5-6 of the mentioned components)
 (কমপক্ষে 5 - 6টি উপাদান "CPU, RAM, পাওয়ার সাপ্লাই, স্টোরেজ, মাদারবোর্ড, কেসিং" যোগ করার পরে ব্যবহারকারী সম্পূর্ণ বিল্ড বোতামে ক্লিক করতে সক্ষম হবেন। (ব্যবহারকারী উল্লিখিত উপাদানগুলির মধ্যে কমপক্ষে 5-6টি যোগ না করলে এই বোতামটি নিষ্ক্রিয় করা হবে))
 
 
 🟡 Bonus Part:
-❌ The PC Builder Page should be a protected/private route (only logged-in users can visit this route). 
+✅ The PC Builder Page should be a protected/private route (only logged-in users can visit this route). 
 (পিসি বিল্ডার পৃষ্ঠাটি একটি সুরক্ষিত/ব্যক্তিগত রুট হওয়া উচিত "শুধুমাত্র লগ ইন করা ব্যবহারকারীরা এই রুটে যেতে পারেন"।)
 
 ✅ You have to use NextAuth with at least one social login (Google/Github) provider to enable user authentication.
 (ব্যবহারকারীর প্রমাণীকরণ সক্ষম করতে আপনাকে কমপক্ষে একটি সামাজিক লগইন "Google/Github" প্রদানকারীর সাথে NextAuth ব্যবহার করতে হবে।)
 
-❌ Clicking on the Complete Build button will show a success alert.
+✅ Clicking on the Complete Build button will show a success alert.
 (Complete Build বাটনে ক্লিক করলে সাফল্যের সতর্কতা দেখাবে। হোম পেজে একটি হিরো বিভাগ/ব্যানার বিভাগ এবং একটি ফুটার থাকা উচিত।)
 
 ✅ The Home page should also have a hero section/banner section and a footer.
