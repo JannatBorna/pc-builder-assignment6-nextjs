@@ -128,7 +128,7 @@ const RootLayout = ({ children }) => {
         { children }
 
       </Content>
-            <Footer
+      <Footer
         style={{
           textAlign: "center",
           background: "#1f1f1f",
