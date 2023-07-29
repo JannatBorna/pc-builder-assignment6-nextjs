@@ -16,7 +16,7 @@ const PowersPage = ({motherboards}) => {
             margin:"30px 0px",
         }}
         >
-   # Motherboard
+   <span style={{color: "#da8d8d"}}>#</span> Motherboard
 </h1>
         <Row>
           {
@@ -45,7 +45,7 @@ const PowersPage = ({motherboards}) => {
                   style={{
                     height:"5px",
                     margin: "20px 0",
-                    background: "#000",
+                    background: "#da8d8d",
                     width: "100%"
                   }}
                 ></div>
@@ -74,16 +74,16 @@ const PowersPage = ({motherboards}) => {
                       style={{
                           fontSize:"15px",
                           marginTop:"20px",
-                          backgroundColor:"black",
+                          backgroundColor:"#da8d8d",
                           color:"white",
                           width: "100%",
                           padding: "2px 5px",
                           fontWeight: "300",
-                          letterSpacing: "3px",
+                          letterSpacing: "5px",
                           textAlign: "center",
                       }}
                       >
-                          See Detail
+                          SEE DETAIL
                       </p>
                 </Link>
               </Card>

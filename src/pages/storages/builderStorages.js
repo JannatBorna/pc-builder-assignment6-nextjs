@@ -16,7 +16,7 @@ const BuilderStorages = ({storages}) => {
             margin:"30px 0px",
         }}
         >
-   # Storages
+   <span style={{color: "#da8d8d"}}>#</span> Storages
 </h1>
         <Row>
           {
@@ -45,7 +45,7 @@ const BuilderStorages = ({storages}) => {
                   style={{
                     height:"5px",
                     margin: "20px 0",
-                    background: "#000",
+                    background: "#da8d8d",
                     width: "100%"
                   }}
                 ></div>
@@ -74,7 +74,7 @@ const BuilderStorages = ({storages}) => {
                   style={{
                   fontSize:"15px",
                   marginTop:"20px",
-                  backgroundColor:"black",
+                  backgroundColor:"#da8d8d",
                   color:"white",
                   width: "100%",
                   padding: "2px 5px",

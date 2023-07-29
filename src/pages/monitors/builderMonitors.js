@@ -16,7 +16,7 @@ const BuilderMonitors = ({monitors}) => {
             margin:"30px 0px",
         }}
         >
-   # Monitor
+   <span style={{color: "#da8d8d"}}>#</span> Monitor
 </h1>
         <Row>
           {
@@ -45,7 +45,7 @@ const BuilderMonitors = ({monitors}) => {
                   style={{
                     height:"5px",
                     margin: "20px 0",
-                    background: "#000",
+                    background: "#da8d8d",
                     width: "100%"
                   }}
                 ></div>
@@ -74,7 +74,7 @@ const BuilderMonitors = ({monitors}) => {
                   style={{
                   fontSize:"15px",
                   marginTop:"20px",
-                  backgroundColor:"black",
+                  backgroundColor:"#da8d8d",
                   color:"white",
                   width: "100%",
                   padding: "2px 5px",
@@ -82,7 +82,7 @@ const BuilderMonitors = ({monitors}) => {
                   letterSpacing: "3px",
                   textAlign: "center",
                     }}
-                   >Add To Builder</p>
+                   >ADD TO BUILDER</p>
                 </Link>
               </Card>
 

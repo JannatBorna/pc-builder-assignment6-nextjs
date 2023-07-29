@@ -1,9 +1,11 @@
 .btn{
-    background-color: #273941;
+    padding: 0.5em;
+    background-color: #da8d8d;
     color: white;
+    border: 1px solid #da8d8d !important;
 }
 .btn:hover{
-    color: #273941 !important;
+    color: #da8d8d !important;
     background-color: white;
-    border: 1px solid #273941 !important;
+    
 }

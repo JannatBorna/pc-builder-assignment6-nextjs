@@ -16,7 +16,7 @@ const BuilderMotherboards = ({motherboards}) => {
             margin:"30px 0px",
         }}
         >
-   # Motherboard
+   <span style={{color: "#da8d8d"}}>#</span> Motherboard
 </h1>
         <Row>
           {
@@ -45,7 +45,7 @@ const BuilderMotherboards = ({motherboards}) => {
                   style={{
                     height:"5px",
                     margin: "20px 0",
-                    background: "#000",
+                    background: "#da8d8d",
                     width: "100%"
                   }}
                 ></div>
@@ -74,7 +74,7 @@ const BuilderMotherboards = ({motherboards}) => {
                   style={{
                   fontSize:"15px",
                   marginTop:"20px",
-                  backgroundColor:"black",
+                  backgroundColor:"#da8d8d",
                   color:"white",
                   width: "100%",
                   padding: "2px 5px",
@@ -82,7 +82,7 @@ const BuilderMotherboards = ({motherboards}) => {
                   letterSpacing: "3px",
                   textAlign: "center",
                     }}
-              >Add To Builder</p>
+              >ADD TO BUILDER</p>
                 </Link>
               </Card>
 

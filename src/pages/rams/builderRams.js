@@ -1,8 +1,8 @@
-import { Card, Col, Row } from "antd";
 import Image from "next/image";
 import styles from '@/styles/Home.module.css';
 import Link from "next/link";
 import RootLayout from "../components/Layouts/RootLayout";
+import { Card, Col, Row } from "antd";
 
 
 const BuilderRams = ({rams}) => {
@@ -16,7 +16,7 @@ const BuilderRams = ({rams}) => {
             margin:"30px 0px",
         }}
         >
-   # RAM
+   <span style={{color: "#da8d8d"}}>#</span> RAM
 </h1>
         <Row>
           {
@@ -45,7 +45,7 @@ const BuilderRams = ({rams}) => {
                   style={{
                     height:"5px",
                     margin: "20px 0",
-                    background: "#000",
+                    background: "#da8d8d",
                     width: "100%"
                   }}
                 ></div>
@@ -74,7 +74,7 @@ const BuilderRams = ({rams}) => {
                   style={{
                   fontSize:"15px",
                   marginTop:"20px",
-                  backgroundColor:"black",
+                  backgroundColor:"#da8d8d",
                   color:"white",
                   width: "100%",
                   padding: "2px 5px",
@@ -82,7 +82,7 @@ const BuilderRams = ({rams}) => {
                   letterSpacing: "3px",
                   textAlign: "center",
                     }}
-               >Add To Builder</p>
+               >ADD TO BUILDER</p>
               </Link>
         </Card>
 

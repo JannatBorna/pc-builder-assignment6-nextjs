@@ -45,7 +45,7 @@ const MonitorPage = ({monitors}) => {
                   style={{
                     height:"5px",
                     margin: "20px 0",
-                    background: "#000",
+                    background: "#da8d8d",
                     width: "100%"
                   }}
                 ></div>
@@ -74,7 +74,7 @@ const MonitorPage = ({monitors}) => {
                       style={{
                           fontSize:"15px",
                           marginTop:"20px",
-                          backgroundColor:"black",
+                          backgroundColor:"#da8d8d",
                           color:"white",
                           width: "100%",
                           padding: "2px 5px",
@@ -83,7 +83,7 @@ const MonitorPage = ({monitors}) => {
                           textAlign: "center",
                       }}
                       >
-                          See Detail
+                          SEE DETAIL
                       </p>
                 </Link>
               </Card>

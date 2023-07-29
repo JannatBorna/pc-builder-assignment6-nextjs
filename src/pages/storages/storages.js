@@ -45,7 +45,7 @@ const StoragesPage = ({storages}) => {
                   style={{
                     height:"5px",
                     margin: "20px 0",
-                    background: "#000",
+                    background: "#da8d8d",
                     width: "100%"
                   }}
                 ></div>
@@ -74,16 +74,16 @@ const StoragesPage = ({storages}) => {
                       style={{
                           fontSize:"15px",
                           marginTop:"20px",
-                          backgroundColor:"black",
+                          backgroundColor:"#da8d8d",
                           color:"white",
                           width: "100%",
                           padding: "2px 5px",
-                          fontWeight: "300",
-                          letterSpacing: "3px",
+                          fontWeight: "500",
+                          letterSpacing: "5px",
                           textAlign: "center",
                       }}
                       >
-                          See Detail
+                          SEE DETAIL
                       </p>
                 </Link>
               </Card>

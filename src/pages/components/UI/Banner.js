@@ -16,7 +16,7 @@ const Banner = () => (
       <Row>
         <Col xs={24} sm={24} md={12} lg={12}>
           <h1 style={{ fontSize: "50px" }}>
-            IdeaPad Gaming &apos; Core i5
+           <span style={{color: "#da8d8d"}}> Idea </span> Pad Gaming &apos; Core i5
             <br />
             15.6&rdquo; FHD Laptop
           </h1>
@@ -25,7 +25,7 @@ const Banner = () => (
             style={{
               height: "5px",
               margin: "20px 0",
-              background: "#000",
+              background: "#da8d8d",
               width: "95%",
             }}
           ></div>
@@ -51,7 +51,7 @@ const Banner = () => (
         xs={24} sm={24} md={12} lg={12}
         >
           <h1 style={{ fontSize: "50px" }}>
-            Lenovo 300 Wired 
+            Lenovo <span style={{color: "#da8d8d"}}>300 Wired</span>
             <br />
             USB Mouse
           </h1>
@@ -60,7 +60,7 @@ const Banner = () => (
             style={{
               height: "5px",
               margin: "20px 0",
-              background: "#000",
+              background: "#da8d8d",
               width: "95%",
             }}
           ></div>
@@ -91,7 +91,7 @@ const Banner = () => (
        xs={24} sm={24} md={12} lg={12}
        >
          <h1 style={{ fontSize: "50px" }}>
-           Motorola Pulse 120 
+           Motorola <span style={{color: "#da8d8d"}}>Pulse 120</span> 
            <br />
           Wired Headphone
          </h1>
@@ -100,7 +100,7 @@ const Banner = () => (
            style={{
              height: "5px",
              margin: "20px 0",
-             background: "#000",
+             background: "#da8d8d",
              width: "95%",
            }}
          ></div>

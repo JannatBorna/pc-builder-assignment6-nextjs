@@ -21,7 +21,7 @@ const RamDetailPage = ({rams}) => {
                 style={{
                      height:"5px",
                      margin:"20px 0",
-                     background:"#000",
+                     background:"#da8d8d",
                      width:"90%",
                 }}
                 ></div>
@@ -40,7 +40,7 @@ const RamDetailPage = ({rams}) => {
          style={{
               height:"5px",
               margin:"20px 0",
-              background:"#000",
+              background:"#da8d8d",
               width:"100%",
          }}
          ></div>
