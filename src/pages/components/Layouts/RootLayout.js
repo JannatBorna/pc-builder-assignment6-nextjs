@@ -36,7 +36,7 @@ const RootLayout = ({ children }) => {
   key: '3',
 },
 {
-  label: <button className={styles.itemBtn} onClick={() => Router.push('/storages/storages')} 
+  label: <button className={styles.itemBtn} onClick={() => Router.push('/storages')} 
         >Storage Device</button>,  
   key: '4',
 },
@@ -46,7 +46,7 @@ const RootLayout = ({ children }) => {
   key: '5',
 },
   {
-    label: <button className={styles.itemBtn} onClick={() => Router.push('/others/others')} 
+    label: <button className={styles.itemBtn} onClick={() => Router.push('/others')} 
            >Others</button>,  
     key: '6',
   },

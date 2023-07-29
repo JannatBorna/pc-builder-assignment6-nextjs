@@ -1,8 +1,8 @@
 import Image from "next/image";
 import styles from '@/styles/cart.module.css';
-import RootLayout from "../components/Layouts/RootLayout";
 import { Card, Col, Row } from "antd";
 import Router from "next/router";
+import RootLayout from "./components/Layouts/RootLayout";
 
 
 const MonitorPage = ({others}) => {
