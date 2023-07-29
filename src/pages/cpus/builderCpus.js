@@ -68,13 +68,13 @@ const BuilderCpus = ({cpus}) => {
                     Category: {cpu?.category}
                 </span>
                 </p>
-                {/* <Link href="/pcBuilder"> */}
+
                <button 
                onClick={() => Router.push('/pcBuilder')}
                className={styles.cartBtn}
                >ADD TO BUILDER
                </button>                
-                {/* </Link> */}
+
               </Card>
 
     </Col>

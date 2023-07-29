@@ -69,13 +69,13 @@ const AllProductsPage = ({allProducts}) => {
                 </span>
                 </p>
 
-                {/* <Link href={`/product/${products?._id}`}> */}
+
                 <button 
                 onClick={() => Router.push(`/product/${products?._id}`)}
                 className={styles.cartBtn}
                 >SEE DETAIL
                 </button>
-                {/* </Link> */}
+
               </Card>
 
     </Col>

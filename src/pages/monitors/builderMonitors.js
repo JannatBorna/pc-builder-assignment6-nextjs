@@ -48,7 +48,7 @@ const BuilderMonitors = ({monitors}) => {
                     width: "100%"
                   }}
                 ></div>
-               <h2 style={{color:"gray",}}>{monitor?.status}</h2>
+               <h2 style={{color:"gray"}}>{monitor?.status}</h2>
                 <p
                 style={{
                   display: "flex",
