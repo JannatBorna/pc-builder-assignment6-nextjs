@@ -21,7 +21,9 @@
   cursor: pointer;
 
 }
-
+.loginSetion{
+ text-align: end;
+}
 
 .manu_item a{
   font-size: 18px;

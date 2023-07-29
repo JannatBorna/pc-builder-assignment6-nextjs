@@ -70,7 +70,9 @@ const RootLayout = ({ children }) => {
         </div>
         </Col>
     <Col  xs={16} sm={16} md={12} lg={16}>
-        <items mode="vertical" style={{ backgroundColor: "#1f1f1f", textAlign: "end"}} className={styles.manu_item} >
+            <div className={styles.loginSetion}>
+        <items mode="vertical" style={{ backgroundColor: "#1f1f1f"}} className={styles.manu_item} >
+
              <Dropdown 
                   menu={{
                     items,
@@ -90,10 +92,9 @@ const RootLayout = ({ children }) => {
            </items>
         </button>  
 
+          
          { session?.user?.email? (
  
-      
-
                <items style={{ margin: "0px 30px" }}>
                <button 
                onClick={() => signOut()}
@@ -110,8 +111,9 @@ const RootLayout = ({ children }) => {
                 Login
               </items>
             </button>
-        }
+        }     
         </items>
+        </div>
         </Col>
           </Row> 
         </Header>
