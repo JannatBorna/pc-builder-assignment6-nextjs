@@ -36,7 +36,7 @@ export const getStaticProps = async () =>{
   console.log(data);
   return{
   props :{
-    rams: data.data.data,
+    rams: data.data,
   },
    revalidate: 10,
   };

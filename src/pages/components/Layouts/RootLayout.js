@@ -26,7 +26,7 @@ const RootLayout = ({ children }) => {
   key: '1',
 },
 {
-  label: <button className={styles.itemBtn} onClick={() => Router.push('/rams/rams')} 
+  label: <button className={styles.itemBtn} onClick={() => Router.push('/rams')} 
          >RAM</button>, 
   key: '2',
 },
