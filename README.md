@@ -1,10 +1,10 @@
 # (Assignment 6) Project Name: PC Builder
 
-*** github link:
+*** github link: ***
 
   [https://github.com/JannatBorna/pc-builder-assignment6-nextjs]
 
-*** live link:
+*** live link: ***
 
 []
 
