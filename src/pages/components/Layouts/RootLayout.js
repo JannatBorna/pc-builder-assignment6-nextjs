@@ -1,9 +1,8 @@
 import Image from 'next/image';
 import logo from '@/assets/images/logo.png';
-import Link from 'next/link';
 import { FacebookFilled, GoogleSquareFilled,  LinkedinFilled, LoginOutlined,  PoweroffOutlined,   TwitterSquareFilled, } from '@ant-design/icons';
 import styles from '@/styles/Home.module.css';
-import { Col, Dropdown, Layout, Menu, Row, Space } from 'antd';
+import { Col, Dropdown, Layout, Row, Space } from 'antd';
 const { Header, Content, Footer } = Layout;
 import { useSession, signOut } from "next-auth/react"
 import Router from 'next/router';

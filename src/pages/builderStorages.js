@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styles from '@/styles/cart.module.css';
 import { Card, Col, Row } from "antd";
-import Link from "next/link";
 import RootLayout from "./components/Layouts/RootLayout";
 import Router from "next/router";
 
