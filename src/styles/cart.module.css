@@ -18,3 +18,28 @@
     border: none;
     cursor: pointer;              
 }
+
+.builderPage{
+  margin: auto;
+  width: 60%;
+  border: 3px solid #7b846e;
+  padding: 10px;
+}
+
+.builderBtn{
+  padding: 0.5em;
+  background-color: #eedb6b;
+  height: 7vh;
+  border: none;
+  cursor: pointer;
+}
+
+.xbtn{
+  padding: 0.5em;
+  background-color: #727272;
+  color: #fff;
+  height: 7vh;
+  width: 10vh;
+  border: none;
+  cursor: pointer;
+}

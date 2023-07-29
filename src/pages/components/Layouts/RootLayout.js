@@ -6,6 +6,7 @@ import styles from '@/styles/Home.module.css';
 import { Col, Dropdown, Layout, Menu, Row, Space } from 'antd';
 const { Header, Content, Footer } = Layout;
 import { useSession, signOut } from "next-auth/react"
+import Router from 'next/router';
 
 
 const RootLayout = ({ children }) => {
@@ -15,31 +16,38 @@ const RootLayout = ({ children }) => {
 
   const items = [
   {
-    label: <Link href="/cpus/cpus">CPU / Processor</Link>,
+    label: <button  className={styles.itemBtn} onClick={() => Router.push('/cpus/cpus')} 
+            >CPU / Processor</button>,
     key: '0',
   },
   {
-  label: <Link href="/motherboards/motherboards">Motherboard</Link>,
+  label: <button className={styles.itemBtn} onClick={() => Router.push('/motherboards/motherboards')} 
+          >Motherboard</button>,
   key: '1',
 },
 {
-  label: <Link href="/rams/rams">RAM</Link>,
+  label: <button className={styles.itemBtn} onClick={() => Router.push('/rams/rams')} 
+         >RAM</button>, 
   key: '2',
 },
 {
-  label: <Link href="/powers/powers">Power Supply Unit</Link>,
+  label:<button className={styles.itemBtn} onClick={() => Router.push('/powers/powers')} 
+        >Power Supply Unit</button>,  
   key: '3',
 },
 {
-  label: <Link href="/storages/storages">Storage Device</Link>,
+  label: <button className={styles.itemBtn} onClick={() => Router.push('/storages/storages')} 
+        >Storage Device</button>,  
   key: '4',
 },
 {
-  label: <Link href="/monitors/monitors">Monitor</Link>,
+  label:<button className={styles.itemBtn} onClick={() => Router.push('/monitors/monitors')} 
+       >Monitor</button>,  
   key: '5',
 },
   {
-    label: <Link href="/others/others">Others</Link>,
+    label: <button className={styles.itemBtn} onClick={() => Router.push('/others/others')} 
+           >Others</button>,  
     key: '6',
   },
 ];
@@ -53,14 +61,14 @@ const RootLayout = ({ children }) => {
         
         >
         <div> 
-        <Link href="/">
+        <p onClick={() => Router.push('/')}>
           <Image
             src={logo}
             alt='logo'
             width={200}
-            style={{marginTop: "-70px"}}
+            style={{marginTop: "-70px", cursor:"pointer"}}
             />
-        </Link>
+        </p>
         </div>
         </Col>
     <Col  xs={16} sm={16} md={12} lg={16}>
@@ -73,17 +81,17 @@ const RootLayout = ({ children }) => {
                   trigger={['click']}
                 >
               <a onClick={(e) => e.preventDefault()}>
-              <Space>
-              Categories
+              <Space style={{ margin: "0px 30px" }}>
+                Categories
               </Space>
               </a>
                </Dropdown>
 
-        <Link href="/pcBuilder" className={styles.manu}> 
-           <items style={{ margin: "0px 30px", padding: "10px" }} className={styles.list}>      
+        <button onClick={() => Router.push('/pcBuilder')}  className={styles.pcbuilderBtn}> 
+           <items style={{ padding: "10px" }}>      
            PC Builder
            </items>
-        </Link>  
+        </button>  
 
          { session?.user?.email? (
  
@@ -99,13 +107,14 @@ const RootLayout = ({ children }) => {
                  </button>
               </items>
            ) :
-
-            <Link href="/login"  className={styles.manu}>
+           <button onClick={() => Router.push('/login')} className={styles.loginBtn}> 
+            {/* <Link href="/login"  className={styles.manu}> */}
               <items style={{padding: "10px"}}>
                 <LoginOutlined style={{margin: "5px"}}/>
                 Login
               </items>
-            </Link>  
+            {/* </Link>   */}
+            </button>
         }
         </Menu>
         </Col>
