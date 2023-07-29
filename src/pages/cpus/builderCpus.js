@@ -1,8 +1,8 @@
 import Image from "next/image";
-import styles from '@/styles/Home.module.css';
+import styles from '@/styles/cart.module.css';
 import RootLayout from "../components/Layouts/RootLayout";
-import Link from "next/link";
 import { Card, Col, Row } from "antd";
+import Router from "next/router";
 
 
 const BuilderCpus = ({cpus}) => {
@@ -69,21 +69,13 @@ const BuilderCpus = ({cpus}) => {
                     Category: {cpu?.category}
                 </span>
                 </p>
-                <Link href="/pcBuilder">
-                  <p
-                  style={{
-                  fontSize:"15px",
-                  marginTop:"20px",
-                  backgroundColor:"#da8d8d",
-                  color:"white",
-                  width: "100%",
-                  padding: "2px 5px",
-                  fontWeight: "300",
-                  letterSpacing: "5px",
-                  textAlign: "center",
-                    }}
-              >ADD TO BUILDER</p>
-                </Link>
+                {/* <Link href="/pcBuilder"> */}
+               <button 
+               onClick={() => Router.push('/pcBuilder')}
+               className={styles.cartBtn}
+               >ADD TO BUILDER
+               </button>                
+                {/* </Link> */}
               </Card>
 
     </Col>

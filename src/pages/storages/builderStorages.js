@@ -1,8 +1,10 @@
-import { Card, Col, Row } from "antd";
 import Image from "next/image";
-import styles from '@/styles/Home.module.css';
+import styles from '@/styles/cart.module.css';
+import { Card, Col, Row } from "antd";
 import Link from "next/link";
 import RootLayout from "../components/Layouts/RootLayout";
+import Router from "next/router";
+
 
 
 const BuilderStorages = ({storages}) => {
@@ -16,7 +18,7 @@ const BuilderStorages = ({storages}) => {
             margin:"30px 0px",
         }}
         >
-   <span style={{color: "#da8d8d"}}>#</span> Storages
+   <span style={{color: "#da8d8d"}}>#</span> Storages Device
 </h1>
         <Row>
           {
@@ -69,21 +71,13 @@ const BuilderStorages = ({storages}) => {
                     Category: {storage?.category}
                 </span>
                 </p>
-                <Link href="/pcBuilder">
-                  <p
-                  style={{
-                  fontSize:"15px",
-                  marginTop:"20px",
-                  backgroundColor:"#da8d8d",
-                  color:"white",
-                  width: "100%",
-                  padding: "2px 5px",
-                  fontWeight: "300",
-                  letterSpacing: "3px",
-                  textAlign: "center",
-                    }}
-                 >Add To Builder</p>
-                </Link>
+
+               <button 
+               onClick={() => Router.push('/pcBuilder')}
+               className={styles.cartBtn}
+               >ADD TO BUILDER
+               </button>                
+               
               </Card>
 
     </Col>
