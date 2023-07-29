@@ -35,7 +35,6 @@ const RamsPage = ({rams}) => {
                     src={ram?.img}
                     width={500}
                     height={200}
-                    true
                     alt="image"
                   />
                   }

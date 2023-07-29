@@ -35,7 +35,6 @@ const BuilderMonitors = ({monitors}) => {
                     src={monitor?.img}
                     width={500}
                     height={200}
-                    true
                     alt="image"
                   />
                   }

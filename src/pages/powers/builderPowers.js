@@ -35,7 +35,6 @@ const BuilderPowers = ({powers}) => {
                     src={power?.img}
                     width={500}
                     height={200}
-                    true
                     alt="image"
                   />
                   }

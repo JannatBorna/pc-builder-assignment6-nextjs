@@ -35,7 +35,6 @@ const MonitorPage = ({others}) => {
                     src={other?.img}
                     width={500}
                     height={200}
-                    true
                     alt="image"
                   />
                   }

@@ -12,7 +12,6 @@ const ProductDetailPage = ({products}) => {
                 src={products?.image}
                 width={500}
                 height={400}
-                true
                 alt="image"
               />
               </div>

@@ -12,7 +12,6 @@ const RamDetailPage = ({rams}) => {
                 src={rams?.img}
                 width={500}
                 height={400}
-                true
                 alt="image"
               />
               </div>

@@ -12,7 +12,6 @@ const OtherDetailPage = ({others}) => {
                 src={others?.img}
                 width={500}
                 height={400}
-                true
                 alt="image"
               />
               </div>
