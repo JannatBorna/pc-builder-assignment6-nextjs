@@ -1,11 +1,11 @@
 import Image from "next/image";
 import styles from '@/styles/cart.module.css';
-import RootLayout from "../components/Layouts/RootLayout";
+import RootLayout from "./components/Layouts/RootLayout";
 import { Card, Col, Row } from "antd";
 import Router from "next/router";
 
 
-const PowersPage = ({powers}) => {
+const BuilderMotherboards = ({motherboards}) => {
     const {Meta} = Card;
     return (
       <>
@@ -16,14 +16,14 @@ const PowersPage = ({powers}) => {
             margin:"30px 0px",
         }}
         >
-   <span style={{color: "#da8d8d"}}>#</span> Power Supply Unit
+   <span style={{color: "#da8d8d"}}>#</span> Motherboard
 </h1>
         <Row>
           {
-          powers?.map((power) =>(
+          motherboards?.map((motherboard) =>(
               <Col 
               xs={24} sm={24} md={12} lg={8} 
-              key={power?._id}
+              key={motherboard?._id}
 
               >
 
@@ -32,14 +32,14 @@ const PowersPage = ({powers}) => {
               hoverable
                   cover={
                   <Image
-                    src={power?.img}
+                    src={motherboard?.img}
                     width={500}
                     height={200}
                     alt="image"
                   />
                   }
               >
-                <Meta title={power?.name}/>
+                <Meta title={motherboard?.name}/>
                 <div
                   style={{
                     height:"5px",
@@ -48,7 +48,7 @@ const PowersPage = ({powers}) => {
                     width: "100%"
                   }}
                 ></div>
-               <h2 style={{color:"gray",}}>{power?.status}</h2>
+               <h2 style={{color:"gray",}}>{motherboard?.status}</h2>
                 <p
                 style={{
                   display: "flex",
@@ -59,19 +59,20 @@ const PowersPage = ({powers}) => {
                 }}
                 >
                 <span>
-                    Price: {power?.price}&#2547; 
+                    Price: {motherboard?.price}&#2547; 
                 </span>
                 <span>
-                     Rating : {power?.rating} 
+                     Rating : {motherboard?.rating} 
                 </span>
                 <span>
-                    Category: {power?.category}
+                    Category: {motherboard?.category}
                 </span>
                 </p>
+
                <button 
-               onClick={() => Router.push(`/power/${power?._id}`)}
+               onClick={() => Router.push('/pcBuilder')}
                className={styles.cartBtn}
-               >SEE DETAIL
+               >ADD TO BUILDER
                </button>                
               </Card>
 
@@ -82,9 +83,9 @@ const PowersPage = ({powers}) => {
     );
 };
 
-export default PowersPage;
+export default BuilderMotherboards;
 
-PowersPage.getLayout = function getLayout (page){
+BuilderMotherboards.getLayout = function getLayout (page){
     return(
         <RootLayout>
             {page}
@@ -94,12 +95,12 @@ PowersPage.getLayout = function getLayout (page){
 
 // data fetching
 export const getStaticProps = async () => {
-    const res = await fetch ("http://localhost:3000/api/powers");
+    const res = await fetch ("http://localhost:3000/api/motherboards");
     const data = await res.json();
     console.log(data);
     return{
         props: {
-            powers: data.data,
+            motherboards: data.data,
         }
     }
 }

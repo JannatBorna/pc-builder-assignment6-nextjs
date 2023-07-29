@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import RootLayout from '../components/Layouts/RootLayout';
 
-const MonitorHomePage = () => {
+const CupsHomePage = () => {
   return (
     <div>
         <>
      <Head>
-       <title>Monitor PC_Builder</title>
+       <title>Cpus PC_Builder</title>
        <meta
          name="description"
          content="This is PC_Builder website made by next-js"
@@ -14,14 +14,15 @@ const MonitorHomePage = () => {
        <meta name="viewport" content="width=device-width, initial-scale=1" />
        <link rel="icon" href="/favicon.ico" />
      </Head>
+
      
    </>
     </div>
   );
 };
 
-export default MonitorHomePage;
-MonitorHomePage.getLayout = function getLayout(page){
+export default CupsHomePage;
+CupsHomePage.getLayout = function getLayout(page){
   return (
     <RootLayout>
       {page}
@@ -31,12 +32,12 @@ MonitorHomePage.getLayout = function getLayout(page){
 
 // data fetching
 export const getStaticProps = async () =>{
-  const res = await fetch("http://localhost:3000/api/monitors")
+  const res = await fetch("http://localhost:3000/api/cpus")
   const data = await res.json();
   console.log(data);
   return{
   props :{
-    monitors: data.data.data,
+    cpus: data.data,
   },
    revalidate: 10,
   };

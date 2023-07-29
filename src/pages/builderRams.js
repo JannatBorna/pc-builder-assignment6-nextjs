@@ -1,11 +1,11 @@
 import Image from "next/image";
 import styles from '@/styles/cart.module.css';
-import RootLayout from "../components/Layouts/RootLayout";
+import RootLayout from "./components/Layouts/RootLayout";
 import { Card, Col, Row } from "antd";
 import Router from "next/router";
 
 
-const BuilderMotherboards = ({motherboards}) => {
+const BuilderRams = ({rams}) => {
     const {Meta} = Card;
     return (
       <>
@@ -16,14 +16,14 @@ const BuilderMotherboards = ({motherboards}) => {
             margin:"30px 0px",
         }}
         >
-   <span style={{color: "#da8d8d"}}>#</span> Motherboard
+   <span style={{color: "#da8d8d"}}>#</span> RAM
 </h1>
         <Row>
           {
-          motherboards?.map((motherboard) =>(
+          rams?.map((ram) =>(
               <Col 
               xs={24} sm={24} md={12} lg={8} 
-              key={motherboard?._id}
+              key={ram?._id}
 
               >
 
@@ -32,14 +32,14 @@ const BuilderMotherboards = ({motherboards}) => {
               hoverable
                   cover={
                   <Image
-                    src={motherboard?.img}
+                    src={ram?.img}
                     width={500}
                     height={200}
                     alt="image"
                   />
                   }
               >
-                <Meta title={motherboard?.name}/>
+                <Meta title={ram?.name}/>
                 <div
                   style={{
                     height:"5px",
@@ -48,7 +48,7 @@ const BuilderMotherboards = ({motherboards}) => {
                     width: "100%"
                   }}
                 ></div>
-               <h2 style={{color:"gray",}}>{motherboard?.status}</h2>
+               <h2 style={{color:"gray",}}>{ram?.status}</h2>
                 <p
                 style={{
                   display: "flex",
@@ -59,13 +59,13 @@ const BuilderMotherboards = ({motherboards}) => {
                 }}
                 >
                 <span>
-                    Price: {motherboard?.price}&#2547; 
+                    Price: {ram?.price}&#2547; 
                 </span>
                 <span>
-                     Rating : {motherboard?.rating} 
+                     Rating : {ram?.rating} 
                 </span>
                 <span>
-                    Category: {motherboard?.category}
+                    Category: {ram?.category}
                 </span>
                 </p>
 
@@ -74,7 +74,7 @@ const BuilderMotherboards = ({motherboards}) => {
                className={styles.cartBtn}
                >ADD TO BUILDER
                </button>                
-              </Card>
+        </Card>
 
     </Col>
     ))}
@@ -83,9 +83,9 @@ const BuilderMotherboards = ({motherboards}) => {
     );
 };
 
-export default BuilderMotherboards;
+export default BuilderRams;
 
-BuilderMotherboards.getLayout = function getLayout (page){
+BuilderRams.getLayout = function getLayout (page){
     return(
         <RootLayout>
             {page}
@@ -95,12 +95,12 @@ BuilderMotherboards.getLayout = function getLayout (page){
 
 // data fetching
 export const getStaticProps = async () => {
-    const res = await fetch ("http://localhost:3000/api/motherboards");
+    const res = await fetch ("http://localhost:3000/api/rams");
     const data = await res.json();
     console.log(data);
     return{
         props: {
-            motherboards: data.data,
+            rams: data.data,
         }
     }
 }

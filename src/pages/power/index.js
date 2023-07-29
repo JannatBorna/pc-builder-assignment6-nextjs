@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import RootLayout from '../components/Layouts/RootLayout';
 
-const MotherboardsHomePage = () => {
+const PowerHomePage = () => {
   return (
     <div>
         <>
      <Head>
-       <title>Motherboards PC_Builder</title>
+       <title>Powers PC_Builder</title>
        <meta
          name="description"
          content="This is PC_Builder website made by next-js"
@@ -20,8 +20,8 @@ const MotherboardsHomePage = () => {
   );
 };
 
-export default MotherboardsHomePage;
-MotherboardsHomePage.getLayout = function getLayout(page){
+export default PowerHomePage;
+PowerHomePage.getLayout = function getLayout(page){
   return (
     <RootLayout>
       {page}
@@ -31,12 +31,12 @@ MotherboardsHomePage.getLayout = function getLayout(page){
 
 // data fetching
 export const getStaticProps = async () =>{
-  const res = await fetch("http://localhost:3000/api/motherboards")
+  const res = await fetch("http://localhost:3000/api/powers")
   const data = await res.json();
   console.log(data);
   return{
   props :{
-    motherboards: data.data.data,
+    powers: data.data,
   },
    revalidate: 10,
   };

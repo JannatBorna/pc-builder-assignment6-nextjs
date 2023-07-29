@@ -16,12 +16,12 @@ const RootLayout = ({ children }) => {
 
   const items = [
   {
-    label: <button  className={styles.itemBtn} onClick={() => Router.push('/cpus/cpus')} 
+    label: <button  className={styles.itemBtn} onClick={() => Router.push('/cpus')} 
             >CPU / Processor</button>,
     key: '0',
   },
   {
-  label: <button className={styles.itemBtn} onClick={() => Router.push('/motherboards/motherboards')} 
+  label: <button className={styles.itemBtn} onClick={() => Router.push('/motherboards')} 
           >Motherboard</button>,
   key: '1',
 },
@@ -31,7 +31,7 @@ const RootLayout = ({ children }) => {
   key: '2',
 },
 {
-  label:<button className={styles.itemBtn} onClick={() => Router.push('/powers/powers')} 
+  label:<button className={styles.itemBtn} onClick={() => Router.push('/powers')} 
         >Power Supply Unit</button>,  
   key: '3',
 },
@@ -41,7 +41,7 @@ const RootLayout = ({ children }) => {
   key: '4',
 },
 {
-  label:<button className={styles.itemBtn} onClick={() => Router.push('/monitors/monitors')} 
+  label:<button className={styles.itemBtn} onClick={() => Router.push('/monitors')} 
        >Monitor</button>,  
   key: '5',
 },

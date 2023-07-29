@@ -48,7 +48,7 @@ const PcBuilderPage = () => {
                         
                         <div>  
                          <button className={styles.xbtn}
-                         onClick={() => Router.push('/cpus/builderCpus')}
+                         onClick={() => Router.push('/builderPowers')}
                          > X </button> 
                          </div>
                     </div>
@@ -67,7 +67,7 @@ const PcBuilderPage = () => {
 
                     <div>  
                          <button className={styles.xbtn}
-                         onClick={() => Router.push('/cpus/builderCpus')}
+                         onClick={() => Router.push('/builderCpus')}
                          > X </button> 
                     </div>
                 </div>
@@ -85,7 +85,7 @@ const PcBuilderPage = () => {
                     </div>
                     <div>  
                         <button className={styles.xbtn}
-                        onClick={() => Router.push('/cpus/builderCpus')}
+                        onClick={() => Router.push('/builderCpus')}
                         > X </button> 
                     </div>
                 </div>
@@ -103,7 +103,7 @@ const PcBuilderPage = () => {
                     </div>
                     <div>  
                         <button className={styles.xbtn}
-                        onClick={() => Router.push('/cpus/builderCpus')}
+                        onClick={() => Router.push('/builderCpus')}
                         > X </button> 
                     </div>
                 </div>
@@ -121,7 +121,7 @@ const PcBuilderPage = () => {
                         </div>
                     <div>  
                         <button className={styles.xbtn}
-                        onClick={() => Router.push('/cpus/builderCpus')}
+                        onClick={() => Router.push('/builderCpus')}
                         > X </button> 
                     </div>
                     </div>
@@ -138,7 +138,7 @@ const PcBuilderPage = () => {
 
                         <div>
                            <button className={styles.builderBtn}
-                           onClick={() => Router.push('/cpus/builderCpus')}
+                           onClick={() => Router.push('/builderCpus')}
                            >Choose</button>
                         </div>
                     </div>
@@ -155,7 +155,7 @@ const PcBuilderPage = () => {
 
                        <div>
                           <button className={styles.builderBtn}
-                          onClick={() => Router.push('/motherboards/builderMotherboards')}
+                          onClick={() => Router.push('/builderMotherboards')}
                           >Choose</button>                        
                        </div>
                    </div>
@@ -172,7 +172,7 @@ const PcBuilderPage = () => {
                        </div>     
                        <div>
                             <button className={styles.builderBtn}
-                           onClick={() => Router.push('/rams/builderRams')}        
+                           onClick={() => Router.push('/builderRams')}        
                            >Choose</button>
                        </div>                    
                    </div>
@@ -188,7 +188,7 @@ const PcBuilderPage = () => {
                        </div>     
                        <div>
                            <button className={styles.builderBtn}
-                          onClick={() => Router.push('/powers/builderPowers')}
+                          onClick={() => Router.push('/builderPowers')}
                           >Choose</button>                       
                        </div>
                    </div>
@@ -204,7 +204,7 @@ const PcBuilderPage = () => {
                        </div>   
                        <div>
                            <button className={styles.builderBtn}
-                           onClick={() => Router.push('/storages/builderStorages')}
+                           onClick={() => Router.push('/builderStorages')}
                            >Choose</button>                        
                        </div>                              
                    </div>
@@ -220,7 +220,7 @@ const PcBuilderPage = () => {
                        </div>                     
                        <div>
                            <button className={styles.builderBtn}
-                           onClick={() => Router.push('/monitors/builderMonitors')}           
+                           onClick={() => Router.push('/builderMonitors')}           
                            >Choose</button>
                        </div>
                    </div>

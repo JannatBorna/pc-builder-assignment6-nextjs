@@ -1,11 +1,11 @@
 import Image from "next/image";
 import styles from '@/styles/cart.module.css';
-import RootLayout from "../components/Layouts/RootLayout";
+import RootLayout from "./components/Layouts/RootLayout";
 import { Card, Col, Row } from "antd";
 import Router from "next/router";
 
 
-const CpusPage = ({cpus}) => {
+const PowersPage = ({motherboards}) => {
     const {Meta} = Card;
     return (
       <>
@@ -16,14 +16,14 @@ const CpusPage = ({cpus}) => {
             margin:"30px 0px",
         }}
         >
-   <span style={{color: "#da8d8d"}}>#</span> CPU
+   <span style={{color: "#da8d8d"}}>#</span> Motherboard
 </h1>
         <Row>
           {
-          cpus?.map((cpu) =>(
+          motherboards?.map((motherboard) =>(
               <Col 
               xs={24} sm={24} md={12} lg={8} 
-              key={cpu?._id}
+              key={motherboard?._id}
 
               >
 
@@ -32,14 +32,14 @@ const CpusPage = ({cpus}) => {
               hoverable
                   cover={
                   <Image
-                    src={cpu?.img}
+                    src={motherboard?.img}
                     width={500}
                     height={200}
                     alt="image"
                   />
                   }
               >
-                <Meta title={cpu?.name}/>
+                <Meta title={motherboard?.name}/>
                 <div
                   style={{
                     height:"5px",
@@ -48,7 +48,7 @@ const CpusPage = ({cpus}) => {
                     width: "100%"
                   }}
                 ></div>
-               <h2 style={{color:"gray",}}>{cpu?.status}</h2>
+               <h2 style={{color:"gray",}}>{motherboard?.status}</h2>
                 <p
                 style={{
                   display: "flex",
@@ -59,18 +59,18 @@ const CpusPage = ({cpus}) => {
                 }}
                 >
                 <span>
-                    Price: {cpu?.price}&#2547; 
+                    Price: {motherboard?.price}&#2547; 
                 </span>
                 <span>
-                     Rating : {cpu?.rating} 
+                     Rating : {motherboard?.rating} 
                 </span>
                 <span>
-                    Category: {cpu?.category}
+                    Category: {motherboard?.category}
                 </span>
                 </p>
 
                <button 
-               onClick={() => Router.push(`/cpu/${cpu?._id}`)}
+               onClick={() => Router.push(`/motherboard/${motherboard?._id}`)}
                className={styles.cartBtn}
                >SEE DETAIL
                </button>                
@@ -84,9 +84,9 @@ const CpusPage = ({cpus}) => {
     );
 };
 
-export default CpusPage;
+export default PowersPage;
 
-CpusPage.getLayout = function getLayout (page){
+PowersPage.getLayout = function getLayout (page){
     return(
         <RootLayout>
             {page}
@@ -96,12 +96,12 @@ CpusPage.getLayout = function getLayout (page){
 
 // data fetching
 export const getStaticProps = async () => {
-    const res = await fetch ("http://localhost:3000/api/cpus");
+    const res = await fetch ("http://localhost:3000/api/motherboards");
     const data = await res.json();
     console.log(data);
     return{
         props: {
-            cpus: data.data,
+            motherboards: data.data,
         }
     }
 }

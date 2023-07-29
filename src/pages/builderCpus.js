@@ -1,11 +1,11 @@
 import Image from "next/image";
 import styles from '@/styles/cart.module.css';
-import RootLayout from "../components/Layouts/RootLayout";
+import RootLayout from "./components/Layouts/RootLayout";
 import { Card, Col, Row } from "antd";
 import Router from "next/router";
 
 
-const BuilderMonitors = ({monitors}) => {
+const BuilderCpus = ({cpus}) => {
     const {Meta} = Card;
     return (
       <>
@@ -16,14 +16,14 @@ const BuilderMonitors = ({monitors}) => {
             margin:"30px 0px",
         }}
         >
-   <span style={{color: "#da8d8d"}}>#</span> Monitor
+   <span style={{color: "#da8d8d"}}>#</span> CPU
 </h1>
         <Row>
           {
-          monitors?.map((monitor) =>(
+          cpus?.map((cpu) =>(
               <Col 
               xs={24} sm={24} md={12} lg={8} 
-              key={monitor?._id}
+              key={cpu?._id}
 
               >
 
@@ -32,14 +32,14 @@ const BuilderMonitors = ({monitors}) => {
               hoverable
                   cover={
                   <Image
-                    src={monitor?.img}
+                    src={cpu?.img}
                     width={500}
                     height={200}
                     alt="image"
                   />
                   }
               >
-                <Meta title={monitor?.name}/>
+                <Meta title={cpu?.name}/>
                 <div
                   style={{
                     height:"5px",
@@ -48,7 +48,7 @@ const BuilderMonitors = ({monitors}) => {
                     width: "100%"
                   }}
                 ></div>
-               <h2 style={{color:"gray"}}>{monitor?.status}</h2>
+               <h2 style={{color:"gray",}}>{cpu?.status}</h2>
                 <p
                 style={{
                   display: "flex",
@@ -59,13 +59,13 @@ const BuilderMonitors = ({monitors}) => {
                 }}
                 >
                 <span>
-                    Price: {monitor?.price}&#2547; 
+                    Price: {cpu?.price}&#2547; 
                 </span>
                 <span>
-                     Rating : {monitor?.rating} 
+                     Rating : {cpu?.rating} 
                 </span>
                 <span>
-                    Category: {monitor?.category}
+                    Category: {cpu?.category}
                 </span>
                 </p>
 
@@ -84,9 +84,9 @@ const BuilderMonitors = ({monitors}) => {
     );
 };
 
-export default BuilderMonitors;
+export default BuilderCpus;
 
-BuilderMonitors.getLayout = function getLayout (page){
+BuilderCpus.getLayout = function getLayout (page){
     return(
         <RootLayout>
             {page}
@@ -96,12 +96,12 @@ BuilderMonitors.getLayout = function getLayout (page){
 
 // data fetching
 export const getStaticProps = async () => {
-    const res = await fetch ("http://localhost:3000/api/monitors");
+    const res = await fetch ("http://localhost:3000/api/cpus");
     const data = await res.json();
     console.log(data);
     return{
         props: {
-            monitors: data.data,
+            cpus: data.data,
         }
     }
 }

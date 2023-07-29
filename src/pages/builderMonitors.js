@@ -1,11 +1,11 @@
 import Image from "next/image";
 import styles from '@/styles/cart.module.css';
-import RootLayout from "../components/Layouts/RootLayout";
+import RootLayout from "./components/Layouts/RootLayout";
 import { Card, Col, Row } from "antd";
 import Router from "next/router";
 
 
-const MonitorPage = ({monitors}) => {
+const BuilderMonitors = ({monitors}) => {
     const {Meta} = Card;
     return (
       <>
@@ -16,7 +16,7 @@ const MonitorPage = ({monitors}) => {
             margin:"30px 0px",
         }}
         >
-   # Monitor
+   <span style={{color: "#da8d8d"}}>#</span> Monitor
 </h1>
         <Row>
           {
@@ -48,7 +48,7 @@ const MonitorPage = ({monitors}) => {
                     width: "100%"
                   }}
                 ></div>
-               <h2 style={{color:"gray",}}>{monitor?.status}</h2>
+               <h2 style={{color:"gray"}}>{monitor?.status}</h2>
                 <p
                 style={{
                   display: "flex",
@@ -70,9 +70,9 @@ const MonitorPage = ({monitors}) => {
                 </p>
 
                <button 
-               onClick={() => Router.push(`/monitor/${monitor?._id}`)}
+               onClick={() => Router.push('/pcBuilder')}
                className={styles.cartBtn}
-               >SEE DETAIL
+               >ADD TO BUILDER
                </button>                
 
               </Card>
@@ -84,9 +84,9 @@ const MonitorPage = ({monitors}) => {
     );
 };
 
-export default MonitorPage;
+export default BuilderMonitors;
 
-MonitorPage.getLayout = function getLayout (page){
+BuilderMonitors.getLayout = function getLayout (page){
     return(
         <RootLayout>
             {page}

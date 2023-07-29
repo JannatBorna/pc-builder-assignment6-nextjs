@@ -1,13 +1,11 @@
 import Image from "next/image";
 import styles from '@/styles/cart.module.css';
+import RootLayout from "./components/Layouts/RootLayout";
 import { Card, Col, Row } from "antd";
-import Link from "next/link";
-import RootLayout from "../components/Layouts/RootLayout";
 import Router from "next/router";
 
 
-
-const BuilderStorages = ({storages}) => {
+const CpusPage = ({cpus}) => {
     const {Meta} = Card;
     return (
       <>
@@ -18,14 +16,14 @@ const BuilderStorages = ({storages}) => {
             margin:"30px 0px",
         }}
         >
-   <span style={{color: "#da8d8d"}}>#</span> Storages Device
+   <span style={{color: "#da8d8d"}}>#</span> CPU
 </h1>
         <Row>
           {
-          storages?.map((storage) =>(
+          cpus?.map((cpu) =>(
               <Col 
               xs={24} sm={24} md={12} lg={8} 
-              key={storage?._id}
+              key={cpu?._id}
 
               >
 
@@ -34,14 +32,14 @@ const BuilderStorages = ({storages}) => {
               hoverable
                   cover={
                   <Image
-                    src={storage?.img}
+                    src={cpu?.img}
                     width={500}
                     height={200}
                     alt="image"
                   />
                   }
               >
-                <Meta title={storage?.name}/>
+                <Meta title={cpu?.name}/>
                 <div
                   style={{
                     height:"5px",
@@ -50,7 +48,7 @@ const BuilderStorages = ({storages}) => {
                     width: "100%"
                   }}
                 ></div>
-               <h2 style={{color:"gray",}}>{storage?.status}</h2>
+               <h2 style={{color:"gray",}}>{cpu?.status}</h2>
                 <p
                 style={{
                   display: "flex",
@@ -61,22 +59,22 @@ const BuilderStorages = ({storages}) => {
                 }}
                 >
                 <span>
-                    Price: {storage?.price}&#2547; 
+                    Price: {cpu?.price}&#2547; 
                 </span>
                 <span>
-                     Rating : {storage?.rating} 
+                     Rating : {cpu?.rating} 
                 </span>
                 <span>
-                    Category: {storage?.category}
+                    Category: {cpu?.category}
                 </span>
                 </p>
 
                <button 
-               onClick={() => Router.push('/pcBuilder')}
+               onClick={() => Router.push(`/cpu/${cpu?._id}`)}
                className={styles.cartBtn}
-               >ADD TO BUILDER
+               >SEE DETAIL
                </button>                
-               
+
               </Card>
 
     </Col>
@@ -86,9 +84,9 @@ const BuilderStorages = ({storages}) => {
     );
 };
 
-export default BuilderStorages;
+export default CpusPage;
 
-BuilderStorages.getLayout = function getLayout (page){
+CpusPage.getLayout = function getLayout (page){
     return(
         <RootLayout>
             {page}
@@ -98,12 +96,12 @@ BuilderStorages.getLayout = function getLayout (page){
 
 // data fetching
 export const getStaticProps = async () => {
-    const res = await fetch ("http://localhost:3000/api/storages");
+    const res = await fetch ("http://localhost:3000/api/cpus");
     const data = await res.json();
     console.log(data);
     return{
         props: {
-            storages: data.data,
+            cpus: data.data,
         }
     }
 }

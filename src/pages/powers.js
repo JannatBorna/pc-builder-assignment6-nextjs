@@ -1,11 +1,11 @@
 import Image from "next/image";
 import styles from '@/styles/cart.module.css';
-import RootLayout from "../components/Layouts/RootLayout";
+import RootLayout from "./components/Layouts/RootLayout";
 import { Card, Col, Row } from "antd";
 import Router from "next/router";
 
 
-const BuilderCpus = ({cpus}) => {
+const PowersPage = ({powers}) => {
     const {Meta} = Card;
     return (
       <>
@@ -16,14 +16,14 @@ const BuilderCpus = ({cpus}) => {
             margin:"30px 0px",
         }}
         >
-   <span style={{color: "#da8d8d"}}>#</span> CPU
+   <span style={{color: "#da8d8d"}}>#</span> Power Supply Unit
 </h1>
         <Row>
           {
-          cpus?.map((cpu) =>(
+          powers?.map((power) =>(
               <Col 
               xs={24} sm={24} md={12} lg={8} 
-              key={cpu?._id}
+              key={power?._id}
 
               >
 
@@ -32,14 +32,14 @@ const BuilderCpus = ({cpus}) => {
               hoverable
                   cover={
                   <Image
-                    src={cpu?.img}
+                    src={power?.img}
                     width={500}
                     height={200}
                     alt="image"
                   />
                   }
               >
-                <Meta title={cpu?.name}/>
+                <Meta title={power?.name}/>
                 <div
                   style={{
                     height:"5px",
@@ -48,7 +48,7 @@ const BuilderCpus = ({cpus}) => {
                     width: "100%"
                   }}
                 ></div>
-               <h2 style={{color:"gray",}}>{cpu?.status}</h2>
+               <h2 style={{color:"gray",}}>{power?.status}</h2>
                 <p
                 style={{
                   display: "flex",
@@ -59,22 +59,20 @@ const BuilderCpus = ({cpus}) => {
                 }}
                 >
                 <span>
-                    Price: {cpu?.price}&#2547; 
+                    Price: {power?.price}&#2547; 
                 </span>
                 <span>
-                     Rating : {cpu?.rating} 
+                     Rating : {power?.rating} 
                 </span>
                 <span>
-                    Category: {cpu?.category}
+                    Category: {power?.category}
                 </span>
                 </p>
-
                <button 
-               onClick={() => Router.push('/pcBuilder')}
+               onClick={() => Router.push(`/power/${power?._id}`)}
                className={styles.cartBtn}
-               >ADD TO BUILDER
+               >SEE DETAIL
                </button>                
-
               </Card>
 
     </Col>
@@ -84,9 +82,9 @@ const BuilderCpus = ({cpus}) => {
     );
 };
 
-export default BuilderCpus;
+export default PowersPage;
 
-BuilderCpus.getLayout = function getLayout (page){
+PowersPage.getLayout = function getLayout (page){
     return(
         <RootLayout>
             {page}
@@ -96,12 +94,12 @@ BuilderCpus.getLayout = function getLayout (page){
 
 // data fetching
 export const getStaticProps = async () => {
-    const res = await fetch ("http://localhost:3000/api/cpus");
+    const res = await fetch ("http://localhost:3000/api/powers");
     const data = await res.json();
     console.log(data);
     return{
         props: {
-            cpus: data.data,
+            powers: data.data,
         }
     }
 }
