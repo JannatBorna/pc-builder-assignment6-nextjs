@@ -9,6 +9,9 @@ import builder5 from '../assets/images/storage-2.png'
 import styles  from '@/styles/Home.module.css';
 import Image from 'next/image';
 import swal from 'sweetalert';
+import {BsCpu, BsMotherboard, BsMemory, BsFuelPumpDieselFill, BsUsbDrive } from 'react-icons/bs';
+import { MdMonitor } from 'react-icons/md';
+import  Router  from 'next/router';
 
 
 const PcBuilderPage = () => {
@@ -18,151 +21,214 @@ const PcBuilderPage = () => {
         )
     }
     return (
-        <div>
+        <div className={styles.builderPage}>
             <Row>
                 <Col xs={24} sm={24} md={24} lg={24}>
                  <div style={{padding:"20px"}}>
                     <button 
-                    onClick={(handlar)} 
-                    style={{padding:"13px", 
-                    background:"#09258c", 
-                    color:"white"}}>
+                    onClick={(handlar)}
+                    className={styles.builderBtn}
+                    >
                         Complete Build
                     </button>
                  </div>
                                      
                   <hr style={{margin:"30px"}}/>
                 
-                     <div style={{display:"flex", justifyContent:"space-around", marginTop:"20px"}}>
+                     <div style={{display:"flex", justifyContent:"space-between", marginTop:"20px"}}>
                         <div>
                             <Image  
                             src={builder1}
-                            width={100}
-                            height={100}
+                            width={50}
+                            height={50}
                             responsive
                             alt="image"/>
-
+                  
                             <h4>Asustor DRIVESTOR 4 Pro AS3304T 4-Bay NAS</h4> 
                             <h5>8777 &#2547;</h5>
                         </div>
-
-                     <Link href="/cpus/builderCpus">
-                       X
-                    </Link>
+                        
+                        <div>  
+                         <button className={styles.xbtn}
+                         onClick={() => Router.push('/cpus/builderCpus')}
+                         > X </button> 
+                         </div>
                     </div>
               <hr style={{margin:"30px"}}/>
             
-                 <div style={{display:"flex", justifyContent:"space-around", marginTop:"20px"}}>
+                 <div style={{display:"flex", justifyContent:"space-between", marginTop:"20px"}}>
                     <div>
                         <Image  
                         src={builder2}
-                        width={100}
-                        height={100}
+                        width={50}
+                        height={50}
                         responsive
                         alt="image"/>
                         <h4>Asustor DRIVESTOR 4 Pro AS3304T 4-Bay NAS</h4> 
                         <h5>8777 &#2547;</h5>
                     </div>
-                 <Link href="/cpus/builderCpus">
-                   X
-                </Link>
+
+                    <div>  
+                         <button className={styles.xbtn}
+                         onClick={() => Router.push('/cpus/builderCpus')}
+                         > X </button> 
+                    </div>
                 </div>
               <hr style={{margin:"30px"}}/>
             
-                 <div style={{display:"flex", justifyContent:"space-around", marginTop:"20px"}}>
+                 <div style={{display:"flex", justifyContent:"space-between", marginTop:"20px"}}>
                     <div>
                         <Image  
                         src={builder3}
-                        width={100}
-                        height={100}
+                        width={50}
+                        height={50}
                         responsive
                         alt="image"/>
                         <h4>Gigabyte X299 AORUS Gaming 3 Motherboard</h4> 
                         <h5>2000 &#2547;</h5>
                     </div>
-                 <Link href="/motherboards/builderMotherboard">
-                   X
-                </Link>
+                    <div>  
+                        <button className={styles.xbtn}
+                        onClick={() => Router.push('/cpus/builderCpus')}
+                        > X </button> 
+                    </div>
                 </div>
               <hr style={{margin:"30px"}}/>
             
-                 <div style={{display:"flex", justifyContent:"space-around", marginTop:"20px"}}>
+                 <div style={{display:"flex", justifyContent:"space-between", marginTop:"20px"}}>
                     <div>
                         <Image  
                         src={builder4}
-                        width={100}
-                        height={100}
+                        width={50}
+                        height={50}
                         responsive
                         alt="image"/>
                         <h4>Cooler Master MWE 450W V2 Non-Modular 80 Plus Bronze Power Supply</h4> 
                         <h5>2555 &#2547;</h5>
                     </div>
-                 <Link href="/powers/builderPowers">
-                   X
-                </Link>
+                    <div>  
+                        <button className={styles.xbtn}
+                        onClick={() => Router.push('/cpus/builderCpus')}
+                        > X </button> 
+                    </div>
                 </div>
                    <hr style={{margin:"30px"}}/>
-                     <div style={{display:"flex", justifyContent:"space-around", marginTop:"20px"}}>
+                     <div style={{display:"flex", justifyContent:"space-between", marginTop:"20px"}}>
                         <div>
                             <Image  
                             src={builder5}
-                            width={100}
-                            height={100}
+                            width={50}
+                            height={50}
                             responsive
                             alt="image"/>
 
                             <h4>Asustor AS6602T NAS Storage</h4> 
                             <h5>888 &#2547;</h5>
                         </div>
-
-                     <Link href="/storages/builderStorages">
-                       X
-                    </Link>
+                    <div>  
+                        <button className={styles.xbtn}
+                        onClick={() => Router.push('/cpus/builderCpus')}
+                        > X </button> 
+                    </div>
                     </div>
 
 
                      <hr style={{margin:"30px"}}/>
-                    <div style={{display:"flex", justifyContent:"space-around", marginTop:"20px"}}>
-                        <h4>CPU / Processor</h4>
-                         <Link href="/cpus/builderCpus">
-                            <button className={styles.builderBtn}>Choose</button>
-                        </Link>
-                    </div>
-                    <hr style={{margin:"30px"}}/>
+                    <div style={{display:"flex", justifyContent:"space-between", marginTop:"20px"}}>
+                        <div>
+                            <p style={{fontSize:"20px"}}>    
+                            <span style={{fontSize:"20px", margin:"20px"}}> <BsCpu/></span>
+                               CPU / Processor
+                            </p>
+                        </div> 
 
-                   <div style={{display:"flex", justifyContent:"space-around",}}>
-                       <h4>Motherboard</h4>
-                        <Link href="/motherboards/builderMotherboards">
-                           <button className={styles.builderBtn}>Choose</button>
-                       </Link>
+                        <div>
+                           <button className={styles.builderBtn}
+                           onClick={() => Router.push('/cpus/builderCpus')}
+                           >Choose</button>
+                        </div>
+                    </div>
+
+                    <hr style={{margin:"20px"}}/>
+
+                   <div style={{display:"flex", justifyContent:"space-between"}}>
+                       <div>
+                           <p style={{fontSize:"20px"}}>    
+                           <span style={{fontSize:"20px", margin:"20px"}}> <BsMotherboard/></span>
+                              Motherboard
+                           </p>
+                       </div> 
+
+                       <div>
+                          <button className={styles.builderBtn}
+                          onClick={() => Router.push('/motherboards/builderMotherboards')}
+                          >Choose</button>                        
+                       </div>
                    </div>
+
                    <hr style={{margin:"30px"}} />
-                   <div style={{display:"flex", justifyContent:"space-around",}}>
-                       <h4>RAM</h4>
-                        <Link href="/rams/builderRams">
-                           <button className={styles.builderBtn}>Choose</button>
-                       </Link>
+
+                   <div style={{display:"flex", justifyContent:"space-between",}}>
+
+                       <div>
+                           <p style={{fontSize:"20px"}}>    
+                           <span style={{fontSize:"20px", margin:"20px"}}> <BsMemory/></span>
+                              RAM
+                           </p>
+                       </div>     
+                       <div>
+                            <button className={styles.builderBtn}
+                           onClick={() => Router.push('/rams/builderRams')}        
+                           >Choose</button>
+                       </div>                    
                    </div>
+
                    <hr style={{margin:"30px"}}/>
-                   <div style={{display:"flex", justifyContent:"space-around",}}>
-                       <h4>Power Supply Unit</h4>
-                        <Link href="/powers/builderPowers">
-                           <button className={styles.builderBtn}>Choose</button>
-                       </Link>
+
+                   <div style={{display:"flex", justifyContent:"space-between"}}>
+                        <div>
+                           <p style={{fontSize:"20px"}}>    
+                           <span style={{fontSize:"20px", margin:"20px"}}> <BsFuelPumpDieselFill/></span>
+                              Power Supply Unit
+                           </p>
+                       </div>     
+                       <div>
+                           <button className={styles.builderBtn}
+                          onClick={() => Router.push('/powers/builderPowers')}
+                          >Choose</button>                       
+                       </div>
                    </div>
+
                    <hr style={{margin:"30px"}}/>
-                   <div style={{display:"flex", justifyContent:"space-around",}}>
-                       <h4>Storage Device</h4>
-                        <Link href="/storages/builderStorages">
-                           <button className={styles.builderBtn}>Choose</button>
-                       </Link>
+
+                   <div style={{display:"flex", justifyContent:"space-between"}}>
+                        <div>
+                           <p style={{fontSize:"20px"}}>    
+                           <span style={{fontSize:"20px", margin:"20px"}}> <BsUsbDrive/></span>
+                              Storages Device
+                           </p>
+                       </div>   
+                       <div>
+                           <button className={styles.builderBtn}
+                           onClick={() => Router.push('/storages/builderStorages')}
+                           >Choose</button>                        
+                       </div>                              
                    </div>
+
                    <hr style={{margin:"30px"}}/>
-                   <div style={{display:"flex", justifyContent:"space-around",}}>
-                       <h4>Monitor</h4>
-                        <Link href="/monitors/builderMonitors">
-                           <button className={styles.builderBtn}>Choose</button>
-                       </Link>
+
+                   <div style={{display:"flex", justifyContent:"space-between"}}>
+                        <div>
+                           <p style={{fontSize:"20px"}}>    
+                           <span style={{fontSize:"20px", margin:"20px"}}> <MdMonitor/></span>
+                              Monitor
+                           </p>
+                       </div>                     
+                       <div>
+                           <button className={styles.builderBtn}
+                           onClick={() => Router.push('/monitors/builderMonitors')}           
+                           >Choose</button>
+                       </div>
                    </div>
                    <hr style={{margin:"30px"}}/>
                 </Col>
