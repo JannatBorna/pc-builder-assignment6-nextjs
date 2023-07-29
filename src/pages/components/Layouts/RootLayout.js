@@ -8,8 +8,6 @@ const { Header, Content, Footer } = Layout;
 import { useSession, signOut } from "next-auth/react"
 
 
-
-
 const RootLayout = ({ children }) => {
   
      const { data: session } = useSession(); // github
@@ -49,10 +47,12 @@ const RootLayout = ({ children }) => {
   return (
     <Layout>
 
-      <Header  className={styles.layout} >
+      <Header className={styles.layout} >
         <Row>
-        <Col xs={8} sm={8} md={12} lg={8} >
-        <div className="brand-logo"> 
+        <Col xs={8} sm={8} md={12} lg={8} 
+        
+        >
+        <div> 
         <Link href="/">
           <Image
             src={logo}
@@ -92,14 +92,7 @@ const RootLayout = ({ children }) => {
                <items style={{ margin: "0px 30px" }}>
                <button 
                onClick={() => signOut()}
-               style={{
-                 margin: "5px",
-                background:"#1f1f1f", 
-                 border:"none", 
-                 color: "red",
-                 fontSize: "20px",
-                cursor: "pointer"
-                 }}
+               className={styles.logout}
                  >
                  <PoweroffOutlined  style={{margin: "5px"}}/>
                  Logout

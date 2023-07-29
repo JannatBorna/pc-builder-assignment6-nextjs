@@ -18,6 +18,15 @@
   border: 1px solid #da8d8d;
 }
 
+.logout{
+  margin: 5px;
+  background:#1f1f1f;
+  border:none;
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 .social_icons a{
   font-size: 28px;
   margin: 15px 3px;
@@ -35,4 +44,34 @@
   height: 7vh;
   border: none;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .manu_item a{
+  font-size: 10px;
+}
+
+.layout{
+  background-color: #1f1f1f;
+  height: 20vh;
+}
+
+.logout{
+  font-size: 13px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  .manu_item a{
+  font-size: 10px;
+}
+
+.layout{
+  background-color: #1f1f1f;
+  height: 24vh;
+}
+
+.logout{
+  font-size: 13px;
+}
 }
