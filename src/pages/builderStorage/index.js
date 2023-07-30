@@ -33,12 +33,12 @@ BuilderStorageHome.getLayout = function getLayout(page){
 // data fetching
 
 export const getServerSideProps = async () => {
-    const res = await fetch ("https://pc-builder-iota.vercel.app/api/rams");
+    const res = await fetch ("https://pc-builder-iota.vercel.app/api/storages");
     const data = await res.json();
 
     return{
         props: {
-            rams: data.data,
+            storages: data.data,
         }
     }
 };
