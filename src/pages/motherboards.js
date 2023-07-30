@@ -1,10 +1,13 @@
 import Image from "next/image";
 import styles from '@/styles/cart.module.css';
 import RootLayout from "./components/Layouts/RootLayout";
-import Router from "next/router";
+import { useRouter } from "next/router";
 import { Card, Col, Row } from "antd";
 
 const PowersPage = ({motherboards}) => {
+
+   const router = useRouter()
+
     const {Meta} = Card;
     return (
       <>
@@ -69,7 +72,7 @@ const PowersPage = ({motherboards}) => {
                 </p>
 
                <button 
-               onClick={() => Router.push(`/motherboard/${motherboard?._id}`)}
+               onClick={() => router.push(`/motherboard/${motherboard?._id}`)}
                className={styles.cartBtn}
                >SEE DETAIL
                </button>                

@@ -4,7 +4,6 @@ import Head from 'next/head';
 import styles from "@/styles/error.module.css";
 import { ArrowLeftOutlined } from '@ant-design/icons';
 import { useRouter } from "next/router";
-import  Router  from "next/router";
 
 const NotFoundPage = () => {
 
@@ -30,7 +29,7 @@ const NotFoundPage = () => {
             />
             
             <button className={styles.btn}
-            onClick={() => Router.push('/')}
+            onClick={() => router.push('/')}
             ><ArrowLeftOutlined /> Back To Home</button>
         </div>
     );

@@ -1,11 +1,13 @@
 import Image from "next/image";
 import styles from '@/styles/cart.module.css';
 import RootLayout from "./components/Layouts/RootLayout";
-import Router from "next/router";
+import { useRouter } from "next/router";
 import { Card, Col, Row } from "antd";
 
 
 const PowersPage = ({powers}) => {
+    const router = useRouter()
+
     const {Meta} = Card;
     return (
       <>
@@ -69,7 +71,7 @@ const PowersPage = ({powers}) => {
                 </span>
                 </p>
                <button 
-               onClick={() => Router.push(`/power/${power?._id}`)}
+               onClick={() => router.push(`/power/${power?._id}`)}
                className={styles.cartBtn}
                >SEE DETAIL
                </button>                

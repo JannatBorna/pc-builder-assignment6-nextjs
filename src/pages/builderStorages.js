@@ -1,12 +1,15 @@
 import Image from "next/image";
 import styles from '@/styles/cart.module.css';
 import RootLayout from "./components/Layouts/RootLayout";
-import Router from "next/router";
+import { useRouter } from "next/router";
 import { Card, Col, Row } from "antd";
 
 
 
 const BuilderStorages = ({storages}) => {
+
+  const router = useRouter()
+
     const {Meta} = Card;
     return (
       <>
@@ -71,7 +74,7 @@ const BuilderStorages = ({storages}) => {
                 </p>
 
                <button 
-               onClick={() => Router.push('/pcBuilder')}
+               onClick={() => router.push('/pcBuilder')}
                className={styles.cartBtn}
                >ADD TO BUILDER
                </button>                

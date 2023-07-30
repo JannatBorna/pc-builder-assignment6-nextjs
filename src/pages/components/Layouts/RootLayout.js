@@ -4,48 +4,50 @@ import { FacebookFilled, GoogleSquareFilled,  LinkedinFilled, LoginOutlined,  Po
 import styles from '@/styles/Home.module.css';
 import { Col, Dropdown, Layout, Row, Space } from 'antd';
 import { useSession, signOut } from "next-auth/react"
-import Router from "next/router";
+import { useRouter } from "next/router";
 const { Header, Content, Footer } = Layout;
 
 
 const RootLayout = ({ children }) => {
+
+  const router = useRouter()
   
      const { data: session } = useSession(); // github
 
 
   const items = [
   {
-    label: <button  className={styles.itemBtn} onClick={() => Router.push('/cpus')} 
+    label: <button  className={styles.itemBtn} onClick={() => router.push('/cpus')} 
             >CPU / Processor</button>,
     key: '0',
   },
   {
-  label: <button className={styles.itemBtn} onClick={() => Router.push('/motherboards')} 
+  label: <button className={styles.itemBtn} onClick={() => router.push('/motherboards')} 
           >Motherboard</button>,
   key: '1',
 },
 {
-  label: <button className={styles.itemBtn} onClick={() => Router.push('/rams')} 
+  label: <button className={styles.itemBtn} onClick={() => router.push('/rams')} 
          >RAM</button>, 
   key: '2',
 },
 {
-  label:<button className={styles.itemBtn} onClick={() => Router.push('/powers')} 
+  label:<button className={styles.itemBtn} onClick={() => router.push('/powers')} 
         >Power Supply Unit</button>,  
   key: '3',
 },
 {
-  label: <button className={styles.itemBtn} onClick={() => Router.push('/storages')} 
+  label: <button className={styles.itemBtn} onClick={() => router.push('/storages')} 
         >Storage Device</button>,  
   key: '4',
 },
 {
-  label:<button className={styles.itemBtn} onClick={() => Router.push('/monitors')} 
+  label:<button className={styles.itemBtn} onClick={() => router.push('/monitors')} 
        >Monitor</button>,  
   key: '5',
 },
   {
-    label: <button className={styles.itemBtn} onClick={() => Router.push('/others')} 
+    label: <button className={styles.itemBtn} onClick={() => router.push('/others')} 
            >Others</button>,  
     key: '6',
   },
@@ -58,7 +60,7 @@ const RootLayout = ({ children }) => {
         <Row>
         <Col xs={8} sm={8} md={12} lg={8} >
         <div> 
-        <p onClick={() => Router.push('/')}>
+        <p onClick={() => router.push('/')}>
           <Image
             src={logo}
             alt='logo'
@@ -85,7 +87,7 @@ const RootLayout = ({ children }) => {
               </a>
                </Dropdown>
 
-        <button onClick={() => Router.push('/pcBuilder')}  className={styles.pcbuilderBtn}> 
+        <button onClick={() => router.push('/pcBuilder')}  className={styles.pcbuilderBtn}> 
            <items style={{ padding: "10px" }}>      
            PC Builder
            </items>
@@ -104,7 +106,7 @@ const RootLayout = ({ children }) => {
                  </button>
               </items>
            ) :
-           <button onClick={() => Router.push('/login')} className={styles.loginBtn}> 
+           <button onClick={() => router.push('/login')} className={styles.loginBtn}> 
               <items style={{padding: "10px"}}>
                 <LoginOutlined style={{margin: "5px"}}/>
                 Login

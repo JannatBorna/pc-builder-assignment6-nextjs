@@ -1,11 +1,14 @@
 import Image from "next/image";
 import styles from '@/styles/cart.module.css';
 import RootLayout from "./components/Layouts/RootLayout";
-import Router from "next/router";
+import { useRouter } from "next/router";
 import { Card, Col, Row } from "antd";
 
 
 const AllProductsPage = ({allProducts}) => {
+
+  const router = useRouter()
+
     const {Meta} = Card;
     return (
       <>
@@ -71,7 +74,7 @@ const AllProductsPage = ({allProducts}) => {
 
 
                 <button 
-                onClick={() => Router.push(`/product/${products?._id}`)}
+                onClick={() => router.push(`/product/${products?._id}`)}
                 className={styles.cartBtn}
                 >SEE DETAIL
                 </button>

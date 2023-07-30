@@ -1,12 +1,15 @@
 import Image from "next/image";
 import styles from '@/styles/cart.module.css';
 import RootLayout from "./components/Layouts/RootLayout";
-import Router from "next/router";
+import { useRouter } from "next/router";
 import { Card, Col, Row } from "antd";
 
 
 
 const RamsPage = ({rams}) => {
+ 
+  const router = useRouter()
+
     const {Meta} = Card;
     return (
       <>
@@ -71,7 +74,7 @@ const RamsPage = ({rams}) => {
                 </p>
 
                <button 
-               onClick={() => Router.push(`/ram/${ram?._id}`)}
+               onClick={() => router.push(`/ram/${ram?._id}`)}
                className={styles.cartBtn}
                >SEE DETAIL
                </button>                

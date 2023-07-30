@@ -1,11 +1,14 @@
 import Image from "next/image";
 import styles from '@/styles/cart.module.css';
 import RootLayout from "./components/Layouts/RootLayout";
-import Router from "next/router";
+import { useRouter } from "next/router";
 import { Card, Col, Row } from "antd";
 
 
 const MonitorPage = ({monitors}) => {
+
+  const router = useRouter()
+
     const {Meta} = Card;
     return (
       <>
@@ -70,7 +73,7 @@ const MonitorPage = ({monitors}) => {
                 </p>
 
                <button 
-               onClick={() => Router.push(`/monitor/${monitor?._id}`)}
+               onClick={() => router.push(`/monitor/${monitor?._id}`)}
                className={styles.cartBtn}
                >SEE DETAIL
                </button>                

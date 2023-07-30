@@ -1,11 +1,14 @@
 import Image from "next/image";
 import styles from '@/styles/cart.module.css';
 import RootLayout from "./components/Layouts/RootLayout";
-import Router from "next/router";
+import { useRouter } from "next/router";
 import { Card, Col, Row } from "antd";
 
 
 const CpusPage = ({cpus}) => {
+
+   const router = useRouter()
+
     const {Meta} = Card;
     return (
       <>
@@ -70,7 +73,7 @@ const CpusPage = ({cpus}) => {
                 </p>
 
                <button 
-               onClick={() => Router.push(`/cpu/${cpu?._id}`)}
+               onClick={() => router.push(`/cpu/${cpu?._id}`)}
                className={styles.cartBtn}
                >SEE DETAIL
                </button>                
