@@ -98,7 +98,7 @@ BuilderMonitors.getLayout = function getLayout (page){
 }
 
 // data fetching
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
     const res = await fetch ("https://pc-builder-iota.vercel.app/api/monitors");
     const data = await res.json();
 
