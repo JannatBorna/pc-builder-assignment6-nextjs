@@ -103,7 +103,7 @@ export const getStaticProps = async (context) => {
     const { params } = context;
     const res = await fetch(`http://localhost:3000/api/singleMotherboard/singleMotherboard?motherboardId=${params.motherboardId}`);
     const data = await res.json();
-    console.log(data)
+
 
     return{
         props: {
