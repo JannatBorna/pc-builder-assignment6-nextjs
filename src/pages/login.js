@@ -21,8 +21,8 @@ const LoginPage = () => {
         <h3 style={{borderBottom: "1px solid white"}}>LOGIN NOW</h3>
         <button 
             className={styles.social_icons}
-            onClick={() => signIn("github", {
-             callbackUrl: "https://pc-builder-iota.vercel.app/"
+           onClick={() => signIn("github", {
+           callbackUrl: "https://pc-builder-iota.vercel.app/"
            })
            }>
           <GithubOutlined
