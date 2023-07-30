@@ -89,7 +89,7 @@ StorageDetailPage.getLayout = function getLayout (page){
 }
 
 export const getStaticPaths = async () => {
-     const res = await fetch("http://localhost:3000/api/storages");
+     const res = await fetch("https://pc-builder-iota.vercel.app/api/storages");
      const storagees = await res.json();
      const paths = storagees?.data.map((storages) => ({
      params: { storageId: storages._id },
@@ -101,7 +101,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
     const { params } = context;
-    const res = await fetch(`http://localhost:3000/api/singleStorage/singleStorage?storageId=${params.storageId}`);
+    const res = await fetch(`https://pc-builder-iota.vercel.app/api/singleStorage/singleStorage?storageId=${params.storageId}`);
     const data = await res.json();
 
     return{

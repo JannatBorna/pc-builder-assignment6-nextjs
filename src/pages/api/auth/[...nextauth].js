@@ -10,7 +10,7 @@ export const authOptions = {
     }),
   ],
    pages:{
-   signIn: "/login",
+   signIn: "https://pc-builder-iota.vercel.app/login",
  }
 }
 

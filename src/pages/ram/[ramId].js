@@ -89,7 +89,7 @@ RamDetailPage.getLayout = function getLayout (page){
 }
 
 export const getStaticPaths = async () => {
-     const res = await fetch("http://localhost:3000/api/rams");
+     const res = await fetch("https://pc-builder-iota.vercel.app/api/rams");
      const rames = await res.json();
      const paths = rames?.data.map((rams) => ({
      params: { ramId: rams._id },
@@ -101,7 +101,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
     const { params } = context;
-    const res = await fetch(`http://localhost:3000/api/singleRam/singleRam?ramId=${params.ramId}`);
+    const res = await fetch(`https://pc-builder-iota.vercel.app/api/singleRam/singleRam?ramId=${params.ramId}`);
     const data = await res.json();
 
     return{

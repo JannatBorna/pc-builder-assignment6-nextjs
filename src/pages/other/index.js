@@ -31,7 +31,7 @@ OthersHomePage.getLayout = function getLayout(page){
 
 // data fetching
 export const getStaticProps = async () =>{
-  const res = await fetch("http://localhost:3000/api/others")
+  const res = await fetch("https://pc-builder-iota.vercel.app/api/others")
   const data = await res.json();
 
   return{

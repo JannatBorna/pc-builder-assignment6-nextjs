@@ -89,7 +89,7 @@ CputDetailPage.getLayout = function getLayout (page){
 }
 
 export const getStaticPaths = async () => {
-     const res = await fetch("http://localhost:3000/api/cpus");
+     const res = await fetch("https://pc-builder-iota.vercel.app/api/cpus");
      const cpues = await res.json();
      const paths = cpues?.data.map((cpus) => ({
      params: { cpuId: cpus._id },
@@ -101,7 +101,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
     const { params } = context;
-    const res = await fetch(`http://localhost:3000/api/singleCpu/singleCpu?cpuId=${params.cpuId}`);
+    const res = await fetch(`https://pc-builder-iota.vercel.app/api/singleCpu/singleCpu?cpuId=${params.cpuId}`);
     const data = await res.json();
 
 

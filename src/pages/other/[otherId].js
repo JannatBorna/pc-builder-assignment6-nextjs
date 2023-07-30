@@ -89,7 +89,7 @@ OtherDetailPage.getLayout = function getLayout (page){
 }
 
 export const getStaticPaths = async () => {
-     const res = await fetch("http://localhost:3000/api/others");
+     const res = await fetch("https://pc-builder-iota.vercel.app/api/others");
      const otheres = await res.json();
      const paths = otheres?.data.map((others) => ({
      params: { otherId: others._id },
@@ -101,7 +101,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
     const { params } = context;
-    const res = await fetch(`http://localhost:3000/api/singleOther/singleOther?otherId=${params.otherId}`);
+    const res = await fetch(`https://pc-builder-iota.vercel.app/api/singleOther/singleOther?otherId=${params.otherId}`);
     const data = await res.json();
 
 

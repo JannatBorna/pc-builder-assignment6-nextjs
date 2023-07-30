@@ -22,7 +22,7 @@ const LoginPage = () => {
         <button 
             className={styles.social_icons}
             onClick={() => signIn("github", {
-             callbackUrl: "http://localhost:3000/"
+             callbackUrl: "https://pc-builder-iota.vercel.app/"
            })
            }>
           <GithubOutlined

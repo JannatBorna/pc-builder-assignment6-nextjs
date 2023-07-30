@@ -89,7 +89,7 @@ MotherboardDetailPage.getLayout = function getLayout (page){
 }
 
 export const getStaticPaths = async () => {
-     const res = await fetch("http://localhost:3000/api/motherboards");
+     const res = await fetch("https://pc-builder-iota.vercel.app/api/motherboards");
      const motherboardes = await res.json();
      const paths = motherboardes?.data.map((motherboards) => ({
      params: { motherboardId: motherboards._id },
@@ -101,7 +101,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
     const { params } = context;
-    const res = await fetch(`http://localhost:3000/api/singleMotherboard/singleMotherboard?motherboardId=${params.motherboardId}`);
+    const res = await fetch(`https://pc-builder-iota.vercel.app/api/singleMotherboard/singleMotherboard?motherboardId=${params.motherboardId}`);
     const data = await res.json();
 
 

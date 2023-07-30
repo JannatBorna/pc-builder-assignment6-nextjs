@@ -100,7 +100,7 @@ BuilderPowers.getLayout = function getLayout (page){
 
 // data fetching
 export const getStaticProps = async () => {
-    const res = await fetch ("http://localhost:3000/api/powers");
+    const res = await fetch ("https://pc-builder-iota.vercel.app/api/powers");
     const data = await res.json();
 
     return{

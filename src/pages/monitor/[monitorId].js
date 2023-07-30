@@ -88,7 +88,7 @@ CputDetailPage.getLayout = function getLayout (page){
 }
 
 export const getStaticPaths = async () => {
-     const res = await fetch("http://localhost:3000/api/monitors");
+     const res = await fetch("https://pc-builder-iota.vercel.app/api/monitors");
      const monitores = await res.json();
      const paths = monitores?.data.map((monitors) => ({
      params: { monitorId: monitors._id },
@@ -100,7 +100,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
     const { params } = context;
-    const res = await fetch(`http://localhost:3000/api/singleMonitor/singleMonitor?monitorId=${params.monitorId}`);
+    const res = await fetch(`https://pc-builder-iota.vercel.app/api/singleMonitor/singleMonitor?monitorId=${params.monitorId}`);
     const data = await res.json();
 
 

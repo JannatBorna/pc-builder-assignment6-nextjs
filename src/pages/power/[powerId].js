@@ -89,7 +89,7 @@ PowerDetailPage.getLayout = function getLayout (page){
 }
 
 export const getStaticPaths = async () => {
-     const res = await fetch("http://localhost:3000/api/powers");
+     const res = await fetch("https://pc-builder-iota.vercel.app/api/powers");
      const poweres = await res.json();
      const paths = poweres?.data.map((powers) => ({
      params: { powerId: powers._id },
@@ -101,7 +101,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
     const { params } = context;
-    const res = await fetch(`http://localhost:3000/api/singlePower/singlePower?powerId=${params.powerId}`);
+    const res = await fetch(`https://pc-builder-iota.vercel.app/api/singlePower/singlePower?powerId=${params.powerId}`);
     const data = await res.json();
 
     return{
