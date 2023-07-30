@@ -1,6 +1,6 @@
 import RootLayout from '../components/Layouts/RootLayout';
+import Image from "next/image";
 import { Col, Row } from 'antd';
-import Image from 'next/image';
 
 const StorageDetailPage = ({storages}) => {
     return (

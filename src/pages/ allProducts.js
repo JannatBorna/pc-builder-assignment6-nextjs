@@ -1,8 +1,8 @@
-import { Card, Col, Row } from "antd";
 import Image from "next/image";
 import styles from '@/styles/cart.module.css';
 import RootLayout from "./components/Layouts/RootLayout";
 import Router from "next/router";
+import { Card, Col, Row } from "antd";
 
 
 const AllProductsPage = ({allProducts}) => {

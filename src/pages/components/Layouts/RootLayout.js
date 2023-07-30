@@ -1,11 +1,11 @@
-import Image from 'next/image';
+import Image from "next/image";
 import logo from '@/assets/images/logo.png';
 import { FacebookFilled, GoogleSquareFilled,  LinkedinFilled, LoginOutlined,  PoweroffOutlined,   TwitterSquareFilled, } from '@ant-design/icons';
 import styles from '@/styles/Home.module.css';
 import { Col, Dropdown, Layout, Row, Space } from 'antd';
-const { Header, Content, Footer } = Layout;
 import { useSession, signOut } from "next-auth/react"
-import Router from 'next/router';
+import Router from "next/router";
+const { Header, Content, Footer } = Layout;
 
 
 const RootLayout = ({ children }) => {

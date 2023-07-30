@@ -1,10 +1,10 @@
-import Image from 'next/image';
+import Image from "next/image";
 import error from '@/assets/images/404_error.png'
 import Head from 'next/head';
 import styles from "@/styles/error.module.css";
 import { ArrowLeftOutlined } from '@ant-design/icons';
-import { useRouter } from 'next/router';
-import  Router  from 'next/router';
+import { useRouter } from "next/router";
+import  Router  from "next/router";
 
 const NotFoundPage = () => {
 
